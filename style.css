@@ -12,6 +12,7 @@ p{
 
 
 
+/* Thibault start : création divs de couleurs */
 .red{
   background-color: red;
 }
@@ -37,3 +38,5 @@ p{
   flex-direction :
   width: 200px;
 }
+/*Thibault end*/
+/**/
