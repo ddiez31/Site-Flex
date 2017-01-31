@@ -1,0 +1,54 @@
+body {
+    background-color: purple;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.ui_container {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Thibault start : création divs de couleurs */
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.red,
+.yellow,
+.grey,
+.green {
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+
+/*Thibault end*/
+
+
+/**/

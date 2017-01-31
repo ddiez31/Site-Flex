@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
+
 <body>
-	
+    <div class="ui menu">
+        <div class="header item"><a href="./index.html">Accueil</a></div>
+        <a class="item" href="./theorie.html">Theorie</a>
+        <a class="item" href="./ressources.html">Ressources</a>
+        <a class="item" href="./Pratique.html">Exercices</a>
+    </div>
+
+
+    <div class="ui container raised very padded text container segment">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aliquam optio saepe doloremque doloribus rem voluptate quidem repellendus facilis ducimus commodi quod fugiat numquam, totam quibusdam! Explicabo, quasi similique eos.</p>
+    </div>
+    <!-- -->
+    <!-- Cyril ajout de la "doc"
+    Flex-grow : C'est une valeur sans unitée qui représente la proportion de place qu'un item prendra au final par raport a la place disponible.
+.selecteur{
+    flex-grow : x; /* assigne le nombre x comme proportion a l'item selectionné */
+}
+Flex-shrink : Donne la possibilitée a un item de se rétrécir selon les besoin.
+.selecteur{
+    flex-shrink : x; /* assigne le nombre x comme facteur de réducion en cas de besoin  */
+}
+Flex-basis : taille initiale de l'élément avant que l'espace restant ne soit déffini.
+.selecteur{
+    flex-basis : x; /* assigne le nombre x comme taille initiale de l'item selectionné */
+}
+Flex : Ça remplace respectif flex-grow, flex-shrink, et flex-basis.
+Justify-content : flex-start, center et flex-end sont respectivement les propriétées qui permetent de mettre les éléments flex au début, au centre ou à la fin de l'axe principal, de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des dits éléments
+Align-content : très exactement la même chose que pour justify-content mais sur l'axe secondraire => flex-start, center et flex-end sont respectivement les propriétées qui permetent de mettre les éléments flex au début, au centre ou à la fin de l'axe secondaire, de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des dits éléments
+Align-items : c'est un align-content, qui s'applique a un item visé -->
+
+
+    <div class="ui container raised very padded text container segment">
+
+        <img src="http://placehold.it/460x200">
+    </div>
 </body>
-	<script type="text/javascript" src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
 </html>
