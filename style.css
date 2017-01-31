@@ -9,3 +9,31 @@ p{
 .ui_container{
 	background-color: yellow;
 }
+
+
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.green{
+  background-color: green;
+}
+
+.red, .yellow, .grey, .green{
+  width: 50px;
+}
+
+.container{
+  display : flex;
+  flex-direction :
+  width: 200px;
+}
