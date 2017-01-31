@@ -6,6 +6,11 @@ p{
 	font-size: 25px;
 
 }
+
+h1, h2, h3, h4, h5{
+	font-family: 'Coming Soon', cursive;
+	font-size: 20px;
+}
 .ui_container{
 	background-color: yellow;
 }
