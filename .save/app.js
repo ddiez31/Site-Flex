@@ -1,4 +1,3 @@
-// Thibault start : création function qui applique column-reverse
 $(document).ready(function(){
     console.log('jquery fonctionne');
 
@@ -9,8 +8,4 @@ $(document).ready(function(){
 
   });
 
-
   });
-
-// Thibault end
-//
