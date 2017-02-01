@@ -25,28 +25,29 @@ function draw() {
 $(document).ready(function() {
 
 	console.log('jquery fonctionne');
-    // Thibault start : création function qui applique column-reverse
-
-    $("#col-rev").click(function(){
-    	console.log('le click a été detecté');
-    	$("#containercol").css('flex-direction', 'column-reverse');
-
-    });
-
-    console.log('jquery fonctionne');
-    // Thibault start : création function qui applique wrap
-
-    $("#wrap").click(function(){
-    	console.log('le click a été detecté');
-    	$("#containerwrap").css('flex-wrap', 'wrap');
-
-    });
+	// Thibault start
 
 
-// Thibault end
-
-
+	$(".btnFlexFlow").click(function(){
+		var outils = $(this).attr("id");
+		console.log(outils);
+		if(outils === "containercolrev"){
+			$("#TestFlexFlow").css('flex-direction', 'column-reverse');
+		}else if(outils === "containercol"){
+			$("#TestFlexFlow").css('flex-direction', 'column');
+		}else if(outils === "wrap"){
+			$("#TestFlexFlow").css('flex-wrap', 'wrap');
+		} else if(outils === "dirwrap"){
+			$("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+		}
+	});
 });
+
+	// Thibault end
+	// Cyril début,
+	
+	// Cyril Fin.
+
 
 
 //

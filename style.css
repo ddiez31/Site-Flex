@@ -16,47 +16,29 @@ h1, h2, h3, h4, h5{
 	background-color: yellow;
 }
 
-
 h1 {
 	text-align: center;
 	font-size: 50px;
 	color: orange;
 }
 
-
 /* Thibault start : création divs de couleurs */
 
-/*.red {
-    background-color: red;
+.divDeTest{
+  display : flex;
+  width: 200px;
+  height: 75px;
+  border: 1px solid black;
 }
 
-.yellow {
-    background-color: yellow;
+.element{
+  flex-direction: column-reverse;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
 }
 
-.grey {
-    background-color: grey;
-}
+/*Thibault end*/
 
-.green {
-    background-color: green;
-}
-
-.red,
-.yellow,
-.grey,
-.green {
-    width: 50px;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    width: 120px;
-    }*/
-
-    /*Thibault end*/
-
-
-    /**/
-
+/**/
