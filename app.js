@@ -48,14 +48,14 @@ $(document).ready(function() {
 		var inp;
 		var outils = $(this).attr("id");
 		console.log(outils);
-		if(outils === "grow"){
-			inp = $('#growinp').val();
+		if(outils == "grow"){
+			// inp = $('#growinp').val();
 			$("#TestFlex").css('flex-direction', 'column-reverse');
-		}else if(outils === "basis"){
-			inp = $('#basisinp').val();
+		}else if(outils == "basis"){
+			// inp = $('#basisinp').val();
 			$("#TestFlex").css('flex-wrap', 'wrap');
-		} else if(outils === "shrink"){
-			inp = $('#shrinkinp').val();
+		} else if(outils == "shrink"){
+			// inp = $('#shrinkinp').val();
 			$("#TestFlex").css('flex-flow', 'column-reverse wrap');
 		}
 	});
