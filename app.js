@@ -24,48 +24,39 @@ function draw() {
 
 $(document).ready(function() {
 
-    console.log('jquery fonctionne');
+        console.log('jquery fonctionne');
+        // Thibault start
 
-// Thibault start :
 
-    // $("#containercol").click(function(){    // pour illustrer flex direction
-    //   console.log('le click a été detecté');
-    //   console.log($(".element").text());
-    //   $("#TestFlexFlow").css('flex-direction', 'column-reverse');
+        $(".btnFlexFlow").click(function(){
+                var outils = $(this).attr("id");
+                console.log(outils);
+                if(outils === "containercolrev"){
+                    $("#TestFlexFlow").css('flex-direction', 'column-reverse');
+                }else if(outils === "containercol"){
+                    $("#TestFlexFlow").css('flex-direction', 'column');
+                }else if(outils === "row"){
+                    $("#TestFlexFlow").css('flex-direction', 'row');
+                }else if(outils === "row-reverse"){
+                    $("#TestFlexFlow").css('flex-direction', 'row-reverse');
+                }else if(outils === "wrap"){
+                    $("#TestFlexFlow").css('flex-wrap', 'wrap');
+                }else if(outils === "wraprev"){
+                    $("#TestFlexFlow").css('flex-wrap', 'wrap-reverse');
+                }else if(outils === "nowrap"){
+                    $("#TestFlexFlow").css('flex-wrap', 'nowrap');
+                } else if(outils === "dirwrap"){
+                    $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+                }
+            });
+
 
     });
 
+// Thibault end
+// Cyril début,
 
-    // $("#wrap").click(function(){
-    //   console.log('le click a été detecté'); // pour illustrer flex-wrap
-    //   $("#TestFlexFlow").css('flex-wrap', 'wrap');
-
-    // });
-
-//     $("#dirwrap").click(function(){
-//       console.log('le click a été detecté'); // pour illustrer flex-wrap
-//       $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-// });
-
-    $(".btnFlexFlow").click(function(){
-        var outils = $(this).attr("id");
-        console.log(outils);
-        if(outils === "containercolrev"){
-             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
-        }else if(outils === "containercol"){
-            $("#TestFlexFlow").css('flex-direction', 'column');
-        }else if(outils === "wrap"){
-            $("#TestFlexFlow").css('flex-wrap', 'wrap');
-        } else if(outils === "dirwrap"){
-            $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-        }
-    });
-
-	// Thibault end
-	// Cyril début,
-	
-	// Cyril Fin.
-
+// Cyril Fin.
 
 
 //
