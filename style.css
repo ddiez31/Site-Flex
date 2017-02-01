@@ -7,17 +7,20 @@ p {
     font-size: 25px;
 }
 
-
-h1, h2, h3, h4, h5{
-	font-family: 'Coming Soon', cursive;
-	font-size: 20px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Coming Soon', cursive;
+    font-size: 20px;
 }
-.ui_container{
-	background-color: yellow;
+
+.ui .container {
+    display: flex;
+    background-color: yellow;
 }
 
-
-<<<<<<< HEAD
 /* Thibault start : création divs de couleurs */
 .red{
   background-color: red;
@@ -46,47 +49,7 @@ h1, h2, h3, h4, h5{
 }
 /*Thibault end*/
 /**/
-=======
+
 h1 {
     text-align: center;
 }
-
-
-/* Thibault start : création divs de couleurs */
-
-.red {
-    background-color: red;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.grey {
-    background-color: grey;
-}
-
-.green {
-    background-color: green;
-}
-
-.red,
-.yellow,
-.grey,
-.green {
-    width: 50px;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-}
-
-
-/*Thibault end*/
-
-
-/**/
-
->>>>>>> f35473b6df573ea99dc6e1ebcd6b6def00cfaf27
