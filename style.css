@@ -21,33 +21,41 @@ h5 {
     background-color: yellow;
 }
 
+
 /* Thibault start : création divs de couleurs */
-.red{
-  background-color: red;
+
+.red {
+    background-color: red;
 }
 
-.yellow{
-  background-color: yellow;
+.yellow {
+    background-color: yellow;
 }
 
-.grey{
-  background-color: grey;
+.grey {
+    background-color: grey;
 }
 
-.green{
-  background-color: green;
+.green {
+    background-color: green;
 }
 
-.red, .yellow, .grey, .green{
-  width: 50px;
+.red,
+.yellow,
+.grey,
+.green {
+    width: 50px;
 }
 
-.container{
-  display : flex;
-  flex-direction :
-  width: 200px;
+.container {
+    display: flex;
+    width: 200px;
 }
+
+
 /*Thibault end*/
+
+
 /**/
 
 h1 {
