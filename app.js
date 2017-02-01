@@ -33,8 +33,6 @@ $(document).ready(function() {
     //   console.log($(".element").text());
     //   $("#TestFlexFlow").css('flex-direction', 'column-reverse');
 
-    });
-
 
     // $("#wrap").click(function(){
     //   console.log('le click a été detecté'); // pour illustrer flex-wrap
@@ -60,6 +58,9 @@ $(document).ready(function() {
             $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
         }
     });
+
+    $
+});
 
 	// Thibault end
 	// Cyril début,
