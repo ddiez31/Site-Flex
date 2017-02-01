@@ -27,18 +27,24 @@ $(document).ready(function() {
     console.log('jquery fonctionne');
     // Thibault start : création function qui applique column-reverse
 
-    $("button").click(function(){
+    $("#col-rev").click(function(){
       console.log('le click a été detecté');
-      $(".container").css('flex-direction', 'column-reverse');
+      $("#containercol").css('flex-direction', 'column-reverse');
 
+    });
 
+    console.log('jquery fonctionne');
+    // Thibault start : création function qui applique wrap
+
+    $("#wrap").click(function(){
+      console.log('le click a été detecté');
+      $("#containerwrap").css('flex-wrap', 'wrap');
 
     });
 
 	// Thibault end
 	// Cyril début,
-
-
+	
 	// Cyril Fin.
 
 });

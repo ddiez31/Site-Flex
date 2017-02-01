@@ -2,27 +2,23 @@ body {
     background-color: purple;
 }
 
-p {
+p, blockquote{
     font-family: 'Indie Flower', cursive;
     font-size: 25px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Coming Soon', cursive;
-    font-size: 20px;
-}
 
-.ui .container {
-    display: flex;
-    background-color: yellow;
+h1, h2, h3, h4, h5{
+	font-family: 'Coming Soon', cursive;
+	font-size: 20px;
 }
-
-/**/
+.ui .container{
+	background-color: yellow;
+}
 
 h1 {
     text-align: center;
 }
+
+/**/
+
