@@ -25,21 +25,40 @@ function draw() {
 $(document).ready(function() {
 
     console.log('jquery fonctionne');
-    // Thibault start : création function qui applique column-reverse
 
-    $("#col-rev").click(function(){
-      console.log('le click a été detecté');
-      $("#containercol").css('flex-direction', 'column-reverse');
+// Thibault start :
+
+    // $("#containercol").click(function(){    // pour illustrer flex direction
+    //   console.log('le click a été detecté');
+    //   console.log($(".element").text());
+    //   $("#TestFlexFlow").css('flex-direction', 'column-reverse');
 
     });
 
-    console.log('jquery fonctionne');
-    // Thibault start : création function qui applique wrap
 
-    $("#wrap").click(function(){
-      console.log('le click a été detecté');
-      $("#containerwrap").css('flex-wrap', 'wrap');
+    // $("#wrap").click(function(){
+    //   console.log('le click a été detecté'); // pour illustrer flex-wrap
+    //   $("#TestFlexFlow").css('flex-wrap', 'wrap');
 
+    // });
+
+//     $("#dirwrap").click(function(){
+//       console.log('le click a été detecté'); // pour illustrer flex-wrap
+//       $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+// });
+
+    $(".btnFlexFlow").click(function(){
+        var outils = $(this).attr("id");
+        console.log(outils);
+        if(outils === "containercolrev"){
+             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
+        }else if(outils === "containercol"){
+            $("#TestFlexFlow").css('flex-direction', 'column');
+        }else if(outils === "wrap"){
+            $("#TestFlexFlow").css('flex-wrap', 'wrap');
+        } else if(outils === "dirwrap"){
+            $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+        }
     });
 
 	// Thibault end
@@ -47,7 +66,6 @@ $(document).ready(function() {
 	
 	// Cyril Fin.
 
-});
 
 
 //
