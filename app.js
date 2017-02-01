@@ -1,10 +1,10 @@
 function setup() {
-    createCanvas(200, 100, WEBGL);
-    noStroke();
+	createCanvas(200, 600, WEBGL);
+	noStroke();
 }
 
 function draw() {
-    background(0);
+	background(0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -24,12 +24,12 @@ function draw() {
 
 $(document).ready(function() {
 
-    console.log('jquery fonctionne');
+	console.log('jquery fonctionne');
     // Thibault start : création function qui applique column-reverse
 
     $("#col-rev").click(function(){
-      console.log('le click a été detecté');
-      $("#containercol").css('flex-direction', 'column-reverse');
+    	console.log('le click a été detecté');
+    	$("#containercol").css('flex-direction', 'column-reverse');
 
     });
 
@@ -37,8 +37,8 @@ $(document).ready(function() {
     // Thibault start : création function qui applique wrap
 
     $("#wrap").click(function(){
-      console.log('le click a été detecté');
-      $("#containerwrap").css('flex-wrap', 'wrap');
+    	console.log('le click a été detecté');
+    	$("#containerwrap").css('flex-wrap', 'wrap');
 
     });
 
