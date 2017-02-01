@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $("button").click(function(){
       console.log('le click a été detecté');
-      $("button").css('flex-direction', 'column-reverse');
+      $(".container").css('flex-direction', 'column-reverse');
 
 
   });
