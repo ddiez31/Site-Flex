@@ -1,10 +1,10 @@
 function setup() {
-    createCanvas(200, 100, WEBGL);
-    noStroke();
+	createCanvas(200, 600, WEBGL);
+	noStroke();
 }
 
 function draw() {
-    background(0);
+	background(0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -24,49 +24,44 @@ function draw() {
 
 $(document).ready(function() {
 
-    console.log('jquery fonctionne');
+	console.log('jquery fonctionne');
+	// Thibault start
 
-// Thibault start :
-
-    // $("#containercol").click(function(){    // pour illustrer flex direction
-    //   console.log('le click a été detecté');
-    //   console.log($(".element").text());
-    //   $("#TestFlexFlow").css('flex-direction', 'column-reverse');
-
-
-    // $("#wrap").click(function(){
-    //   console.log('le click a été detecté'); // pour illustrer flex-wrap
-    //   $("#TestFlexFlow").css('flex-wrap', 'wrap');
-
-    // });
-
-//     $("#dirwrap").click(function(){
-//       console.log('le click a été detecté'); // pour illustrer flex-wrap
-//       $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-// });
-
-    $(".btnFlexFlow").click(function(){
-        var outils = $(this).attr("id");
-        console.log(outils);
-        if(outils === "containercolrev"){
-             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
-        }else if(outils === "containercol"){
-            $("#TestFlexFlow").css('flex-direction', 'column');
-        }else if(outils === "wrap"){
-            $("#TestFlexFlow").css('flex-wrap', 'wrap');
-        } else if(outils === "dirwrap"){
-            $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-        }
-    });
-
-    $
-});
+	$(".btnFlexFlow").click(function(){
+		var outils = $(this).attr("id");
+		console.log(outils);
+		if(outils === "containercolrev"){
+			$("#TestFlexFlow").css('flex-direction', 'column-reverse');
+		}else if(outils === "containercol"){
+			$("#TestFlexFlow").css('flex-direction', 'column');
+		}else if(outils === "wrap"){
+			$("#TestFlexFlow").css('flex-wrap', 'wrap');
+		} else if(outils === "dirwrap"){
+			$("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+		}
+	});
 
 	// Thibault end
+
 	// Cyril début,
-	
+	$(".btnFlex").click(function(){
+		var inp;
+		var outils = $(this).attr("id");
+		console.log(outils);
+		if(outils === "grow"){
+			inp = $('#growinp').val();
+			$("#TestFlex").css('flex-direction', 'column-reverse');
+		}else if(outils === "basis"){
+			inp = $('#basisinp').val();
+			$("#TestFlex").css('flex-wrap', 'wrap');
+		} else if(outils === "shrink"){
+			inp = $('#shrinkinp').val();
+			$("#TestFlex").css('flex-flow', 'column-reverse wrap');
+		}
+	});
 	// Cyril Fin.
 
+});
 
 
 //
