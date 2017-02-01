@@ -50,8 +50,10 @@ $(document).ready(function() {
     $(".btnFlexFlow").click(function(){
         var outils = $(this).attr("id");
         console.log(outils);
-        if(outils === "containercol"){
+        if(outils === "containercolrev"){
              $("#TestFlexFlow").css('flex-direction', 'column-reverse');
+        }else if(outils === "containercol"){
+            $("#TestFlexFlow").css('flex-direction', 'column');
         }else if(outils === "wrap"){
             $("#TestFlexFlow").css('flex-wrap', 'wrap');
         } else if(outils === "dirwrap"){
