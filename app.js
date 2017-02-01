@@ -50,6 +50,12 @@ $(document).ready(function() {
                 }
             });
 
+				$("#activeFF").click(function(){
+                    var dir = 
+                    if((#activeFF) = checked){
+
+                    }
+                });
 
     });
 
