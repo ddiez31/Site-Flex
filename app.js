@@ -1,10 +1,10 @@
 function setup() {
-    createCanvas(200, 100, WEBGL);
-    noStroke();
+	createCanvas(200, 600, WEBGL);
+	noStroke();
 }
 
 function draw() {
-    background(0);
+	background(0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -52,6 +52,7 @@ $(document).ready(function() {
 
 
     });
+
 
 // Thibault end
 // Cyril début,
