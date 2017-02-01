@@ -21,10 +21,11 @@ function draw() {
 }
 
 
-// Thibault start : création function qui applique column-reverse
+
 $(document).ready(function() {
 
     console.log('jquery fonctionne');
+    // Thibault start : création function qui applique column-reverse
 
     $("button").click(function(){
       console.log('le click a été detecté');
@@ -34,8 +35,10 @@ $(document).ready(function() {
 
     });
 
+// Thibault end
+
 
 });
 
-// Thibault end
+
 //
