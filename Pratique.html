@@ -3,84 +3,133 @@
 
 <head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
-	<meta charset="UTF-8">
-	<title>Exercices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Exercices</title>
 
 </head>
 
 <body>
-	<div class="ui menu">
-		<div class="header item"><a href="./index.html">Accueil</a></div>
-		<a class="item" href="./theorie.html">Theorie</a>
-		<a class="item" href="./ressources.html">Ressources</a>
-		<a class="item" href="./Pratique.html">Exercices</a>
-	</div>
-	<h1>Exercices</h1>
-	<div class="ui container raised very padded text container segment">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi aut, vitae, delectus veniam autem debitis aliquid recusandae architecto itaque? Ducimus totam quis ut voluptas dolorem maxime vitae, veniam neque!</p>
-	</div>
+    <div class="ui menu">
+        <div class="header item"><a href="./index.html">Accueil</a></div>
+        <a class="item" href="./theorie.html">Theorie</a>
+        <a class="item" href="./Pratique.html">Exercices</a>
+        <a class="item" href="./ressources.html">Ressources</a>
+    </div>
 
-	<h2>Lorem ipsum.</h2>
-	<div class="ui container raised very padded text container segment">
-		<button class="small ui button inverted black btnFlexFlow" name="col" id="grow">valid</button>
+    <h1>Exercices</h1>
+    <div class="ui container raised very padded text segment">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi aut, vitae, delectus veniam autem debitis aliquid recusandae architecto itaque? Ducimus totam quis ut voluptas dolorem maxime vitae, veniam neque!</p>
+    </div>
+
+	<h2>Cyril, grow shrink basis</h2> <!-- boutons fonctionels -->
+	<div class="ui container raised very padded text segment">
+		<button class="small ui button inverted black btnFlex" name="col" id="grow">Grow</button>
 		<input type="number" id="growinp"><br>
-		<button class="small ui button inverted red btnFlexFlow" name="col-rev" id="shrink">valid</button>
+		<button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
 		<input type="number" id="shrinkinp"><br>
-		<button class="small ui button inverted orange btnFlexFlow" name="row-rev" id="basis">valid</button>
+		<button class="small ui button inverted orange btnFlex" name="row-rev" id="basis">Basis</button>
 		<input type="number" id="basisinp"><br>
 
 		<div class="ui container raised very padded text segment">
 			<div class="divDeTest" id="TestFlex">
-				<div class="element"> 1 </div>
-				<div class="element"> 2 </div>
-				<div class="element"> 3 </div>
-				<div class="element"> 4 </div>
-				<div class="element"> 5 </div>
-				<div class="element"> 6 </div>
-				<div class="element"> 7 </div>
-				<div class="element"> 8 </div>
-				<div class="element"> 9 </div>
-				<div class="element"> 10 </div>
-				<div class="element"> 11 </div>
-				<div class="element"> 12 </div>
+				<div class="element" id="groshrbas1"><span> 1 </span></div>
+				<div class="element" id="groshrbas2"> 2 </div>
+				<div class="element" id="groshrbas3"> 3 </div>
+				<div class="element" id="groshrbas4"> 4 </div>
+                <div class="element" id="groshrbas5"> 5 </div>
+                <div class="element" id="groshrbas6"> 6 </div>
+                <div class="element" id="groshrbas7"> 7 </div>
+                <div class="element" id="groshrbas8"> 8 </div>
+                <div class="element" id="groshrbas9"> 9 </div>
 			</div>
 		</div>
 	</div>
 
-	<h2>Lorem ipsum dolor.</h2>
-	<div class="ui container raised very padded text container segment">
+    <h2>Lorem ipsum dolor.</h2>
+    <div class="ui container raised very padded text container segment">
+        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+        <button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
+        <div class="ui container raised very padded text container segment">
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
 
-		<button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-		<button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
-		<button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
-		<button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
+    <h2>Lorem ipsum.</h2>
+    <div class="ui container raised very padded text container segment">
+        <button class="small ui button inverted black btnFlexFlow" name="col" id="containercol">Columns</button>
+        <button class="small ui button inverted red btnFlexFlow" name="col-rev" id="containercolrev">Col-rev</button>
+        <button class="small ui button inverted pink btnFlexFlow" name="row" id="row">Row</button>
+        <button class="small ui button inverted orange btnFlexFlow" name="row-rev" id="row-reverse">Row-reverse</button>
 
-		<div class="ui container raised very padded container segment">
+        <div class="ui container raised very padded text segment">
 
-			<div class="divDeTest" id="TestFlexFlow" >
-				<div class="element"> 1 </div>
-				<div class="element"> 2 </div>
-				<div class="element"> 3 </div>
-				<div class="element"> 4 </div>
-				<div class="element"> 5 </div>
-				<div class="element"> 6 </div>
-				<div class="element"> 7 </div>
-				<div class="element"> 8 </div>
-				<div class="element"> 9 </div>
-				<div class="element"> 10 </div>
-				<div class="element"> 11 </div>
-				<div class="element"> 12 </div>
-			</div>
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
 
-			<button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
-		</div>
-	</div>
+    <h2>Lorem ipsum dolor.</h2>
+    <div class="ui container raised very padded text container segment">
+
+        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+        <button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
+
+        <div class="ui container raised very padded container segment">
+
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+
+            <button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
+        </div>
+    </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
+
 </html>

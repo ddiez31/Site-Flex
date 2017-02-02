@@ -1,10 +1,10 @@
 function setup() {
-	createCanvas(200, 600, WEBGL);
+	createCanvas(200, 200, WEBGL);
 	noStroke();
 }
 
 function draw() {
-	background(0);
+	background(0, 0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -20,13 +20,9 @@ function draw() {
     box(50);
 }
 
-
-
 $(document).ready(function() {
 
-	console.log('jquery fonctionne');
-	// Thibault start
-
+    // Thibault start
 
     $(".btnFlexFlow").click(function(){
     	var outils = $(this).attr("id");
@@ -48,33 +44,30 @@ $(document).ready(function() {
     		$("#TestFlexFlow").css('flex-wrap', 'wrap-reverse');
     	}else if(outils === "nowrap"){
     		$("#TestFlexFlow").css('flex-wrap', 'nowrap');
-            // } else if(outils === "dirwrap"){
-            //     $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-        }
-    });
+                // } else if(outils === "dirwrap"){
+                //     $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+            }
+        });
 
-	// Cyril début,
+	// Cyril début, btn fonctionel pour le grow le shrink et basis
 	$(".btnFlex").click(function(){
 		var inp;
 		var outils = $(this).attr("id");
 		console.log(outils);
 		if(outils == "grow"){
-			console.log('coucou')
 			inp = $('#growinp').val();
 			console.log(inp);
-			$("#TestFlex").css('flex-direction', 'column-reverse');
+			$("#groshrbas2").css('flex-grow', inp);
 		}else if(outils === "basis"){
 			inp = $('#basisinp').val();
-			$("#TestFlex").css('flex-wrap', 'wrap');
+            console.log(inp);
+			$("#groshrbas2").css('flex-basis', inp);
 		} else if(outils === "shrink"){
-			inp = $('#inp').val();
-			$("#TestFlex").css('flex-flow', 'column-reverse wrap');
+			inp = $('#shrinkinp').val();
+            console.log(inp);
+			$("#groshrbas3").css('flex-shrink', inp);
 		}
 	});
 	// Cyril Fin.
 
 });
-
-
-// Thibault end
-//
