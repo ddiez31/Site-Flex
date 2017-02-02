@@ -3,116 +3,184 @@
 
 <head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
-	<meta charset="UTF-8">
-	<title>Exercices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Exercices</title>
 
 </head>
 
 <body>
-	<div class="ui fixed menu">
-		<div class="header item"><a href="./index.html">Accueil</a></div>
-		<a class="item" href="./theorie.html">Théorie</a>
-		<a class="item" href="./Pratique.html">Exercices</a>
-		<a class="item" href="./ressources.html">Ressources</a>
-		<div class="ui right aligned category image item">
-			<img src="logo_simplon.png" width="100" height="100"></div> <!-- logo simplon occitanie rajouté -->
-		</div>
-	</div>
-	<iframe src="canvas.html" width="100%" height="100%"></iframe>
+    <div class="ui fixed menu">
+        <div class="header item"><a href="./index.html">Accueil</a></div>
+        <a class="item" href="./theorie.html">Théorie</a>
+        <a class="item" href="./Pratique.html">Exercices</a>
+        <a class="item" href="./ressources.html">Ressources</a>
+        <div class="ui right aligned category image item">
+            <a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
+        </div>
+    </div>
+    </div>
+    <iframe src="canvas.html" width="100%" height="100%"></iframe>
 
-	<br>
-	<br>
-	<br>
-	<h1>Exercices</h1>
-	<div class="ui container raised very padded text segment">
-		<p class="center">AMUSEZ-VOUS!!! ;)</p>
-	</div>
+    <br>
+    <br>
+    <br>
+    <h1>Exercices</h1>
+    <div class="ui container raised very padded text segment">
+        <p class="center">AMUSEZ-VOUS!!! ;)</p>
+    </div>
 
-	<h2>Cyril, grow shrink basis</h2> <!-- boutons fonctionels -->
-	<div class="ui container raised very padded text segment">
-		<button class="small ui button inverted black btnFlex" name="col" id="grow">Grow</button>
-		<input type="number" id="growinp"><br>
-		<button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
-		<input type="number" id="shrinkinp"><br>
-		<button class="small ui button inverted orange btnFlex" name="row-rev" id="basis">Basis</button>
-		<input type="number" id="basisinp"><br>
+    <h2>Cyril, grow shrink basis</h2>
+    <!-- boutons fonctionels -->
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted pink btnFlex" name="col" id="grow">Grow</button>
+        <input type="number" id="growinp"><br>
+        <button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
+        <input type="number" id="shrinkinp"><br>
+        <button class="small ui button inverted orange btnFlex" name="row-rev" id="basis">Basis</button>
+        <input type="number" id="basisinp"><br>
 
-		<div class="ui container raised very padded text segment">
-			<div class="divDeTest" id="TestFlex">
-				<div class="element" id="groshrbas1"><span> 1 </span></div>
-				<div class="element" id="groshrbas2"> 2 </div>
-				<div class="element" id="groshrbas3"> 3 </div>
-				<div class="element" id="groshrbas4"> 4 </div>
-				<div class="element" id="groshrbas5"> 5 </div>
-				<div class="element" id="groshrbas6"> 6 </div>
-				<div class="element" id="groshrbas7"> 7 </div>
-				<div class="element" id="groshrbas8"> 8 </div>
-				<div class="element" id="groshrbas9"> 9 </div>
-			</div>
-		</div>
-	</div>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlex">
+                <div class="element" id="groshrbas1"> 1 </div>
+                <div class="element" id="groshrbas2"> 2 </div>
+                <div class="element" id="groshrbas3"> 3 </div>
+                <div class="element" id="groshrbas4"> 4 </div>
+                <div class="element" id="groshrbas5"> 5 </div>
+                <div class="element" id="groshrbas6"> 6 </div>
+                <div class="element" id="groshrbas7"> 7 </div>
+                <div class="element" id="groshrbas8"> 8 </div>
+                <div class="element" id="groshrbas9"> 9 </div>
+            </div>
+        </div>
+    </div>
 
-	<h2>LA AUSSI ÇA BOUGE!!! :)</h2>
-	<div class="ui container raised very padded text segment">
-		<button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-		<button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
-		<button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
-		<button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestFlexFlow" >
-				<div class="element"> 1 </div>
-				<div class="element"> 2 </div>
-				<div class="element"> 3 </div>
-				<div class="element"> 4 </div>
-				<div class="element"> 5 </div>
-				<div class="element"> 6 </div>
-				<div class="element"> 7 </div>
-				<div class="element"> 8 </div>
-				<div class="element"> 9 </div>
-				<div class="element"> 10 </div>
-				<div class="element"> 11 </div>
-				<div class="element"> 12 </div>
-			</div>
-		</div>
-	</div>
-	<!-- Thibault start : ajout div couleurs + bouton -->
-	<div class="divDeTest" id="TestFlexFlow" >
-		<div class="element"> 1 </div>
-		<div class="element"> 2 </div>
-		<div class="element"> 3 </div>
-		<div class="element"> 4 </div>
-		<div class="element"> 5 </div>
-		<div class="element"> 6 </div>
-		<div class="element"> 7 </div>
-		<div class="element"> 8 </div>
-		<div class="element"> 9 </div>
-		<div class="element"> 10 </div>
-		<div class="element"> 11 </div>
-		<div class="element"> 12 </div>
-	</div>
+    <h2>LA AUSSI ÇA BOUGE!!! :)</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+        <button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thibault start : ajout div couleurs + bouton -->
+    <div class="ui container raised very padded text segment">
+        <button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
+        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: colum-reverse</button>
+        <button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">row</button>
+        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: row-reverse</button>
+        <button type="button" name="wrap" id="wrap" class="small ui button inverted button yellow btnFlexFlow">wrap</button>
+        <button type="button" name="wrap" id="dirwrap" class="small ui button inverted button yellow btnFlexFlow">Flex flow</button>
+        <button type="button" name="wraprev" id="wraprev" class="small ui button inverted button yellow btnFlexFlow">wrap-reverse</button>
+        <button type="button" name="no-wrap" id="nowrap" class="small ui button inverted button yellow btnFlexFlow">no-wrap</button>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
 
-	<button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
 
-	<button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: colum-reverse</button>
+    <!-- Thibault end : ajout div couleurs + bouton -->
 
-	<button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">row</button>
+    <!-- David start -->
+    <h2>Display</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted red btnFlexFlow" name="flex" id="flex">Flex</button>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
 
-	<button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: row-reverse</button>
+    <h2>Order</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted orange btnFlex" name="order" id="order">Order</button>
+        <input type="number" id="order"><br>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlex">
+                <div class="element" id="groshrbas1"> 1 </div>
+                <div class="element" id="groshrbas2"> 2 </div>
+                <div class="element" id="groshrbas3"> 3 </div>
+                <div class="element" id="groshrbas4"> 4 </div>
+                <div class="element" id="groshrbas5"> 5 </div>
+                <div class="element" id="groshrbas6"> 6 </div>
+                <div class="element" id="groshrbas7"> 7 </div>
+                <div class="element" id="groshrbas8"> 8 </div>
+                <div class="element" id="groshrbas9"> 9 </div>
+            </div>
+        </div>
+    </div>
 
-	<button type="button" name="wrap" id="wrap" class="small ui button inverted button yellow btnFlexFlow">wrap</button>
+    <h2>Align-self</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted teal btnFlexFlow" name="auto" id="auto">Auto</button>
+        <button class="small ui button inverted yellow btnFlexFlow" name="start" id="start">Flex-start</button>
+        <button class="small ui button inverted green btnFlexFlow" name="end" id="end">Flex-end</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="center" id="center">Center</button>
+        <button class="small ui button inverted pink btnFlexFlow" name="baseline" id="baseline">Baseline</button>
+        <button class="small ui button inverted orange btnFlexFlow" name="strech" id="strech">Stretch</button>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlexFlow">
+                <div class="element"> 1 </div>
+                <div class="element"> 2 </div>
+                <div class="element"> 3 </div>
+                <div class="element"> 4 </div>
+                <div class="element"> 5 </div>
+                <div class="element"> 6 </div>
+                <div class="element"> 7 </div>
+                <div class="element"> 8 </div>
+                <div class="element"> 9 </div>
+                <div class="element"> 10 </div>
+                <div class="element"> 11 </div>
+                <div class="element"> 12 </div>
+            </div>
+        </div>
+    </div>
+    <!-- David end -->
 
-	<button type="button" name="wrap" id="dirwrap" class="small ui button inverted button yellow btnFlexFlow">Flex flow</button>
 
-	<button type="button" name="wraprev" id="wraprev" class="small ui button inverted button yellow btnFlexFlow">wrap-reverse</button>
-
-	<button type="button" name="no-wrap" id="nowrap" class="small ui button inverted button yellow btnFlexFlow">no-wrap</button>
-
-	<!-- Thibault end : ajout div couleurs + bouton -->
-	<!-- -->
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="app.js"></script>

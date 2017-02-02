@@ -11,7 +11,8 @@ body {
 p,
 blockquote {
     font-family: 'Indie Flower', cursive;
-    font-size: 18px; /*changement de la taille de la police p*/
+    font-size: 18px;
+    /*changement de la taille de la police p*/
     color: black;
 }
 
@@ -22,19 +23,22 @@ h4,
 h5 {
     font-family: 'Coming Soon', cursive;
 }
-.center{
-	text-align: center;
+
+.center {
+    text-align: center;
 }
 
 .item {
     font-family: "Coming Soon", cursive;
+    text-shadow: 1px 0 0 black;
 }
 
 .ui .text .container {
     background-color: black;
 }
-.ui .container{
-	background-color: white;
+
+.ui .container {
+    background-color: white;
 }
 
 h1 {
@@ -42,6 +46,8 @@ h1 {
     font-size: 36px;
     color: orange;
 }
+
+
 /*changement de la taille de la police h1 & h2*/
 
 h2 {
@@ -49,6 +55,7 @@ h2 {
     font-size: 26px;
     color: orange;
 }
+
 
 /* Thibault start : création divs de couleurs */
 
@@ -65,6 +72,28 @@ h2 {
     height: 20px;
     width: 20px;
     border: 2px solid black;
+}
+
+#grow,
+#basis,
+#shrink,
+#wrap,
+#dirwrap,
+#wraprev,
+#nowrap,
+#containercol,
+#containercolrev,
+#row,
+#row-reverse,
+#flex,
+#order,
+#auto,
+#start,
+#end,
+#center,
+#baseline,
+#strech {
+    font-family: 'Indie Flower', cursive;
 }
 
 
