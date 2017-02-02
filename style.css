@@ -1,3 +1,9 @@
+iframe {
+    border: none;
+    float: left;
+    position: absolute;
+}
+
 body {
     background-color: #191970;
 }
