@@ -25,7 +25,7 @@ function draw() {
 $(document).ready(function() {
 
 	console.log('jquery fonctionne');
-    // Thibault start
+	// Thibault start
 
 
     $(".btnFlexFlow").click(function(){
@@ -52,13 +52,16 @@ $(document).ready(function() {
             //     $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
         }
     });
+
 	// Cyril début,
 	$(".btnFlex").click(function(){
 		var inp;
 		var outils = $(this).attr("id");
 		console.log(outils);
-		if(outils === "grow"){
+		if(outils == "grow"){
+			console.log('coucou')
 			inp = $('#growinp').val();
+			console.log(inp);
 			$("#TestFlex").css('flex-direction', 'column-reverse');
 		}else if(outils === "basis"){
 			inp = $('#basisinp').val();
@@ -69,6 +72,7 @@ $(document).ready(function() {
 		}
 	});
 	// Cyril Fin.
+
 });
 
 
