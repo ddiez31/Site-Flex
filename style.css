@@ -1,11 +1,12 @@
 body {
-    background-color: purple;
+    background-color: #191970;
 }
 
 p,
 blockquote {
     font-family: 'Indie Flower', cursive;
     font-size: 25px;
+    color: black;
 }
 
 h1,
@@ -17,8 +18,16 @@ h5 {
     font-size: 20px;
 }
 
+.item {
+    font-family: "Coming Soon", cursive;
+}
+
+.ui .text .container {
+    background-color: black;
+}
+
 .ui .container {
-    background-color: Lime;
+    background-color: white;
 }
 
 h1 {
@@ -29,6 +38,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 40px;
     color: orange;
 }
 
