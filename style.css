@@ -31,9 +31,8 @@ h5 {
 .ui .text .container {
     background-color: black;
 }
-
-.ui .container {
-    background-color: white;
+.ui .container{
+	background-color: white;
 }
 
 h1 {
