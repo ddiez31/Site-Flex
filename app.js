@@ -1,10 +1,10 @@
 function setup() {
-	createCanvas(200, 600, WEBGL);
-	noStroke();
+    createCanvas(200, 200, WEBGL);
+    noStroke();
 }
 
 function draw() {
-	background(0);
+    background(0, 0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -24,9 +24,7 @@ function draw() {
 
 $(document).ready(function() {
 
-        console.log('jquery fonctionne');
-        // Thibault start
-
+    // Thibault start
 
         $(".btnFlexFlow").click(function(){
                 var outils = $(this).attr("id");
@@ -71,7 +69,7 @@ $(document).ready(function() {
                     $("#TestFlexFlow").css('flex-wrap', 'nowrap');
                     if(!($("#activeFF").is(':checked'))){
                         $("#TestFlexFlow").css('flex-direction', '');
-                    }    
+                    }
                 }
             });
     });
