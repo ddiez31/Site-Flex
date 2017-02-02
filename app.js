@@ -1,10 +1,10 @@
 function setup() {
-	createCanvas(200, 600, WEBGL);
-	noStroke();
+    createCanvas(200, 200, WEBGL);
+    noStroke();
 }
 
 function draw() {
-	background(0);
+    background(0, 0);
 
     // Orange point light on the right
     pointLight(150, 100, 0, 500, 0, 200);
@@ -24,34 +24,34 @@ function draw() {
 
 $(document).ready(function() {
 
-        console.log('jquery fonctionne');
-        // Thibault start
+    console.log('jquery fonctionne');
+    // Thibault start
 
 
-        $(".btnFlexFlow").click(function(){
-                var outils = $(this).attr("id");
-                console.log(outils);
-                if(outils === "containercolrev"){
-                    $("#TestFlexFlow").css('flex-direction', 'column-reverse');
-                }else if(outils === "containercol"){
-                    $("#TestFlexFlow").css('flex-direction', 'column');
-                }else if(outils === "row"){
-                    $("#TestFlexFlow").css('flex-direction', 'row');
-                }else if(outils === "row-reverse"){
-                    $("#TestFlexFlow").css('flex-direction', 'row-reverse');
-                }else if(outils === "wrap"){
-                    $("#TestFlexFlow").css('flex-wrap', 'wrap');
-                }else if(outils === "wraprev"){
-                    $("#TestFlexFlow").css('flex-wrap', 'wrap-reverse');
-                }else if(outils === "nowrap"){
-                    $("#TestFlexFlow").css('flex-wrap', 'nowrap');
-                } else if(outils === "dirwrap"){
-                    $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
-                }
-            });
-
-
+    $(".btnFlexFlow").click(function() {
+        var outils = $(this).attr("id");
+        console.log(outils);
+        if (outils === "containercolrev") {
+            $("#TestFlexFlow").css('flex-direction', 'column-reverse');
+        } else if (outils === "containercol") {
+            $("#TestFlexFlow").css('flex-direction', 'column');
+        } else if (outils === "row") {
+            $("#TestFlexFlow").css('flex-direction', 'row');
+        } else if (outils === "row-reverse") {
+            $("#TestFlexFlow").css('flex-direction', 'row-reverse');
+        } else if (outils === "wrap") {
+            $("#TestFlexFlow").css('flex-wrap', 'wrap');
+        } else if (outils === "wraprev") {
+            $("#TestFlexFlow").css('flex-wrap', 'wrap-reverse');
+        } else if (outils === "nowrap") {
+            $("#TestFlexFlow").css('flex-wrap', 'nowrap');
+        } else if (outils === "dirwrap") {
+            $("#TestFlexFlow").css('flex-flow', 'column-reverse wrap');
+        }
     });
+
+
+});
 
 
 // Thibault end
