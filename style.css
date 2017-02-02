@@ -1,3 +1,9 @@
+iframe {
+    border: none;
+    float: left;
+    position: absolute;
+}
+
 body {
     background-color: #191970;
 }
@@ -5,7 +11,7 @@ body {
 p,
 blockquote {
     font-family: 'Indie Flower', cursive;
-    font-size: 25px;
+    font-size: 18px; /*changement de la taille de la police p*/
     color: black;
 }
 
@@ -15,7 +21,9 @@ h3,
 h4,
 h5 {
     font-family: 'Coming Soon', cursive;
-    font-size: 20px;
+}
+.center{
+	text-align: center;
 }
 
 .item {
@@ -25,23 +33,22 @@ h5 {
 .ui .text .container {
     background-color: black;
 }
-
-.ui .container {
-    background-color: white;
+.ui .container{
+	background-color: white;
 }
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 36px;
     color: orange;
 }
+/*changement de la taille de la police h1 & h2*/
 
 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 26px;
     color: orange;
 }
-
 
 /* Thibault start : création divs de couleurs */
 
