@@ -41,6 +41,7 @@ $(document).ready(function() {
                     $("#TestFlexFlow").css('flex-direction', 'row-reverse');
                 }else if(outils === "wrap"){
                     if(!($("#activeFF").is(':checked'))){
+                        console.log('checkbox')
                         $("#TestFlexFlow").css('flex-direction', '');
                     }
                     $("#TestFlexFlow").css('flex-wrap', 'wrap');
