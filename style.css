@@ -13,12 +13,17 @@ h1, h2, h3, h4, h5{
 	font-size: 20px;
 }
 .ui .container{
-	background-color: yellow;
+	background-color: Lime;
 }
 
 h1 {
 	text-align: center;
 	font-size: 50px;
+	color: orange;
+}
+
+h2 {
+	text-align: center;
 	color: orange;
 }
 
