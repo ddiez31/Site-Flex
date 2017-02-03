@@ -14,171 +14,197 @@
 
 <body>
 
-    <div class="ui fixed menu">
-        <div class="header item"><a href="./index.html">Accueil</a></div>
-        <a class="item" href="./theorie.html">Théorie</a>
-        <a class="item" href="./Pratique.html">Exercices</a>
-        <a class="item" href="./ressources.html">Ressources</a>
-    	<div class="ui center aligned category text item">
-    	<h1>Exercices</h1>
+	<div class="ui fixed menu">
+		<div class="header item"><a href="./index.html">Accueil</a></div>
+		<a class="item" href="./theorie.html">Théorie</a>
+		<a class="item" href="./Pratique.html">Exercices</a>
+		<a class="item" href="./ressources.html">Ressources</a>
+		<div class="ui center aligned category text item">
+			<h1>Exercices</h1>
 		</div>
-        <div class="ui right aligned category image item">
-            <a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
-        </div>
-    </div>
-
-    <iframe src="canvas.html" width="100%" height="100%"></iframe>
-<div class="block"></div>
-    <div class="ui container raised very padded text segment">
-        <p class="center">AMUSEZ-VOUS!!! ;)</p>
-    </div>
-
-    <h2>Cyril, grow basis</h2>
-    <!-- boutons fonctionels -->
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted pink btnFlex" name="col" id="grow">Grow</button>
-        <input type="number" id="growinp"><br>
-        <button class="small ui button inverted orange btnFlex" name="row-rev" id="basis">Basis</button>
-        <input type="number" id="basisinp"><br>
-
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexGrowBasis">
-                <div class="element" id="grobas1"> 1 </div>
-                <div class="element" id="grobas2"> 2 </div>
-                <div class="element" id="grobas3"> 3 </div>
-                <div class="element" id="grobas4"> 4 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <h2>Cyril, shrink</h2>
-    <!-- boutons fonctionels -->
-
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
-        <input type="number" id="shrinkinp"><br>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexShrink">
-                <div class="element" id="shr1"> 1 </div>
-                <div class="element" id="shr2"> 2 </div>
-                <div class="element" id="shr3"> 3 </div>
-                <div class="element" id="shr4"> 4 </div>
-                <div class="element" id="shr5"> 5 </div>
-                <div class="element" id="shr6"> 6 </div>
-                <div class="element" id="shr7"> 7 </div>
-                <div class="element" id="shr8"> 8 </div>
-                <div class="element" id="shr9"> 9 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Thibault start -->
-    <h2>LA AUSSI ÇA BOUGE!!! :)</h2>
-    <div class="ui container raised very padded text segment">
-        <h5> Flex-wrap : </h5>
-        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
-        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
-        <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button yellow btnFlexFlow">Flex flow</input>
-        <br>
-        <h5>Flex-direction</h5>
-        <button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Column</button>
-        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Column-reverse</button>
-        <button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">Row</button>
-        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Row-reverse</button>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexFlow">
-                <div class="element"> 1 </div>
-                <div class="element"> 2 </div>
-                <div class="element"> 3 </div>
-                <div class="element"> 4 </div>
-                <div class="element"> 5 </div>
-                <div class="element"> 6 </div>
-                <div class="element"> 7 </div>
-                <div class="element"> 8 </div>
-                <div class="element"> 9 </div>
-                <div class="element"> 10 </div>
-                <div class="element"> 11 </div>
-                <div class="element"> 12 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Thibault end -->
-
-
-    <!-- David start -->
-    <h2>Display</h2>
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted red btnFlexFlow" name="flex" id="flex">Flex</button>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexFlow">
-                <div class="element" id="display1"> 1 </div>
-                <div class="element" id="display2"> 2 </div>
-                <div class="element" id="display3"> 3 </div>
-                <div class="element" id="display4"> 4 </div>
-                <div class="element" id="display5"> 5 </div>
-                <div class="element" id="display6"> 6 </div>
-                <div class="element" id="display7"> 7 </div>
-                <div class="element" id="display8"> 8 </div>
-                <div class="element" id="display9"> 9 </div>
-            </div>
-        </div>
-    </div>
-
-    <h2>Order</h2>
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted orange btnOrder" name="order" id="order1">Order 1</button>
-        <input type="number" id="orderinp1"><br>
-        <button class="small ui button inverted teal btnOrder" name="order" id="order2">Order 2</button>
-        <input type="number" id="orderinp2"><br>
-        <button class="small ui button inverted green btnOrder" name="order" id="order3">Order 3</button>
-        <input type="number" id="orderinp3"><br>
-        <button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
-        <input type="number" id="orderinp4"><br>
-        <button class="small ui button inverted purple btnOrder" name="order" id="order">Action</button>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlex">
-                <div class="element" id="orderbox1"> 1 </div>
-                <div class="element" id="orderbox2"> 2 </div>
-                <div class="element" id="orderbox3"> 3 </div>
-                <div class="element" id="orderbox4"> 4 </div>
-            </div>
-        </div>
-    </div>
-
-    <h2>Align-self</h2>
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted teal btnFlexFlow" name="auto" id="auto">Auto</button>
-        <button class="small ui button inverted yellow btnFlexFlow" name="start" id="start">Flex-start</button>
-        <button class="small ui button inverted green btnFlexFlow" name="end" id="end">Flex-end</button>
-        <button class="small ui button inverted brown btnFlexFlow" name="center" id="center">Center</button>
-        <button class="small ui button inverted pink btnFlexFlow" name="baseline" id="baseline">Baseline</button>
-        <button class="small ui button inverted orange btnFlexFlow" name="strech" id="strech">Stretch</button>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexFlow">
-                <div class="element" id="self1"> 1 </div>
-                <div class="element" id="self2"> 2 </div>
-                <div class="element" id="self3"> 3 </div>
-                <div class="element" id="self4"> 4 </div>
-                <div class="element" id="self5"> 5 </div>
-                <div class="element" id="self6"> 6 </div>
-                <div class="element" id="self7"> 7 </div>
-                <div class="element" id="self8"> 8 </div>
-                <div class="element" id="self9"> 9 </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- David end -->
-
-
-<footer class="fooress">
-	<div class="ui vertical footer segment">
-			<p class="footer">Fait par JCDT en 2017 après J.C</p>
+		<div class="ui right aligned category image item">
+			<a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
+		</div>
 	</div>
-</footer>
+
+	<iframe src="canvas.html" width="100%" height="100%"></iframe>
+	<div class="block"></div>
+	
+
+	<div class="ui container raised very padded text segment">
+		<p class="center">AMUSEZ-VOUS!!! ;)</p>
+	</div>
+
+	<h2>Cyril, grow basis</h2>
+	<!-- boutons grow vraiment fonctionels -->
+	<div class="ui container raised very padded text segment">
+		<div class="ui grid">
+			<div>
+				<button class="small ui button inverted pink btnFlex" name="1" type="grow">Grow 1</button>
+				<input type="number" class="growinp1" placeholder="proportion"><br>
+				<button class="small ui button inverted orange btnFlex" name="1" type="basis">Basis 1</button>
+				<input type="number" class="basisinp1" placeholder="en px"><br>
+				<button class="small ui button inverted pink btnFlex" name="2" type="grow">Grow 2</button>
+				<input type="number" class="growinp2" placeholder="proportion"><br>
+				<button class="small ui button inverted orange btnFlex" name="2" type="basis">Basis 2</button>
+				<input type="number" class="basisinp2" placeholder="en px"><br>
+			</div>
+			<div>
+				<button class="small ui button inverted pink btnFlex" name="3" type="grow">Grow 3</button>
+				<input type="number" class="growinp3" placeholder="proportion"><br>
+				<button class="small ui button inverted orange btnFlex" name="3" type="basis">Basis 3</button>
+				<input type="number" class="basisinp3" placeholder="en px"><br>
+				<button class="small ui button inverted pink btnFlex" name="4" type="grow">Grow 4</button>
+				<input type="number" class="growinp4" placeholder="proportion"><br>
+				<button class="small ui button inverted orange btnFlex" name="4" type="basis">Basis 4</button>
+				<input type="number" class="basisinp4" placeholder="en px"><br>
+			</div>
+		</div>
+		<div class="ui container raised very padded segment">
+			<div class="divDeTest" id="TestFlexGrowBasis">
+				<div class="element" id="grobas1"> 1 </div>
+				<div class="element" id="grobas2"> 2 </div>
+				<div class="element" id="grobas3"> 3 </div>
+				<div class="element" id="grobas4"> 4 </div>
+			</div>
+		</div>
+	</div>
+
+
+	<h2>Cyril, shrink</h2>
+	<!-- boutons shrink vraiment fonctionels -->
+	<div class="ui container raised very padded text segment">
+		<!-- button.ui.container.raised.very.padded.text.segment#shrink$*12
+		<button class="small ui button inverted pink btnFlex" name="3" type="grow">Grow 3</button>
+		<input type="number" class="growinp3" placeholder="réduction"><br> -->
+		<button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
+		<input type="number" id="shrinkinp"><br>
+		<div class="ui container raised very padded segment">
+			<div class="divDeTest" id="TestFlexShrink">
+				<div class="element elemgrowshrink" id="shr1"> 1 </div>
+				<div class="element elemgrowshrink" id="shr2"> 2 </div>
+				<div class="element elemgrowshrink" id="shr3"> 3 </div>
+				<div class="element elemgrowshrink" id="shr4"> 4 </div>
+				<div class="element elemgrowshrink" id="shr5"> 5 </div>
+				<div class="element elemgrowshrink" id="shr6"> 6 </div>
+				<div class="element elemgrowshrink" id="shr7"> 7 </div>
+				<div class="element elemgrowshrink" id="shr8"> 8 </div>
+				<div class="element elemgrowshrink" id="shr9"> 9 </div>
+				<div class="element elemgrowshrink" id="shr10"> 10 </div>
+				<div class="element elemgrowshrink" id="shr11"> 11 </div>
+				<div class="element elemgrowshrink" id="shr12"> 12 </div>
+				<div class="element elemgrowshrink" id="shr13"> 13 </div>
+				<div class="element elemgrowshrink" id="shr14"> 14 </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Thibault start -->
+	<h2>LA AUSSI ÇA BOUGE!!! :)</h2>
+	<div class="ui container raised very padded text segment">
+		<h5> Flex-wrap : </h5>
+		<button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+		<button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
+		<button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
+		<input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button yellow btnFlexFlow">Flex flow</input>
+		<br>
+		<h5>Flex-direction</h5>
+		<button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Column</button>
+		<button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Column-reverse</button>
+		<button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">Row</button>
+		<button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Row-reverse</button>
+		<div class="ui container raised very padded segment">
+			<div class="divDeTest" id="TestFlexFlow">
+				<div class="element"> 1 </div>
+				<div class="element"> 2 </div>
+				<div class="element"> 3 </div>
+				<div class="element"> 4 </div>
+				<div class="element"> 5 </div>
+				<div class="element"> 6 </div>
+				<div class="element"> 7 </div>
+				<div class="element"> 8 </div>
+				<div class="element"> 9 </div>
+				<div class="element"> 10 </div>
+				<div class="element"> 11 </div>
+				<div class="element"> 12 </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Thibault end -->
+
+
+	<!-- David start -->
+	<h2>Display</h2>
+	<div class="ui container raised very padded text segment">
+		<button class="small ui button inverted red btnDisplay" name="display" id="display">Flex</button>
+		<button class="small ui button inverted black btnOrder" name="reset" id="reset" style="float: right">Reset</button>
+		<div class="ui container raised very padded segment">
+			<div class="divDisplay" id="TestDisplay">
+				<div class="element" id="display"> 1 </div>
+				<div class="element" id="display"> 2 </div>
+				<div class="element" id="display"> 3 </div>
+				<div class="element" id="display"> 4 </div>
+				<div class="element" id="display"> 5 </div>
+				<div class="element" id="display"> 6 </div>
+				<div class="element" id="display"> 7 </div>
+				<div class="element" id="display"> 8 </div>
+				<div class="element" id="display"> 9 </div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Order</h2>
+	<div class="ui container raised very padded text segment">
+		<button class="small ui button inverted orange btnOrder" name="order" id="order1">Order 1</button>
+		<input type="number" id="orderinp1" placeholder="Valeur de position"><br>
+		<button class="small ui button inverted blue btnOrder" name="order" id="order2">Order 2</button>
+		<input type="number" id="orderinp2" placeholder="Valeur de position"><br>
+		<button class="small ui button inverted green btnOrder" name="order" id="order3">Order 3</button>
+		<input type="number" id="orderinp3" placeholder="Valeur de position"><br>
+		<button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
+		<input type="number" id="orderinp4" placeholder="Valeur de position">
+		<button class="small ui button inverted black btnOrder" name="order" id="order" style="float: right">Action</button>
+		<div class="ui container raised very padded segment">
+			<div class="divDeTest" id="TestOrder">
+				<div class="element" id="orderbox1"> 1 </div>
+				<div class="element" id="orderbox2"> 2 </div>
+				<div class="element" id="orderbox3"> 3 </div>
+				<div class="element" id="orderbox4"> 4 </div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Align-self</h2>
+	<div class="ui container raised very padded text segment">
+		<button class="small ui button inverted blue btnSelf" name="auto" id="auto">Auto</button>
+		<button class="small ui button inverted yellow btnSelf" name="start" id="start">Flex-start</button>
+		<button class="small ui button inverted green btnSelf" name="end" id="end">Flex-end</button>
+		<button class="small ui button inverted brown btnSelf" name="center" id="center">Center</button>
+		<button class="small ui button inverted pink btnSelf" name="baseline" id="baseline">Baseline</button>
+		<button class="small ui button inverted orange btnSelf" name="stretch" id="stretch">Stretch</button>
+		<div class="ui container raised very padded segment">
+			<div class="divDeTest" id="TestSelf">
+				<div class="element" id="self1"> 1 </div>
+				<div class="element" id="self2"> 2 </div>
+				<div class="element" id="self3"> 3 </div>
+				<div class="element" id="self4"> 4 </div>
+				<div class="element" id="self5"> 5 </div>
+				<div class="element" id="self6"> 6 </div>
+				<div class="element" id="self7"> 7 </div>
+				<div class="element" id="self8"> 8 </div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- David end -->
+
+	<footer class="fooress">
+		<div class="ui vertical footer segment">
+			<p class="footer">Fait par JCDT en 2017 après J.C</p>
+		</div>
+	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
