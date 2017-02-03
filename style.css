@@ -96,6 +96,12 @@ h2 {
     font-family: 'Indie Flower', cursive;
 }
 
+.element{
+	border-radius: 20%;
+	line-height: 1px;
+	padding: 20px;
+}
+
 
 /*Thibault end*/
 
