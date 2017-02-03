@@ -48,26 +48,67 @@ $(document).ready(function() {
     });
 
 
-// Thibault end
-	// Cyril début, btn fonctionel pour le grow le shrink et basis
-	$(".btnFlex").click(function(){
-		var inp;
-		var outils = $(this).attr("id");
-		console.log(outils);
-		if(outils == "grow"){
-			inp = $('#growinp').val();
-			console.log(inp);
-			$("#groshrbas2").css('flex-grow', inp);
-		}else if(outils === "basis"){
-			inp = $('#basisinp').val();
-            console.log(inp);
-			$("#groshrbas2").css('flex-basis', inp);
-		} else if(outils === "shrink"){
-			inp = $('#shrinkinp').val();
-            console.log(inp);
-			$("#groshrbas3").css('flex-shrink', inp);
-		}
-	});
-	// Cyril Fin.
+    // Thibault end
+    // Cyril début, btn fonctionel pour le grow le shrink et basis
+    $(".btnFlex").click(function() {
+        var inp;
+        var outils = $(this).attr("id");
+        if (outils == "grow") {
+            inp = $('#growinp').val();
+            $("#groshrbas2").css('flex-grow', inp);
+        } else if (outils === "basis") {
+            inp = $('#basisinp').val();
+            $("#groshrbas2").css('flex-basis', inp);
+        } else if (outils === "shrink") {
+            inp = $('#shrinkinp').val();
+            $("#groshrbas3").css('flex-shrink', inp);
+        }
+    });
+    // Cyril Fin.
+
+
+    // David début
+    $("#order").click(function() {
+        var inp;
+
+        inp = $('#orderinp1').val();
+        $("#orderbox1").css("order", inp);
+
+        inp = $('#orderinp2').val();
+        $("#orderbox2").css("order", inp);
+
+        inp = $('#orderinp3').val();
+        $("#orderbox3").css("order", inp);
+
+        inp = $('#orderinp4').val();
+        $("#orderbox4").css("order", inp);
+
+    });
+
+
+    // $(".btnOrder").click(function() {
+    //     var inp;
+    //     var outils = $(this).attr("id");
+    //     if (outils == "order") {
+    //         inp = $('#orderinp1').val();
+    //         $("#orderbox").css('order', inp);
+    //         return;
+    //     } else if (outils === "basis") {
+    //         inp = $('#basisinp').val();
+    //         $("#groshrbas2").css('flex-basis', inp);
+    //     } else if (outils === "shrink") {
+    //         inp = $('#shrinkinp').val();
+    //         $("#groshrbas3").css('flex-shrink', inp);
+    //     }
+    // });
+
+
+    // $(".resetO").click(function() {
+    //     $("#yellowO").css("order", "0");
+    //     $("#orangeO").css("order", "0");
+    //     $("#redO").css("order", "0");
+    // });
+    // David Fin
+
 
 });
