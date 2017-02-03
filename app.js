@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     $(".btnFlexFlow").click(function() {
         var outils = $(this).attr("id");
-        console.log(outils);
         if (outils === "containercolrev") {
             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
             if (!($("#activeFF").is(':checked'))) {
@@ -71,23 +70,60 @@ $(document).ready(function() {
 
 
     // David début
-    $("#order").click(function() {
-        var inp;
-
-        inp = $('#orderinp1').val();
-        $("#orderbox1").css("order", inp);
-
-        inp = $('#orderinp2').val();
-        $("#orderbox2").css("order", inp);
-
-        inp = $('#orderinp3').val();
-        $("#orderbox3").css("order", inp);
-
-        inp = $('#orderinp4').val();
-        $("#orderbox4").css("order", inp);
-
+    $(".btnDisplay").click(function() {
+        if ($("#reset").click(function() {
+                $(".divDisplay").css("display", "");
+            }))
+            $(".divDisplay").css("display", "flex");
     });
 
+
+    $("#order").click(function() {
+        var inp;
+        inp = $('#orderinp1').val();
+        $("#orderbox1").css("order", inp);
+        inp = $('#orderinp2').val();
+        $("#orderbox2").css("order", inp);
+        inp = $('#orderinp3').val();
+        $("#orderbox3").css("order", inp);
+        inp = $('#orderinp4').val();
+        $("#orderbox4").css("order", inp);
+    });
+
+    $(".btnSelf").click(function() {
+        var outils = $(this).attr("id");
+        if (outils === "auto") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'auto');
+            $("#self6").css('align-self', 'auto');
+        } else if (outils === "start") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'flex-start');
+            $("#self6").css('align-self', 'flex-start');
+        } else if (outils === "end") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'flex-end');
+            $("#self6").css('align-self', 'flex-end');
+        } else if (outils === "center") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'center');
+            $("#self6").css('align-self', 'center');
+        } else if (outils === "baseline") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'baseline');
+            $("#self6").css('align-self', 'baseline');
+        } else if (outils === "stretch") {
+            $("#self3").css('align-self', 'stretch');
+            $("#self6").css('align-self', 'stretch');
+            $("#self3").css("height", 'inherit');
+            $("#self6").css("height", 'inherit');
+        }
+    });
 
 
     //cyril et julien mettre des couleurs sur les elements et virrer les console.log()
@@ -96,7 +132,6 @@ $(document).ready(function() {
     $('.element').each(function() {
             var rand = Math.floor(Math.random() * colorarray.length);
             if (rand === prevrand) {
-                console.log(colorarray[rand])
                 while (rand === prevrand) {
                     rand = Math.floor(Math.random() * colorarray.length);
                 }
