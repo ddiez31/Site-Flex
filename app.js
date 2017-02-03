@@ -51,17 +51,19 @@ $(document).ready(function() {
     // Thibault end
     // Cyril début, btn fonctionel pour le grow le shrink et basis
     $(".btnFlex").click(function() {
+        var nb = $(this).attr("name");
         var inp;
-        var outils = $(this).attr("id");
-        if (outils == "grow") {
-            inp = $('#growinp').val();
-            $("#groshrbas2").css('flex-grow', inp);
+        var outils = $(this).attr("type");
+        if (outils === "grow") {
+            inp = $('.growinp'+nb).val();
+            $("#grobas"+nb).css('flex-grow', inp);
         } else if (outils === "basis") {
-            inp = $('#basisinp').val();
-            $("#groshrbas2").css('flex-basis', inp);
+            inp = $('.basisinp'+nb).val();
+            console.log(inp)
+            $("#grobas"+nb).css('flex-basis', inp+"px");
         } else if (outils === "shrink") {
-            inp = $('#shrinkinp').val();
-            $("#groshrbas3").css('flex-shrink', inp);
+            inp = $('.shrinkinp'+nb).val();
+            $("#shr"+nb).css('flex-shrink', inp);
         }
     });
     // Cyril Fin.
@@ -124,28 +126,9 @@ $(document).ready(function() {
     });
 
 
-
-    // Cyril début, btn fonctionel pour le grow
-    $(".inpgrowshrink").change(function(e) {
-        var inp;
-        var outils = $(this).attr("id");
-        if (outils == "grow") {
-            inp = $('#growinp').val();
-            $("#grobas2").css('flex-grow', inp);
-        } else if (outils === "basis") {
-            inp = $('#basisinp').val();
-            $("#grobas3").css('flex-basis', inp);
-        } else if (outils === "shrink") {
-            inp = $('#shrinkinp').val();
-            $("#shr2").css('flex-shrink', inp);
-        }
-    });
-    // Cyril Fin.
-
-
-    //cyril et julien mettre des couleurs sur les ellements
+    //cyril et julien mettre des couleurs sur les elements et virrer les console.log()
     var colorarray = ["blue", "red", "green", "white", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"]
-    var prevrand = 8;
+    var prevrand = (colorarray.length)+1;
     $('.element').each(function() {
             var rand = Math.floor(Math.random() * colorarray.length);
             if (rand === prevrand) {
