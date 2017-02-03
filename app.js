@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     $(".btnFlexFlow").click(function() {
         var outils = $(this).attr("id");
+        console.log(outils);
         if (outils === "containercolrev") {
             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
             if (!($("#activeFF").is(':checked'))) {
@@ -45,8 +46,8 @@ $(document).ready(function() {
                 $("#TestFlexFlow").css('flex-direction', '');
             }
         }
-    });
 
+    });
 
     // Thibault end
     // Cyril début, btn fonctionel pour le grow le shrink et basis
@@ -86,29 +87,37 @@ $(document).ready(function() {
     });
 
 
-    // $(".btnOrder").click(function() {
-    //     var inp;
-    //     var outils = $(this).attr("id");
-    //     if (outils == "order") {
-    //         inp = $('#orderinp1').val();
-    //         $("#orderbox").css('order', inp);
-    //         return;
-    //     } else if (outils === "basis") {
-    //         inp = $('#basisinp').val();
-    //         $("#groshrbas2").css('flex-basis', inp);
-    //     } else if (outils === "shrink") {
-    //         inp = $('#shrinkinp').val();
-    //         $("#groshrbas3").css('flex-shrink', inp);
-    //     }
-    // });
+    // Cyril début, btn fonctionel pour le grow
+    $(".inpgrowshrink").change(function(e) {
+        var inp;
+        var outils = $(this).attr("id");
+        if (outils == "grow") {
+            inp = $('#growinp').val();
+            $("#grobas2").css('flex-grow', inp);
+        } else if (outils === "basis") {
+            inp = $('#basisinp').val();
+            $("#grobas3").css('flex-basis', inp);
+        } else if (outils === "shrink") {
+            inp = $('#shrinkinp').val();
+            $("#shr2").css('flex-shrink', inp);
+        }
+    });
+    // Cyril Fin.
 
 
-    // $(".resetO").click(function() {
-    //     $("#yellowO").css("order", "0");
-    //     $("#orangeO").css("order", "0");
-    //     $("#redO").css("order", "0");
-    // });
-    // David Fin
-
-
+    //cyril et julien mettre des couleurs sur les ellements
+    var colorarray = ["blue", "red", "green", "white", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"]
+    var prevrand = 8;
+    $('.element').each(function() {
+            var rand = Math.floor(Math.random() * colorarray.length);
+            if (rand === prevrand) {
+                console.log(rand)
+                while (rand === prevrand) {
+                    rand = Math.floor(Math.random() * colorarray.length);
+                }
+            }
+            $(this).css("background-color", colorarray[rand]);
+            prevrand = rand;
+        })
+        //cyril et julien fin
 });
