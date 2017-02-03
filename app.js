@@ -49,7 +49,7 @@ $(document).ready(function() {
     });
 
     // Thibault end
-    // Cyril début, btn fonctionel pour le grow le shrink et basis
+    // Cyril début, CURSEUR
     $(".btnFlex").click(function() {
         var nb = $(this).attr("name");
         var inp;
@@ -59,13 +59,18 @@ $(document).ready(function() {
             $("#grobas"+nb).css('flex-grow', inp);
         } else if (outils === "basis") {
             inp = $('.basisinp'+nb).val();
-            console.log(inp)
             $("#grobas"+nb).css('flex-basis', inp+"px");
         } else if (outils === "shrink") {
-            inp = $('.shrinkinp'+nb).val();
+            inp = $('#shrinkinp'+nb).val();
             $("#shr"+nb).css('flex-shrink', inp);
         }
     });
+    $("#TestFlexShrinkCurseur").change(function(){
+        var inp = ($("#TestFlexShrinkCurseur").val())*5;
+        console.log(inp);
+        $('#TestFlexShrink').css("width", inp)
+        $('#shrinkDivRange').html(inp)
+    })
     // Cyril Fin.
 
 
