@@ -61,8 +61,14 @@ h2 {
 
 .divDeTest {
     display: flex;
-    width: 200px;
-    height: 75px;
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.divDisplay {
+    width: 500px;
+    height: 250px;
     border: 1px solid black;
 }
 
@@ -105,13 +111,15 @@ h2 {
     padding-right: 20px;
 }
 
-#order {
+#order,
+#reset {
     width: 15em;
     color: black;
     background-color: grey;
 }
 
-#order:hover {
+#order:hover,
+#reset:hover {
     color: white;
     background-color: black;
 }

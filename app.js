@@ -68,6 +68,14 @@ $(document).ready(function() {
 
 
     // David début
+    $(".btnDisplay").click(function() {
+        if ($("#reset").click(function() {
+                $(".divDisplay").css("display", "");
+            }))
+            $(".divDisplay").css("display", "flex");
+    });
+
+
     $("#order").click(function() {
         var inp;
         inp = $('#orderinp1').val();
@@ -82,18 +90,36 @@ $(document).ready(function() {
 
     $(".btnSelf").click(function() {
         var outils = $(this).attr("id");
-        if (outils == "auto") {
-            $("#self3").css('auto');
+        if (outils === "auto") {
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'auto');
+            $("#self6").css('align-self', 'auto');
         } else if (outils === "start") {
-            $("#self3").css('flex-start');
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'flex-start');
+            $("#self6").css('align-self', 'flex-start');
         } else if (outils === "end") {
-            $("#self3").css('flex-end');
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'flex-end');
+            $("#self6").css('align-self', 'flex-end');
         } else if (outils === "center") {
-            $("#self3").css('center');
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'center');
+            $("#self6").css('align-self', 'center');
         } else if (outils === "baseline") {
-            $("#self3").css('baseline');
-        } else if (outils === "strech") {
-            $("#self3").css('strech');
+            $("#self3").css("height", '');
+            $("#self6").css("height", '');
+            $("#self3").css('align-self', 'baseline');
+            $("#self6").css('align-self', 'baseline');
+        } else if (outils === "stretch") {
+            $("#self3").css('align-self', 'stretch');
+            $("#self6").css('align-self', 'stretch');
+            $("#self3").css("height", 'inherit');
+            $("#self6").css("height", 'inherit');
         }
     });
 
