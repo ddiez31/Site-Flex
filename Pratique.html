@@ -23,7 +23,7 @@
             <a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
         </div>
     </div>
-    </div>
+
     <iframe src="canvas.html" width="100%" height="100%"></iframe>
 
     <br>
@@ -34,31 +34,47 @@
         <p class="center">AMUSEZ-VOUS!!! ;)</p>
     </div>
 
-    <h2>Cyril, grow shrink basis</h2>
+    <h2>Cyril, grow basis</h2>
     <!-- boutons fonctionels -->
     <div class="ui container raised very padded text segment">
         <button class="small ui button inverted pink btnFlex" name="col" id="grow">Grow</button>
         <input type="number" id="growinp"><br>
-        <button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
-        <input type="number" id="shrinkinp"><br>
         <button class="small ui button inverted orange btnFlex" name="row-rev" id="basis">Basis</button>
         <input type="number" id="basisinp"><br>
 
         <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlex">
-                <div class="element" id="groshrbas1"> 1 </div>
-                <div class="element" id="groshrbas2"> 2 </div>
-                <div class="element" id="groshrbas3"> 3 </div>
-                <div class="element" id="groshrbas4"> 4 </div>
-                <div class="element" id="groshrbas5"> 5 </div>
-                <div class="element" id="groshrbas6"> 6 </div>
-                <div class="element" id="groshrbas7"> 7 </div>
-                <div class="element" id="groshrbas8"> 8 </div>
-                <div class="element" id="groshrbas9"> 9 </div>
+            <div class="divDeTest" id="TestFlexGrowBasis">
+                <div class="element" id="grobas1"> 1 </div>
+                <div class="element" id="grobas2"> 2 </div>
+                <div class="element" id="grobas3"> 3 </div>
+                <div class="element" id="grobas4"> 4 </div>
             </div>
         </div>
     </div>
-        <!-- Thibault start -->
+
+
+    <h2>Cyril, shrink</h2>
+    <!-- boutons fonctionels -->
+
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted red btnFlex" name="col-rev" id="shrink">Shrink</button>
+        <input type="number" id="shrinkinp"><br>
+        <div class="ui container raised very padded segment">
+            <div class="divDeTest" id="TestFlexShrink">
+                <div class="element" id="shr1"> 1 </div>
+                <div class="element" id="shr2"> 2 </div>
+                <div class="element" id="shr3"> 3 </div>
+                <div class="element" id="shr4"> 4 </div>
+                <div class="element" id="shr5"> 5 </div>
+                <div class="element" id="shr6"> 6 </div>
+                <div class="element" id="shr7"> 7 </div>
+                <div class="element" id="shr8"> 8 </div>
+                <div class="element" id="shr9"> 9 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thibault start -->
     <h2>LA AUSSI ÇA BOUGE!!! :)</h2>
     <div class="ui container raised very padded text segment">
         <h5> Flex-wrap : </h5>
@@ -72,7 +88,6 @@
         <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Column-reverse</button>
         <button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">Row</button>
         <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Row-reverse</button>
-
         <div class="ui container raised very padded segment">
             <div class="divDeTest" id="TestFlexFlow">
                 <div class="element"> 1 </div>
@@ -90,7 +105,9 @@
             </div>
         </div>
     </div>
+
     <!-- Thibault end -->
+
 
     <!-- David start -->
     <h2>Display</h2>
@@ -98,37 +115,36 @@
         <button class="small ui button inverted red btnFlexFlow" name="flex" id="flex">Flex</button>
         <div class="ui container raised very padded segment">
             <div class="divDeTest" id="TestFlexFlow">
-                <div class="element"> 1 </div>
-                <div class="element"> 2 </div>
-                <div class="element"> 3 </div>
-                <div class="element"> 4 </div>
-                <div class="element"> 5 </div>
-                <div class="element"> 6 </div>
-                <div class="element"> 7 </div>
-                <div class="element"> 8 </div>
-                <div class="element"> 9 </div>
-                <div class="element"> 10 </div>
-                <div class="element"> 11 </div>
-                <div class="element"> 12 </div>
+                <div class="element" id="display1"> 1 </div>
+                <div class="element" id="display2"> 2 </div>
+                <div class="element" id="display3"> 3 </div>
+                <div class="element" id="display4"> 4 </div>
+                <div class="element" id="display5"> 5 </div>
+                <div class="element" id="display6"> 6 </div>
+                <div class="element" id="display7"> 7 </div>
+                <div class="element" id="display8"> 8 </div>
+                <div class="element" id="display9"> 9 </div>
             </div>
         </div>
     </div>
 
     <h2>Order</h2>
     <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted orange btnFlex" name="order" id="order">Order</button>
-        <input type="number" id="order"><br>
+        <button class="small ui button inverted orange btnOrder" name="order" id="order1">Order 1</button>
+        <input type="number" id="orderinp1"><br>
+        <button class="small ui button inverted teal btnOrder" name="order" id="order2">Order 2</button>
+        <input type="number" id="orderinp2"><br>
+        <button class="small ui button inverted green btnOrder" name="order" id="order3">Order 3</button>
+        <input type="number" id="orderinp3"><br>
+        <button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
+        <input type="number" id="orderinp4"><br>
+        <button class="small ui button inverted purple btnOrder" name="order" id="order">Action</button>
         <div class="ui container raised very padded segment">
             <div class="divDeTest" id="TestFlex">
-                <div class="element" id="groshrbas1"> 1 </div>
-                <div class="element" id="groshrbas2"> 2 </div>
-                <div class="element" id="groshrbas3"> 3 </div>
-                <div class="element" id="groshrbas4"> 4 </div>
-                <div class="element" id="groshrbas5"> 5 </div>
-                <div class="element" id="groshrbas6"> 6 </div>
-                <div class="element" id="groshrbas7"> 7 </div>
-                <div class="element" id="groshrbas8"> 8 </div>
-                <div class="element" id="groshrbas9"> 9 </div>
+                <div class="element" id="orderbox1"> 1 </div>
+                <div class="element" id="orderbox2"> 2 </div>
+                <div class="element" id="orderbox3"> 3 </div>
+                <div class="element" id="orderbox4"> 4 </div>
             </div>
         </div>
     </div>
@@ -143,18 +159,16 @@
         <button class="small ui button inverted orange btnFlexFlow" name="strech" id="strech">Stretch</button>
         <div class="ui container raised very padded segment">
             <div class="divDeTest" id="TestFlexFlow">
-                <div class="element"> 1 </div>
-                <div class="element"> 2 </div>
-                <div class="element"> 3 </div>
-                <div class="element"> 4 </div>
-                <div class="element"> 5 </div>
-                <div class="element"> 6 </div>
-                <div class="element"> 7 </div>
-                <div class="element"> 8 </div>
-                <div class="element"> 9 </div>
-                <div class="element"> 10 </div>
-                <div class="element"> 11 </div>
-                <div class="element"> 12 </div>
+                <div class="element" id="self1"> 1 </div>
+                <div class="element" id="self2"> 2 </div>
+                <div class="element" id="self3"> 3 </div>
+                <div class="element" id="self4"> 4 </div>
+                <div class="element" id="self5"> 5 </div>
+                <div class="element" id="self6"> 6 </div>
+                <div class="element" id="self7"> 7 </div>
+                <div class="element" id="self8"> 8 </div>
+                <div class="element" id="self9"> 9 </div>
+
             </div>
         </div>
     </div>
