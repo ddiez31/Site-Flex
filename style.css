@@ -87,6 +87,10 @@ h2 {
 #row-reverse,
 #flex,
 #order,
+#order1,
+#order2,
+#order3,
+#order4,
 #auto,
 #start,
 #end,
@@ -96,9 +100,21 @@ h2 {
     font-family: 'Indie Flower', cursive;
 }
 
-#activeFF{
+#activeFF {
     padding-right: 20px;
 }
+
+#order {
+    width: 15em;
+    color: black;
+    background-color: grey;
+}
+
+#order:hover {
+    color: white;
+    background-color: black;
+}
+
 
 /*Thibault end*/
 

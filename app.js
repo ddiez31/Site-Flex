@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     $(".btnFlexFlow").click(function() {
         var outils = $(this).attr("id");
-        console.log(outils);
         if (outils === "containercolrev") {
             $("#TestFlexFlow").css('flex-direction', 'column-reverse');
             if (!($("#activeFF").is(':checked'))) {
@@ -71,20 +70,33 @@ $(document).ready(function() {
     // David début
     $("#order").click(function() {
         var inp;
-
         inp = $('#orderinp1').val();
         $("#orderbox1").css("order", inp);
-
         inp = $('#orderinp2').val();
         $("#orderbox2").css("order", inp);
-
         inp = $('#orderinp3').val();
         $("#orderbox3").css("order", inp);
-
         inp = $('#orderinp4').val();
         $("#orderbox4").css("order", inp);
-
     });
+
+    $(".btnSelf").click(function() {
+        var outils = $(this).attr("id");
+        if (outils == "auto") {
+            $("#self3").css('auto');
+        } else if (outils === "start") {
+            $("#self3").css('flex-start');
+        } else if (outils === "end") {
+            $("#self3").css('flex-end');
+        } else if (outils === "center") {
+            $("#self3").css('center');
+        } else if (outils === "baseline") {
+            $("#self3").css('baseline');
+        } else if (outils === "strech") {
+            $("#self3").css('strech');
+        }
+    });
+
 
 
     // Cyril début, btn fonctionel pour le grow
@@ -111,7 +123,6 @@ $(document).ready(function() {
     $('.element').each(function() {
             var rand = Math.floor(Math.random() * colorarray.length);
             if (rand === prevrand) {
-                console.log(rand)
                 while (rand === prevrand) {
                     rand = Math.floor(Math.random() * colorarray.length);
                 }
