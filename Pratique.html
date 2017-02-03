@@ -42,31 +42,30 @@
 			<div>
 				<button class="small ui button inverted pink btnFlex" name="1" type="grow">Grow 1</button>
 				<input type="number" class="growinp1" placeholder="proportion"><br>
-				<button class="small ui button inverted orange btnFlex" name="1" type="basis">Basis 1</button>
-				<input type="number" class="basisinp1" placeholder="en px"><br>
 				<button class="small ui button inverted pink btnFlex" name="2" type="grow">Grow 2</button>
 				<input type="number" class="growinp2" placeholder="proportion"><br>
-				<button class="small ui button inverted orange btnFlex" name="2" type="basis">Basis 2</button>
-				<input type="number" class="basisinp2" placeholder="en px"><br>
-			</div>
-			<div>
 				<button class="small ui button inverted pink btnFlex" name="3" type="grow">Grow 3</button>
 				<input type="number" class="growinp3" placeholder="proportion"><br>
-				<button class="small ui button inverted orange btnFlex" name="3" type="basis">Basis 3</button>
-				<input type="number" class="basisinp3" placeholder="en px"><br>
 				<button class="small ui button inverted pink btnFlex" name="4" type="grow">Grow 4</button>
 				<input type="number" class="growinp4" placeholder="proportion"><br>
+			</div>
+			<div>
+				<button class="small ui button inverted orange btnFlex" name="1" type="basis">Basis 1</button>
+				<input type="number" class="basisinp1" placeholder="en px"><br>
+				<button class="small ui button inverted orange btnFlex" name="2" type="basis">Basis 2</button>
+				<input type="number" class="basisinp2" placeholder="en px"><br>
+				<button class="small ui button inverted orange btnFlex" name="3" type="basis">Basis 3</button>
+				<input type="number" class="basisinp3" placeholder="en px"><br>
 				<button class="small ui button inverted orange btnFlex" name="4" type="basis">Basis 4</button>
 				<input type="number" class="basisinp4" placeholder="en px"><br>
 			</div>
 		</div>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestFlexGrowBasis">
-				<div class="element" id="grobas1"> 1 </div>
-				<div class="element" id="grobas2"> 2 </div>
-				<div class="element" id="grobas3"> 3 </div>
-				<div class="element" id="grobas4"> 4 </div>
-			</div>
+		<div class="block2"></div>
+		<div class="ui raised very segment divDeTestFine" id="TestFlexGrowBasis">
+			<div class="element" id="grobas1"> 1 </div>
+			<div class="element" id="grobas2"> 2 </div>
+			<div class="element" id="grobas3"> 3 </div>
+			<div class="element" id="grobas4"> 4 </div>
 		</div>
 	</div>
 
@@ -79,14 +78,87 @@
 		<button class="small ui button inverted green btnFlex" name="2" type="shrink" id="shrink2">Shrink 2</button>
 		<input type="number" id="shrinkinp2" placeholder="proport° de réduction"><br>
 		<button class="small ui button inverted teal btnFlex" name="3" type="shrink" id="shrink3">Shrink 3</button>
-		<input type="number" id="shrinkinp3" placeholder="proport° de réduction"><br>
-		<input type="range" val="100" id="TestFlexShrinkCurseur"><span id='shrinkDivRange'></span>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestFlexShrink">
-				<div class="element" style="width: 200px" id="shr1"> 1 </div>
-				<div class="element" style="width: 200px" id="shr2"> 2 </div>
-				<div class="element" style="width: 200px" id="shr3"> 3 </div>
-			</div>
+		<input type="number" id="shrinkinp3" placeholder="proport° de réduction">
+		<div class="block2"></div>
+		<input type="range" min="180" max="600" val="100" id="TestFlexShrinkCurseur"><span id='shrinkDivRange'>Modifier la largeur initiale</span>
+		<div class="ui raised very segment divDeTestFine" id="TestFlexShrink">
+				<div class="element" id="shr1"> 1 </div>
+				<div class="element" id="shr2"> 2 </div>
+				<div class="element" id="shr3"> 3 </div>
+		</div>
+	</div>
+
+	<h2>Justif-content et Align-item</h2>
+	<!-- Justif et aligne content -->
+	<div class="ui container raised very padded text segment">
+		<div>
+			<button class="small ui button inverted teal btnFlexJustifAlign" name="justify-content" type="flex-start">flex-start</button>
+			<button class="small ui button inverted orange btnFlexJustifAlign" name="justify-content" type="flex-end">flex-end</button>
+			<button class="small ui button inverted blue btnFlexJustifAlign" name="justify-content" type="center">center</button>
+			<button class="small ui button inverted green btnFlexJustifAlign" name="justify-content" type="space-between">space-between</button>
+			<button class="small ui button inverted purple btnFlexJustifAlign" name="justify-content" type="space-around">space-around</button>
+			<br>
+			<button class="small ui button inverted teal btnFlexJustifAlign" name="align-items" type="flex-start">flex-start</button>
+			<button class="small ui button inverted orange btnFlexJustifAlign" name="align-items" type="flex-end">flex-end</button>
+			<button class="small ui button inverted blue btnFlexJustifAlign" name="align-items" type="center">center</button>
+			<button class="small ui button inverted green btnFlexJustifAlign" name="align-items" type="base-line">base-line</button>
+			<button class="small ui button inverted purple btnFlexJustifAlign" name="align-items" type="stretch">stretch</button>
+		</div>
+		<div class="ui raised very segment divDeTest" id="TestFlexJustifAlign">
+			<div class="element" id="justifalign1"> 1 </div>
+			<div class="element" id="justifalign2"> 2 </div>
+			<div class="element" id="justifalign3"> 3 </div>
+			<div class="element" id="justifalign4"> 4 </div>
+		</div>
+	</div>
+
+	<h2>Align-content</h2>
+	<!-- Justif et aligne content -->
+	<div class="ui container raised very padded text segment">
+		<div>
+			<button class="small ui button inverted teal btnFlexJustifAlign" name="align-content" type="flex-start">align-content flex-start</button>
+			<button class="small ui button inverted orange btnFlexJustifAlign" name="align-content" type="flex-end">align-content flex-end</button>
+			<button class="small ui button inverted blue btnFlexJustifAlign" name="align-content" type="center">align-content center</button>
+			<button class="small ui button inverted green btnFlexJustifAlign" name="align-content" type="space-between">align-content space-between</button>
+			<button class="small ui button inverted purple btnFlexJustifAlign" name="align-content" type="space-around">align-content space-around</button>
+		</div>
+		<div class="ui raised very segment divDeTest" id="TestFlexAlign">
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
+			<div class="element" id="alignit1"> 1 </div>
+			<div class="element" id="alignit2"> 2 </div>
+			<div class="element" id="alignit3"> 3 </div>
+			<div class="element" id="alignit4"> 4 </div>
 		</div>
 	</div>
 
@@ -104,21 +176,19 @@
 		<button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Column-reverse</button>
 		<button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">Row</button>
 		<button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Row-reverse</button>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestFlexFlow">
-				<div class="element"> 1 </div>
-				<div class="element"> 2 </div>
-				<div class="element"> 3 </div>
-				<div class="element"> 4 </div>
-				<div class="element"> 5 </div>
-				<div class="element"> 6 </div>
-				<div class="element"> 7 </div>
-				<div class="element"> 8 </div>
-				<div class="element"> 9 </div>
-				<div class="element"> 10 </div>
-				<div class="element"> 11 </div>
-				<div class="element"> 12 </div>
-			</div>
+		<div class="ui raised very segment divDeTest" id="TestFlexFlow">
+			<div class="element"> 1 </div>
+			<div class="element"> 2 </div>
+			<div class="element"> 3 </div>
+			<div class="element"> 4 </div>
+			<div class="element"> 5 </div>
+			<div class="element"> 6 </div>
+			<div class="element"> 7 </div>
+			<div class="element"> 8 </div>
+			<div class="element"> 9 </div>
+			<div class="element"> 10 </div>
+			<div class="element"> 11 </div>
+			<div class="element"> 12 </div>
 		</div>
 	</div>
 
@@ -130,8 +200,7 @@
 	<div class="ui container raised very padded text segment">
 		<button class="small ui button inverted red btnDisplay" name="display" id="display">Flex</button>
 		<button class="small ui button inverted black btnOrder" name="reset" id="reset" style="float: right">Reset</button>
-		<div class="ui container raised very padded segment">
-			<div class="divDisplay" id="TestDisplay">
+		<div class="ui raised very segment divDisplay" id="TestDisplay">
 				<div class="element" id="display"> 1 </div>
 				<div class="element" id="display"> 2 </div>
 				<div class="element" id="display"> 3 </div>
@@ -141,7 +210,6 @@
 				<div class="element" id="display"> 7 </div>
 				<div class="element" id="display"> 8 </div>
 				<div class="element" id="display"> 9 </div>
-			</div>
 		</div>
 	</div>
 
@@ -156,13 +224,11 @@
 		<button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
 		<input type="number" id="orderinp4" placeholder="Valeur de position">
 		<button class="small ui button inverted black btnOrder" name="order" id="order" style="float: right">Action</button>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestOrder">
-				<div class="element" id="orderbox1"> 1 </div>
-				<div class="element" id="orderbox2"> 2 </div>
-				<div class="element" id="orderbox3"> 3 </div>
-				<div class="element" id="orderbox4"> 4 </div>
-			</div>
+		<div class="ui raised very segment divDeTestFine" id="TestOrder">
+			<div class="element" id="orderbox1"> 1 </div>
+			<div class="element" id="orderbox2"> 2 </div>
+			<div class="element" id="orderbox3"> 3 </div>
+			<div class="element" id="orderbox4"> 4 </div>
 		</div>
 	</div>
 
@@ -174,19 +240,15 @@
 		<button class="small ui button inverted brown btnSelf" name="center" id="center">Center</button>
 		<button class="small ui button inverted pink btnSelf" name="baseline" id="baseline">Baseline</button>
 		<button class="small ui button inverted orange btnSelf" name="stretch" id="stretch">Stretch</button>
-		<div class="ui container raised very padded segment">
-			<div class="divDeTest" id="TestSelf">
-				<div class="element" id="self1"> 1 </div>
-				<div class="element" id="self2"> 2 </div>
-				<div class="element" id="self3"> 3 </div>
-				<div class="element" id="self4"> 4 </div>
-				<div class="element" id="self5"> 5 </div>
-				<div class="element" id="self6"> 6 </div>
-				<div class="element" id="self7"> 7 </div>
-				<div class="element" id="self8"> 8 </div>
-
-
-			</div>
+		<div class="ui raised very segment divDeTest" id="TestSelf">
+			<div class="element" id="self1"> 1 </div>
+			<div class="element" id="self2"> 2 </div>
+			<div class="element" id="self3"> 3 </div>
+			<div class="element" id="self4"> 4 </div>
+			<div class="element" id="self5"> 5 </div>
+			<div class="element" id="self6"> 6 </div>
+			<div class="element" id="self7"> 7 </div>
+			<div class="element" id="self8"> 8 </div>
 		</div>
 	</div>
 	<!-- David end -->

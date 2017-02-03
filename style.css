@@ -1,19 +1,19 @@
 iframe {
-    border: none;
-    float: left;
-    position: absolute;
+	border: none;
+	float: left;
+	position: absolute;
 }
 
 body {
-    background-color: #191970;
+	background-color: #191970;
 }
 
 p,
 blockquote {
-    font-family: 'Indie Flower', cursive;
-    font-size: 18px;
-    /*changement de la taille de la police p*/
-    color: black;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	/*changement de la taille de la police p*/
+	color: black;
 }
 
 h1,
@@ -21,90 +21,72 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Coming Soon', cursive;
+	font-family: 'Coming Soon', cursive;
 }
 
 .center {
-    text-align: center;
+	text-align: center;
 }
 
 .item {
-    font-family: "Coming Soon", cursive;
-    text-shadow: 1px 0 0 black;
+	font-family: "Coming Soon", cursive;
+	text-shadow: 1px 0 0 black;
 }
 
 .ui .container {
-    background-color: white;
+	background-color: white;
 }
 
 .block{
 	margin-top: 8em;
 }
 
+.block2{
+	height: 10px;
+}
+
 h1 {
-    text-align: center;
-    font-size: 25px;
-    color: orange;
+	text-align: center;
+	font-size: 25px;
+	color: orange;
 }
 
 
 /*changement de la taille de la police h1 & h2*/
 
 h2 {
-    text-align: center;
-    font-size: 26px;
-    color: orange;
+	text-align: center;
+	font-size: 26px;
+	color: orange;
 }
 
 
 /* Thibault start : création divs de couleurs */
 
 .divDeTest {
-    display: flex;
-    width: 500px;
-    height: 250px;
-    border: 1px solid #EEE;
+	display: flex;
 }
 
+.divDeTest,
 .divDisplay {
-    width: 500px;
-    height: 250px;
-    border: 1px solid #EEE;
+	width: 600px;
+	height: 300px;
+	border: 2px solid #EEE;
+}
+.divDeTestFine{
+	display: flex;
+	width: 600px;
+	height: 100px;
+	border: 2px solid #EEE;
 }
 
 .element {
-    height: 20px;
-    width: 20px;
-    border: 2px solid black;
+	height: 20px;
+	width: 20px;
+	border: 2px solid black;
 	border-radius: 20%;
 	line-height: 1px;
 	padding: 20px;
-}
-
-#grow,
-#basis,
-#shrink,
-#wrap,
-#dirwrap,
-#wraprev,
-#nowrap,
-#containercol,
-#containercolrev,
-#row,
-#row-reverse,
-#flex,
-#order,
-#order1,
-#order2,
-#order3,
-#order4,
-#auto,
-#start,
-#end,
-#center,
-#baseline,
-#strech {
-    font-family: 'Indie Flower', cursive;
 }
 
 .footer{
@@ -113,22 +95,47 @@ h2 {
 }
 
 #activeFF {
-    padding-right: 20px;
+	padding-right: 20px;
 }
 
 #order,
 #reset {
-    width: 15em;
-    color: black;
-    background-color: grey;
+	width: 15em;
+	color: black;
+	background-color: grey;
 }
 
 #order:hover,
 #reset:hover {
-    color: white;
-    background-color: black;
+	color: white;
+	background-color: black;
 }
 
+#shr1,
+#shr2,
+#shr3{
+	width: 200px
+}
+
+#justifalign1{
+	height: 85px;
+}
+
+#justifalign2{
+	height: 100px;
+}
+
+#justifalign3{
+	height: 60px;
+}
+
+#justifalign4{
+	height: 50px;
+}
+
+#TestFlexAlign{
+	flex-wrap: wrap;
+}
 
 
 /*Thibault end*/
