@@ -96,8 +96,8 @@ h2 {
     font-family: 'Indie Flower', cursive;
 }
 
-#dirwrap{
-  flex: flex-end;
+#activeFF{
+    padding-right: 20px;
 }
 
 /*Thibault end*/
