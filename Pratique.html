@@ -3,40 +3,48 @@
 
 <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
-    <meta charset="UTF-8">
-    <title>Exercices</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Exercices</title>
 
 </head>
 
 <body>
-	<div class="ui menu">
+	<div class="ui fixed menu">
 		<div class="header item"><a href="./index.html">Accueil</a></div>
+<<<<<<< HEAD
 		<a class="item" href="./theorie.html">Theorie</a>
 		<a class="item" href="./Pratique.html">Exercices</a>
 		<a class="item" href="./ressources.html">Ressources</a>
+=======
+		<a class="item" href="./theorie.html">Théorie</a>
+		<a class="item" href="./Pratique.html">Exercices</a>
+		<a class="item" href="./ressources.html">Ressources</a>
+		<div class="ui right aligned category image item">
+			<img src="logo_simplon.png" width="100" height="100"></div> <!-- logo simplon occitanie rajouté -->
+		</div>
+>>>>>>> 134bc75342db1c09706be073d1417baa742cf67b
 	</div>
-	<h1>Exercices</h1>
+	  <iframe src="canvas.html" width="100%" height="100%"></iframe>
+
+    <br>
+    <br>
+    <br>
+    <h1>Exercices</h1>
 	<div class="ui container raised very padded text segment">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi aut, vitae, delectus veniam autem debitis aliquid recusandae architecto itaque? Ducimus totam quis ut voluptas dolorem maxime vitae, veniam neque!</p>
+		<p class="center">AMUSEZ-VOUS!!! ;)</p>
 	</div>
 
-	<h2>Lorem ipsum.</h2>
-
+	<h2>ATTENTION ÇA BOUGE!!! :)</h2>
 	<div class="ui container raised very padded text segment">
-		<button class="small ui button inverted black btnFlexFlow" name="col" id="containercol">Column</button>
-		<button class="small ui button inverted red btnFlexFlow" name="col-rev" id="containercolrev">Column-reverse</button>
+		<button class="small ui button inverted black btnFlexFlow" name="col" id="containercol">Columns</button>
+		<button class="small ui button inverted red btnFlexFlow" name="col-rev" id="containercolrev">Col-rev</button>
 		<button class="small ui button inverted pink btnFlexFlow" name="row" id="row" >Row</button>
 		<button class="small ui button inverted orange btnFlexFlow" name="row-rev" id="row-reverse">Row-reverse</button>
-		<button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-		<button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
-		<button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
-		<input type="checkbox" name="flex-flow" id="activeFF" value="cbff">flex-flow</input>
-
-		<div class="ui container raised very padded text segment">
+		<div class="ui container raised very padded container segment">
 			<div class="divDeTest" id="TestFlexFlow" >
 				<div class="element"> 1 </div>
 				<div class="element"> 2 </div>
@@ -54,9 +62,12 @@
 		</div>
 	</div>
 
-	<h2>Lorem ipsum dolor.</h2>
-
+	<h2>LA AUSSI ÇA BOUGE!!! :)</h2>
 	<div class="ui container raised very padded text segment">
+		<button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+		<button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
+		<button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
+		<button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
 		<div class="ui container raised very padded segment">
 			<div class="divDeTest" id="TestFlexFlow" >
 				<div class="element"> 1 </div>
@@ -90,8 +101,24 @@
 		<div class="element"> 12 </div>
 	</div>
 
-    <!-- Thibault end : ajout div couleurs + bouton -->
-    <!-- -->
+	<button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
+
+	<button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: colum-reverse</button>
+
+	<button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">row</button>
+
+	<button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: row-reverse</button>
+
+	<button type="button" name="wrap" id="wrap" class="small ui button inverted button yellow btnFlexFlow">wrap</button>
+
+	<button type="button" name="wrap" id="dirwrap" class="small ui button inverted button yellow btnFlexFlow">Flex flow</button>
+
+	<button type="button" name="wraprev" id="wraprev" class="small ui button inverted button yellow btnFlexFlow">wrap-reverse</button>
+
+	<button type="button" name="no-wrap" id="nowrap" class="small ui button inverted button yellow btnFlexFlow">no-wrap</button>
+
+	<!-- Thibault end : ajout div couleurs + bouton -->
+	<!-- -->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
