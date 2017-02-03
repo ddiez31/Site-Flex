@@ -96,6 +96,9 @@ h2 {
     font-family: 'Indie Flower', cursive;
 }
 
+#dirwrap{
+  flex: flex-end;
+}
 
 /*Thibault end*/
 

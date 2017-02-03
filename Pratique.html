@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div class="ui fixed menu">
         <div class="header item"><a href="./index.html">Accueil</a></div>
         <a class="item" href="./theorie.html">Théorie</a>
@@ -70,13 +71,21 @@
             </div>
         </div>
     </div>
-
+        <!-- Thibault start -->
     <h2>LA AUSSI ÇA BOUGE!!! :)</h2>
     <div class="ui container raised very padded text segment">
+        <h5> Flex-wrap : </h5>
         <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-        <button class="small ui button inverted yellow btnFlexFlow" name="wrap" id="dirwrap">Flex flow</button>
-        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">wrap-reverse</button>
-        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">no-wrap</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
+        <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button yellow btnFlexFlow">Flex flow</input>
+        <br>
+        <h5>Flex-direction</h5>
+        <button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Column</button>
+        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Column-reverse</button>
+        <button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">Row</button>
+        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Row-reverse</button>
+
         <div class="ui container raised very padded segment">
             <div class="divDeTest" id="TestFlexFlow">
                 <div class="element"> 1 </div>
@@ -94,36 +103,7 @@
             </div>
         </div>
     </div>
-    <!-- Thibault start : ajout div couleurs + bouton -->
-    <div class="ui container raised very padded text segment">
-        <button type="button" name="col" id="containercol" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: column</button>
-        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: colum-reverse</button>
-        <button type="button" name="row" id="row" class="small ui button inverted button yellow btnFlexFlow">row</button>
-        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button yellow btnFlexFlow">Flex-direction: row-reverse</button>
-        <button type="button" name="wrap" id="wrap" class="small ui button inverted button yellow btnFlexFlow">wrap</button>
-        <button type="button" name="wrap" id="dirwrap" class="small ui button inverted button yellow btnFlexFlow">Flex flow</button>
-        <button type="button" name="wraprev" id="wraprev" class="small ui button inverted button yellow btnFlexFlow">wrap-reverse</button>
-        <button type="button" name="no-wrap" id="nowrap" class="small ui button inverted button yellow btnFlexFlow">no-wrap</button>
-        <div class="ui container raised very padded segment">
-            <div class="divDeTest" id="TestFlexFlow">
-                <div class="element"> 1 </div>
-                <div class="element"> 2 </div>
-                <div class="element"> 3 </div>
-                <div class="element"> 4 </div>
-                <div class="element"> 5 </div>
-                <div class="element"> 6 </div>
-                <div class="element"> 7 </div>
-                <div class="element"> 8 </div>
-                <div class="element"> 9 </div>
-                <div class="element"> 10 </div>
-                <div class="element"> 11 </div>
-                <div class="element"> 12 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Thibault end : ajout div couleurs + bouton -->
+    <!-- Thibault end -->
 
     <!-- David start -->
     <h2>Display</h2>
