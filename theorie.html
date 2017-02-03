@@ -13,21 +13,20 @@
 </head>
 
 <body>
-	<div class="ui fixed menu">
-		<div class="header item"><a href="./index.html">Accueil</a></div>
-		<a class="item" href="./theorie.html">Théorie</a>
-		<a class="item" href="./Pratique.html">Exercices</a>
-		<a class="item" href="./ressources.html">Ressources</a>
-		<div class="ui right aligned category image item">
-			<a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
-		</div>
-	</div>
-	<iframe src="canvas.html" width="100%" height="100%">
-	</iframe>
 
-	<br>
-	<br>
-	<br>
+  <div class="ui fixed menu">
+      <div class="header item"><a href="./index.html">Accueil</a></div>
+      <a class="item" href="./theorie.html">Théorie</a>
+      <a class="item" href="./Pratique.html">Exercices</a>
+      <a class="item" href="./ressources.html">Ressources</a>
+      <div class="ui right aligned category image item">
+          <a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
+      </div>
+  </div>
+  <iframe src="canvas.html" width="100%" height="100%">
+
+  </iframe>
+
 	<h1>Théorie</h1>
 	<div class="ui text container raised very padded text segment">
 		<h2>Justify-content :</h2>
@@ -36,9 +35,7 @@
 
 	<div class="ui text container raised very padded text segment">
 		<h2>Align-content :</h2>
-		<p>Très exactement la même chose que pour justify-content mais sur l'axe secondraire => flex-start, center et flex-end sont respectivement les propriétées qui permetent de mettre les éléments flex au début, au centre ou à la fin de l'axe secondaire,
-			de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des dits éléments.
-		</p>
+		<p>Très exactement la même chose que pour justify-content mais sur l'axe secondraire => flex-start, center et flex-end sont respectivement les propriétées qui permetent de mettre les éléments flex au début, au centre ou à la fin de l'axe secondaire, de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des dits éléments.</p>
 	</div>
 
 	<div class="ui raised very padded text container segment">
@@ -48,37 +45,23 @@
 
 	<div class="ui raised very padded text container segment">
 		<h2>Display :</h2>
-		<p>Propriété indispensable sur l'élément englobant les enfants à piloter. Elle active la propriété flex sur tous les enfants du conteneur. syntaxe: .parent{ display:flex ou inline-flex; } Cela placera tous les enfants côte à côte en essayant de remplir
-			tout l'espace. Flex définit le conteneur comme élément de type block. Inline-flex définit le conteneur comme élément de type inline.
-			<!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest01.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest01.html</a>-->
-		</p>
+		<p>Propriété indispensable sur l'élément englobant les enfants à piloter. Elle active la propriété flex sur tous les enfants du conteneur. syntaxe: .parent{ display:flex ou inline-flex; } Cela placera tous les enfants côte à côte en essayant de remplir tout l'espace. Flex définit le conteneur comme élément de type block. Inline-flex définit le conteneur comme élément de type inline. <!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest01.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest01.html</a>--></p>
 	</div>
 
 	<div class="ui raised very padded text container segment">
 		<h2>Order:</h2>
-		<p>Propriété d'ordonnancement permettant de classer les éléments suivant un ordre défini sans modifier le fichier html. syntaxe: .enfant{ order: nombre; } Sa valeur initiale est égale à 0. Les valeurs les plus fortes se trouveront en fin de pile.
-			On peut utiliser un nombre positif ou négatif.
-			<!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest07.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest07.html</a>-->
-		</p>
+		<p>Propriété d'ordonnancement permettant de classer les éléments suivant un ordre défini sans modifier le fichier html. syntaxe: .enfant{ order: nombre; } Sa valeur initiale est égale à 0. Les valeurs les plus fortes se trouveront en fin de pile. On peut utiliser un nombre positif ou négatif. <!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest07.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest07.html</a>--></p>
 	</div>
 
 	<div class="ui raised very padded text container segment">
 		<h2>Align-Self:</h2>
-		<p>A les mêmes propriétés que ALIGN-ITEMS mais elle permet de gérer l'alignement d'un seul élément de manière indépendante. syntaxe: .enfant{ align-self: auto ou flex-start ou flex-end ou center ou baseline ou stretch;
-			<!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest05b.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest05b.html</a>-->
-		</p>
+		<p>A les mêmes propriétés que ALIGN-ITEMS mais elle permet de gérer l'alignement d'un seul élément de manière indépendante. syntaxe: .enfant{ align-self: auto ou flex-start ou flex-end ou center ou baseline ou stretch; <!--<a href="http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest05b.html">http://www.alsacreations.com/xmedia/tuto/exemples/flexbox/flextest05b.html</a>--></p>
 	</div>
 
 	<!-- -->
 	<!-- Cyril ajout de la "doc"-->
 	<div class="ui raised very padded text container segment">
-		<p>Flex-grow : C'est une valeur sans unitée qui représente la proportion de place qu'un item prendra au final par raport a la place disponible. <br>.selecteur{</p>
-		<blockquote>flex-grow : x; /* assigne le nombre x comme proportion a l'item selectionné */</blockquote>
-		<p>}Flex-shrink : Donne la possibilitée a un item de se rétrécir selon les besoin. <br>.selecteur{</p>
-		<blockquote>flex-shrink : x; /* assigne le nombre x comme facteur de réducion en cas de besoin */ </blockquote>
-		<p>}<br>Flex-basis : taille initiale de l'élément avant que l'espace restant ne soit déffini.<br>.selecteur{</p>
-		<blockquote>flex-basis : x; /* assigne le nombre x comme taille initiale de l'item selectionné */ </blockquote>
-		<p>}Flex : Ça remplace respectivement flex-grow, flex-shrink, et flex-basis.</p>
+		<p>Flex-grow : C'est une valeur sans unitée qui représente la proportion de place qu'un item prendra au final par raport a la place disponible. <br>.selecteur{</p><blockquote>flex-grow : x; /* assigne le nombre x comme proportion a l'item selectionné */</blockquote><p>}Flex-shrink : Donne la possibilitée a un item de se rétrécir selon les besoin. <br>.selecteur{</p><blockquote>flex-shrink : x; /* assigne le nombre x comme facteur de réducion en cas de besoin  */ </blockquote><p>}<br>Flex-basis : taille initiale de l'élément avant que l'espace restant ne soit déffini.<br>.selecteur{</p><blockquote>flex-basis : x; /* assigne le nombre x comme taille initiale de l'item selectionné */ </blockquote><p>}Flex : Ça remplace respectivement flex-grow, flex-shrink, et flex-basis.</p>
 	</div>
 	<!-- Cyril Fin -->
 
