@@ -67,23 +67,20 @@ $(document).ready(function() {
     });
     $("#TestFlexShrinkCurseur").change(function() {
             var inp = $("#TestFlexShrinkCurseur").val();
-            $('#TestFlexShrink').css("width", inp)
-            $('#shrinkDivRange').html(inp)
+            $('#TestFlexShrink').css("width", inp);
+            $('#shrinkDivRange').html("Modifier la largeur initiale: " + inp + "px");
         })
         // Cyril Fin.
 
 
     // David début
-    var count = 0;
-    $(".btnDisplay").click(function() {
-        count++
-        if (count % 2 !== 0) {
-            $(".divDisplay").css("display", "flex");
-        } else {
-            $(".divDisplay").css("display", "");
-        }
-    });
 
+    $(".btnDisplay").click(function() {
+        $(".divDisplay").css("display", "flex");
+    });
+    $(".btnNoDisplay").click(function() {
+        $(".divDisplay").css("display", "");
+    });
 
     $("#order").click(function() {
         var inp;
@@ -162,4 +159,19 @@ $(document).ready(function() {
             prevrand = rand;
         })
         //cyril et julien fin
+
+    //début justify-Content et align-content
+
+    $(".btnFlexJustifAlign").click(function() {
+        var outils1 = $(this).attr("name");
+        var outils = $(this).attr("type");
+        if (outils1 == "justify-content" || outils1 == "align-items") {
+            console.log(outils1);
+            $("#TestFlexJustifAlign").css(outils1, outils);
+        } else if (outils1 == "align-content") {
+            console.log(outils1);
+            $("#TestFlexAlign").css(outils1, outils);
+        }
+    });
+    //fin justify-Content et align-content
 });

@@ -1,116 +1,140 @@
-iframe {
-    border: none;
-    float: left;
-    position: absolute;
-}
-
-body {
-    background-color: #191970;
-}
-
-p,
-blockquote {
-    font-family: 'Indie Flower', cursive;
-    font-size: 18px;
-    color: black;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-em {
-    font-family: 'Coming Soon', cursive;
-}
-
-.center {
-    text-align: center;
-}
-
-.item {
-    font-family: "Coming Soon", cursive;
-    text-shadow: 1px 0 0 black;
-}
-
-.ui .container {
-    background-color: white;
-}
-
-.block {
-    margin-top: 8em;
-}
-
-.block2 {
-    height: 10px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 25px;
-    color: orange;
-}
-
-h2 {
-    text-align: center;
-    font-size: 26px;
-    color: orange;
-}
-
-.divDeTest {
-    display: flex;
-}
-
-.divDeTest,
-.divDisplay {
-    width: 600px;
-    height: 300px;
-    border: 2px solid #EEE;
-}
-
-.divDeTestFine {
-    display: flex;
-    width: 600px;
-    height: 100px;
-    border: 2px solid #EEE;
-}
-
-.element {
-    height: 20px;
-    width: 20px;
-    border: 2px solid black;
-    border-radius: 20%;
-    line-height: 1px;
-    padding: 20px;
-}
-
-.footer {
-    text-align: center;
-    color: orange;
-}
-
-#activeFF {
-    padding-right: 20px;
-}
-
-.checkbox {
-    float: right;
-}
-
-#order {
-    width: 15em;
-    color: black;
-    background-color: grey;
-    float: right;
-}
-
-#order:hover {
-    color: white;
-    background-color: black;
-}
-
-#shr1,
-#shr2,
-#shr3 {
-    width: 200px;
-}
+    iframe {
+        border: none;
+        float: left;
+        position: absolute;
+    }
+    
+    body {
+        background-color: #191970;
+    }
+    
+    p,
+    blockquote {
+        font-family: 'Indie Flower', cursive;
+        font-size: 18px;
+        color: black;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    em {
+        font-family: 'Coming Soon', cursive;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .item {
+        font-family: "Coming Soon", cursive;
+        text-shadow: 1px 0 0 black;
+    }
+    
+    .ui .container {
+        background-color: white;
+    }
+    
+    .block {
+        margin-top: 8em;
+    }
+    
+    .block2 {
+        height: 10px;
+    }
+    
+    .block2 {
+        height: 10px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        color: orange;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 26px;
+        color: orange;
+    }
+    
+    .divDeTest {
+        display: flex;
+    }
+    
+    .divDeTest,
+    .divDisplay {
+        width: 600px;
+        height: 300px;
+        border: 2px solid #EEE;
+    }
+    
+    .divDeTestFine {
+        display: flex;
+        width: 600px;
+        height: 100px;
+        border: 2px solid #EEE;
+    }
+    
+    .element {
+        height: 20px;
+        width: 20px;
+        border: 2px solid black;
+        border-radius: 20%;
+        line-height: 1px;
+        padding: 20px;
+    }
+    
+    .footer {
+        text-align: center;
+        color: orange;
+    }
+    
+    #activeFF {
+        padding-right: 20px;
+    }
+    
+    .checkbox {
+        float: right;
+    }
+    
+    #order {
+        width: 15em;
+        color: black;
+        background-color: grey;
+        float: right;
+    }
+    
+    #order:hover {
+        color: white;
+        background-color: black;
+    }
+    
+    #shr1,
+    #shr2,
+    #shr3 {
+        width: 200px;
+    }
+    
+    #justifalign1 {
+        height: 85px;
+    }
+    
+    #justifalign2 {
+        height: 100px;
+    }
+    
+    #justifalign3 {
+        height: 60px;
+    }
+    
+    #justifalign4 {
+        height: 50px;
+    }
+    
+    #TestFlexAlign {
+        flex-wrap: wrap;
+    }
