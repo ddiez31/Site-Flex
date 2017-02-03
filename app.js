@@ -49,32 +49,39 @@ $(document).ready(function() {
     });
 
     // Thibault end
-    // Cyril début, btn fonctionel pour le grow le shrink et basis
+    // Cyril début, CURSEUR
     $(".btnFlex").click(function() {
         var nb = $(this).attr("name");
         var inp;
         var outils = $(this).attr("type");
         if (outils === "grow") {
-            inp = $('.growinp'+nb).val();
-            $("#grobas"+nb).css('flex-grow', inp);
+            inp = $('.growinp' + nb).val();
+            $("#grobas" + nb).css('flex-grow', inp);
         } else if (outils === "basis") {
-            inp = $('.basisinp'+nb).val();
-            console.log(inp)
-            $("#grobas"+nb).css('flex-basis', inp+"px");
+            inp = $('.basisinp' + nb).val();
+            $("#grobas" + nb).css('flex-basis', inp + "px");
         } else if (outils === "shrink") {
-            inp = $('.shrinkinp'+nb).val();
-            $("#shr"+nb).css('flex-shrink', inp);
+            inp = $('#shrinkinp' + nb).val();
+            $("#shr" + nb).css('flex-shrink', inp);
         }
     });
-    // Cyril Fin.
+    $("#TestFlexShrinkCurseur").change(function() {
+            var inp = $("#TestFlexShrinkCurseur").val();
+            $('#TestFlexShrink').css("width", inp)
+            $('#shrinkDivRange').html(inp)
+        })
+        // Cyril Fin.
 
 
     // David début
+    var count = 0;
     $(".btnDisplay").click(function() {
-        if ($("#reset").click(function() {
-                $(".divDisplay").css("display", "");
-            }))
+        count++
+        if (count % 2 !== 0) {
             $(".divDisplay").css("display", "flex");
+        } else {
+            $(".divDisplay").css("display", "");
+        }
     });
 
 
@@ -91,44 +98,59 @@ $(document).ready(function() {
     });
 
     $(".btnSelf").click(function() {
+        var inp1 = $('#selfinp1').val();
+        var inp2 = $('#selfinp2').val();
+        var inp3 = $('#selfinp3').val();
         var outils = $(this).attr("id");
         if (outils === "auto") {
-            $("#self3").css("height", '');
-            $("#self6").css("height", '');
-            $("#self3").css('align-self', 'auto');
-            $("#self6").css('align-self', 'auto');
+            $("#self" + inp1).css("height", '');
+            $("#self" + inp2).css("height", '');
+            $("#self" + inp3).css("height", '');
+            $("#self" + inp1).css('align-self', 'auto');
+            $("#self" + inp2).css('align-self', 'auto');
+            $("#self" + inp3).css('align-self', 'auto');
         } else if (outils === "start") {
-            $("#self3").css("height", '');
-            $("#self6").css("height", '');
-            $("#self3").css('align-self', 'flex-start');
-            $("#self6").css('align-self', 'flex-start');
+            $("#self" + inp1).css("height", '');
+            $("#self" + inp2).css("height", '');
+            $("#self" + inp3).css("height", '');
+            $("#self" + inp1).css('align-self', 'flex-start');
+            $("#self" + inp2).css('align-self', 'flex-start');
+            $("#self" + inp3).css('align-self', 'flex-start');
         } else if (outils === "end") {
-            $("#self3").css("height", '');
-            $("#self6").css("height", '');
-            $("#self3").css('align-self', 'flex-end');
-            $("#self6").css('align-self', 'flex-end');
+            $("#self" + inp1).css("height", '');
+            $("#self" + inp2).css("height", '');
+            $("#self" + inp3).css("height", '');
+            $("#self" + inp1).css('align-self', 'flex-end');
+            $("#self" + inp2).css('align-self', 'flex-end');
+            $("#self" + inp3).css('align-self', 'flex-end');
         } else if (outils === "center") {
-            $("#self3").css("height", '');
-            $("#self6").css("height", '');
-            $("#self3").css('align-self', 'center');
-            $("#self6").css('align-self', 'center');
+            $("#self" + inp1).css("height", '');
+            $("#self" + inp2).css("height", '');
+            $("#self" + inp3).css("height", '');
+            $("#self" + inp1).css('align-self', 'center');
+            $("#self" + inp2).css('align-self', 'center');
+            $("#self" + inp3).css('align-self', 'center');
         } else if (outils === "baseline") {
-            $("#self3").css("height", '');
-            $("#self6").css("height", '');
-            $("#self3").css('align-self', 'baseline');
-            $("#self6").css('align-self', 'baseline');
+            $("#self" + inp1).css("height", '');
+            $("#self" + inp2).css("height", '');
+            $("#self" + inp3).css("height", '');
+            $("#self" + inp1).css('align-self', 'baseline');
+            $("#self" + inp2).css('align-self', 'baseline');
+            $("#self" + inp3).css('align-self', 'baseline');
         } else if (outils === "stretch") {
-            $("#self3").css('align-self', 'stretch');
-            $("#self6").css('align-self', 'stretch');
-            $("#self3").css("height", 'inherit');
-            $("#self6").css("height", 'inherit');
+            $("#self" + inp1).css('align-self', 'stretch');
+            $("#self" + inp2).css('align-self', 'stretch');
+            $("#self" + inp3).css('align-self', 'stretch');
+            $("#self" + inp1).css("height", 'inherit');
+            $("#self" + inp2).css("height", 'inherit');
+            $("#self" + inp3).css("height", 'inherit');
         }
     });
 
 
     //cyril et julien mettre des couleurs sur les elements et virrer les console.log()
     var colorarray = ["blue", "red", "green", "white", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"]
-    var prevrand = (colorarray.length)+1;
+    var prevrand = (colorarray.length) + 1;
     $('.element').each(function() {
             var rand = Math.floor(Math.random() * colorarray.length);
             if (rand === prevrand) {

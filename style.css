@@ -12,7 +12,6 @@ p,
 blockquote {
     font-family: 'Indie Flower', cursive;
     font-size: 18px;
-    /*changement de la taille de la police p*/
     color: black;
 }
 
@@ -20,7 +19,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+em {
     font-family: 'Coming Soon', cursive;
 }
 
@@ -37,8 +37,12 @@ h5 {
     background-color: white;
 }
 
-.block{
-	margin-top: 8em;
+.block {
+    margin-top: 8em;
+}
+
+.block2 {
+    height: 10px;
 }
 
 h1 {
@@ -47,97 +51,66 @@ h1 {
     color: orange;
 }
 
-
-/*changement de la taille de la police h1 & h2*/
-
 h2 {
     text-align: center;
     font-size: 26px;
     color: orange;
 }
 
-
-/* Thibault start : création divs de couleurs */
-
 .divDeTest {
     display: flex;
-    width: 500px;
-    height: 250px;
-    border: 1px solid #EEE;
 }
 
+.divDeTest,
 .divDisplay {
-    width: 500px;
-    height: 250px;
-    border: 1px solid #EEE;
+    width: 600px;
+    height: 300px;
+    border: 2px solid #EEE;
+}
+
+.divDeTestFine {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    border: 2px solid #EEE;
 }
 
 .element {
     height: 20px;
     width: 20px;
     border: 2px solid black;
-	border-radius: 20%;
-	line-height: 1px;
-	padding: 20px;
+    border-radius: 20%;
+    line-height: 1px;
+    padding: 20px;
 }
 
-#grow,
-#basis,
-#shrink,
-#wrap,
-#dirwrap,
-#wraprev,
-#nowrap,
-#containercol,
-#containercolrev,
-#row,
-#row-reverse,
-#flex,
-#order,
-#order1,
-#order2,
-#order3,
-#order4,
-#auto,
-#start,
-#end,
-#center,
-#baseline,
-#strech {
-    font-family: 'Indie Flower', cursive;
-}
-
-.footer{
-	text-align: center;
-	color: orange;
+.footer {
+    text-align: center;
+    color: orange;
 }
 
 #activeFF {
     padding-right: 20px;
 }
 
-#order,
-#reset {
+.checkbox {
+    float: right;
+}
+
+#order {
     width: 15em;
     color: black;
     background-color: grey;
+    float: right;
 }
 
-#order:hover,
-#reset:hover {
+#order:hover {
     color: white;
     background-color: black;
 }
 
-.block {
-    margin-top: 7em;
+#shr1,
+#shr2,
+#shr3 {
+    width: 200px;
 }
-
-
-
-
-
-/*Thibault end*/
-
-
-/**/
