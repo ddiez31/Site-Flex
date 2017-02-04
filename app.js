@@ -202,7 +202,7 @@ $(document).ready(function() {
     $('.menuFinal').click(function(){
     	outils = $(this).attr('type');
     	if(outils === 'ajout'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="ajout" name="+">ajout element</button><button class="small ui button inverted btnFinal" type="ajout" name="-">suppr</button><button class="small ui button inverted btnFinal" type="ajout" name="reset">reset</button>');
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="ajout" name="+">+</button><button class="small ui button inverted btnFinal" type="ajout" name="-">-</button><button class="small ui button inverted btnFinal" type="ajout" name="reset">reset</button>');
     	}else if (outils === 'dirwrap') {
     		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">nowrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">row</button>')
     	}else if(outils === 'alignit'){
@@ -258,8 +258,9 @@ $(document).ready(function() {
         			})
         		}
         		if(outils1 === "-"){
-        			if(finalselect !== 'TestFinal')
+        			if(finalselect !== 'TestFinal'){
         				$('#'+finalselect).remove()
+        			}
         		}
         		if(outils1 === "reset"){
         			$('#TestFinal').html("")
