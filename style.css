@@ -1,3 +1,8 @@
+    video {
+        float: right;
+        position: relative;
+    }
+    
     iframe {
         border: none;
         float: left;
