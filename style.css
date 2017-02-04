@@ -32,7 +32,11 @@
     }
     
     body {
-        background-color: #191970;
+        background-image: url("box.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+		background-size: cover; 
     }
     
     p,
