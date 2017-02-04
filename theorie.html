@@ -41,7 +41,12 @@
     <div class="ui text container raised very padded text segment">
         <h2>Justify-content :</h2>
         <p>Flex-start, center et flex-end sont respectivement les propriétés qui permettent de mettre les éléments flex au début, au centre ou à la fin de l'axe principal, de plus space-between permet de répartir l'espace restant entre les éléments flex
-            et space-around permet de répartir cet espace tout autour des-dits éléments.</p>
+            et space-around permet de répartir cet espace tout autour des-dits éléments.
+            <blockquote>.selecteur {
+                <blockquote>justify-content: space-around;</blockquote>
+                }
+            </blockquote>
+        </p>
     </div>
 
     <video controls="controls">
@@ -52,13 +57,23 @@
     <div class="ui text container raised very padded text segment">
         <h2>Align-content :</h2>
         <p>Très exactement la même chose que pour justify-content mais sur l'axe secondaire => flex-start, center et flex-end sont respectivement les propriétés qui permettent de mettre les éléments flex au début, au centre ou à la fin de l'axe secondaire,
-            de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des-dits éléments.</p>
+            de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des-dits éléments.
+            <blockquote>.selecteur {
+                <blockquote>align-content: flex-end;</blockquote>
+                }
+            </blockquote>
+        </p>
     </div>
 
 
     <div class="ui raised very padded text container segment">
         <h2>Align-items :</h2>
-        <p> C'est un align-content, qui s'applique à un item visé.</p>
+        <p> C'est un align-content, qui s'applique à un item visé.
+            <blockquote>.selecteur {
+                <blockquote>aligne-items: center;</blockquote>
+                }
+            </blockquote>
+        </p>
     </div>
 
     <video controls="controls">
@@ -68,8 +83,8 @@
 
     <div class="ui raised very padded text container segment">
         <h2>Display :</h2>
-        <p>Propriété indispensable sur l'élément englobant les enfants à piloter. Elle active la propriété flex sur tous les enfants du conteneur. <br> syntaxe:
-            <blockquote> <br>.parent{
+        <p>Propriété indispensable sur l'élément englobant les enfants à piloter. Elle active la propriété flex sur tous les enfants du conteneur.
+            <blockquote> <br>.selecteur {
                 <blockquote>display:flex ou inline-flex;</blockquote> }</blockquote>
             <p> Cela placera tous les enfants côte à côte en essayant de remplir tout l'espace. Flex définit le conteneur comme élément de type block. Inline-flex définit le conteneur comme élément de type inline.
     </div>
@@ -81,8 +96,8 @@
 
     <div class="ui raised very padded text container segment">
         <h2>Order :</h2>
-        <p>Propriété d'ordonnancement permettant de classer les éléments suivant un ordre défini sans modifier le fichier html.<br> syntaxe:
-            <blockquote> <br> .enfant{
+        <p>Propriété d'ordonnancement permettant de classer les éléments suivant un ordre défini sans modifier le fichier html.
+            <blockquote> <br> .selecteur {
                 <blockquote>order: nombre;</blockquote> }</blockquote>
             <p> Sa valeur initiale est égale à 0. Les valeurs les plus fortes se trouveront en fin de pile. On peut utiliser un nombre positif ou négatif.
     </div>
@@ -94,7 +109,9 @@
 
     <div class="ui raised very padded text container segment">
         <h2>Align-Self :</h2>
-        <p>A les mêmes propriétés que Align-Items mais elle permet de gérer l'alignement d'un seul élément de manière indépendante. syntaxe: .enfant{ align-self: auto ou flex-start ou flex-end ou center ou baseline ou stretch;
+        <p>A les mêmes propriétés que Align-Items mais elle permet de gérer l'alignement d'un seul élément de manière indépendante.
+            <blockquote> <br>.selecteur {
+                <blockquote> auto ou flex-start ou flex-end ou center ou baseline ou stretch;</blockquote>}</blockquote>
     </div>
 
     <video controls="controls">
@@ -114,29 +131,31 @@
                 &nbsp;}<br />
                 <br />
             </p>
-            <blockquote>
-                Flex-shrink : Donne la possibilité à un item de se rétrécir selon les besoins. </blockquote>
+            <p>
+                Flex-shrink : Donne la possibilité à un item de se rétrécir selon les besoins. </p>
             <p>
                 &nbsp;.selecteur {<br />
             </p>
             <blockquote>
                 flex-shrink : x; /* assigne le nombre x comme facteur de réduction en cas de besoin */</blockquote>
             <p>
-                &nbsp;}<br />
-                <br /> Flex-basis : taille initiale de l'élément avant que l'espace restant ne soit défini.<br />
-                <br /> .selecteur{
-                <br />
-            </p>
-            <blockquote>
-                flex-basis : x; /* assigne le nombre x comme taille initiale de l'item sélectionné */ }
-            </blockquote>
-            <p>
-                <br /> Flex : Ça remplace respectivement flex-grow, flex-shrink, et flex-basis.</p>
+                }<br />
+                <p> Flex-basis : taille initiale de l'élément avant que l'espace restant ne soit défini.
+                </p>
+                <p> .selecteur {
+                </p>
+                <blockquote>
+                    flex-basis : x; /* assigne le nombre x comme taille initiale de l'item sélectionné */ </blockquote>
+                <p>
+                    }<br/>
+
+                    <p>
+                        <p> Flex : Ça remplace respectivement flex-grow, flex-shrink, et flex-basis.</p>
     </div>
     <!-- Cyril Fin -->
 
     <video controls="controls">
-  <source src="videos/videotest.mp4" type="video/mp4" />
+  <source src="videos/direction.mp4" type="video/mp4" />
   Veuillez installer VLC media player pour lire la vidéo.
 </video>
 
@@ -145,6 +164,10 @@
         <p>La propriété flex-direction permet de modifier l'axe d'alignement des items (vertical / horizontal). Elle permet aussi d'inverser l'ordre des items. <br>
             <blockquote>- column : positionne en colonne des items qui sont initialement disposés à l'horizontale. <br>- column-reverse : positionne en colonne des items qui sont initialement disposés à l'horizontale et inverse leur ordre <br>- row : positionne à
                 l'horizontale des items qui sont initialement disposés en colonne. <br>- row-reverse : positionne à l'horizontale des items qui sont initialement disposés en colonne et inverse leur ordre.
+            </blockquote>
+            <blockquote>.selecteur {
+                <blockquote>flex-direction : column ou column-reverse ou row ou row-reverse;</blockquote>
+                }
             </blockquote>
         </p>
     </div>
@@ -159,22 +182,22 @@
         <p>La propriété flex-wrap permet de chosir si l'on souhaite que les items s'affichent sur une ou plusieurs ligne(s). Elle permet aussi de choisir si les derniers items iront à la ligne d'en dessous ou d'au dessus (ou à droite ou à gauche si les items
             sont positionnés en colonnes). <br> - no-wrap : Les items sont disposés en une seule ligne (au besoin, ils sont compressés pour y tenir). <br> - wrap : active une fonction "retour à la ligne" comme dans un logiciel de traitement de texte classique.
             <br> - wrap-reverse : active le retour à la ligne et les items suivants sont positionnés au dessus des premiers (ou à gauche si les items sont positionnés en colonnes. <br>
-            <blockquote>Exemples : <br>.selecteur{
-                <blockquote>- flex-direction : column-reverse; <br> - flex-wrap : wrap;</blockquote>
+            <blockquote>.selecteur {
+                <blockquote>flex-wrap : wrap;</blockquote>
                 }
             </blockquote>
         </p>
     </div>
 
     <video controls="controls">
-  <source src="videos/videotest.mp4" type="video/mp4" />
+  <source src="videos/flexflow.mp4" type="video/mp4" />
   Veuillez installer VLC media player pour lire la vidéo.
 </video>
 
     <div class="ui container raised very padded text container segment">
         <h2>Flex-flow :</h2>
         <p>Ces deux propriétés peuvent être combinées à l'aide de la propriété flex-flow. il suffit de lui appliquer l'argument de flex-direction suivi de l'argument de flex-wrap. <br>
-            <blockquote>Exemple : <br>.selecteur{
+            <blockquote>.selecteur {
                 <blockquote>flex-flow : column-reverse wrap;</blockquote>
                 }
             </blockquote>
