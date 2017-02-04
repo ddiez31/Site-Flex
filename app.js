@@ -215,6 +215,8 @@ $(document).ready(function() {
     		$('#finalreceiver').html("<span>Largeur en % de l'élément</span><input type='number' id='FinalCurseurW' placeholder='Largeur'><br><span>Hauteur en % de l'élément</span><input type='number' id='FinalCurseurH' placeholder='Hauteur'>")
     	}else if(outils === 'placement'){
     		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="changeselec" name="parent">Parent</button><button class="small ui button inverted btnFinal" type="changeselec" name="enfant">Enfant</button>')
+    	}else if(outils === 'text'){
+    		$('#finalreceiver').html('<input type="text" id="FinalTextinp" placeholder="ajouter du text">')
     	}
     	$('.btnFinal').each(function(){
     		rand = Math.floor(Math.random() * btncolors.length);
@@ -293,11 +295,18 @@ $(document).ready(function() {
     			$('#'+finalselect).css("height", inp+"%");
     		}
     	});
+    	$('#FinalTextinp').on('keypress', function(e){
+    		if(e.which === 13){
+	    		inp = $('#FinalTextinp').val();
+	    		console.log(inp);
+	    		$('#'+finalselect).append("<p>"+inp+"</p>");
+    		}
+    	})
     }
 
     setInterval(function(){
         var color = $('#'+finalselect).attr('style').split(';')[0].split(':')[1];
         $('#finalSelectCol').css('backgroundColor', color)
-    }, 1000);
+    }, 250);
     //final
 });
