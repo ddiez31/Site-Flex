@@ -166,8 +166,14 @@ $(document).ready(function() {
         var outils1 = $(this).attr("name");
         var outils = $(this).attr("type");
         if (outils1 == "justify-content" || outils1 == "align-items") {
-            console.log(outils1);
+            console.log(outils);
+            if(outils !== 'stretch' && outils1 !== "justify-content"){
+                $(".elementjudtifalign").css("height", '');
+            }
             $("#TestFlexJustifAlign").css(outils1, outils);
+            if(outils === 'stretch'){
+                $(".elementjudtifalign").css("height", 'inherit');
+            }
         } else if (outils1 == "align-content") {
             console.log(outils1);
             $("#TestFlexAlign").css(outils1, outils);
