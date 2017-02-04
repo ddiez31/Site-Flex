@@ -4,7 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Play|Lobster" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <meta charset="UTF-8">
@@ -20,10 +20,16 @@
         <a class="item" href="./Pratique.html">Exercices</a>
         <a class="item" href="./ressources.html">Ressources</a>
         <div class="ui center aligned category text item">
+            <h1>FlexBox</h1>
+        </div>
+        <div class="ui center aligned category text item">
             <h1>Exercices</h1>
         </div>
+        <div class="ui right aligned category text item">
+            <p>AMUSEZ-VOUS!!! ;)</p>
+        </div>
         <div class="ui right aligned category image item">
-            <a href="#"><img src="logo_simplon.png" width="40" height="40"></a>
+            <a href="#"><img src="logo_simplon.png"></a>
         </div>
     </div>
 
@@ -92,23 +98,25 @@
     <!-- Justif et aligne content -->
     <div class="ui container raised very padded text segment">
         <div>
+        	<h5>Justify-content: <span id="outputJustifyCont"></span></h5>
             <button class="small ui button inverted teal btnFlexJustifAlign" name="justify-content" type="flex-start">flex-start</button>
             <button class="small ui button inverted orange btnFlexJustifAlign" name="justify-content" type="flex-end">flex-end</button>
             <button class="small ui button inverted blue btnFlexJustifAlign" name="justify-content" type="center">center</button>
             <button class="small ui button inverted green btnFlexJustifAlign" name="justify-content" type="space-between">space-between</button>
             <button class="small ui button inverted purple btnFlexJustifAlign" name="justify-content" type="space-around">space-around</button>
             <br>
+        	<h5>Align-item: <span id="outputAlignItem"></span></h5>
             <button class="small ui button inverted teal btnFlexJustifAlign" name="align-items" type="flex-start">flex-start</button>
             <button class="small ui button inverted orange btnFlexJustifAlign" name="align-items" type="flex-end">flex-end</button>
             <button class="small ui button inverted blue btnFlexJustifAlign" name="align-items" type="center">center</button>
-            <button class="small ui button inverted green btnFlexJustifAlign" name="align-items" type="base-line">base-line</button>
+            <button class="small ui button inverted green btnFlexJustifAlign" name="align-items" type="baseline">base-line</button>
             <button class="small ui button inverted purple btnFlexJustifAlign" name="align-items" type="stretch">stretch</button>
         </div>
         <div class="ui raised very segment divDeTest" id="TestFlexJustifAlign">
-            <div class="element" id="justifalign1"> 1 </div>
-            <div class="element" id="justifalign2"> 2 </div>
-            <div class="element" id="justifalign3"> 3 </div>
-            <div class="element" id="justifalign4"> 4 </div>
+            <div class="element elementjudtifalign" id="justifalign1"> 1 </div>
+            <div class="element elementjudtifalign" id="justifalign2"> 2 </div>
+            <div class="element elementjudtifalign" id="justifalign3"> 3 </div>
+            <div class="element elementjudtifalign" id="justifalign4"> 4 </div>
         </div>
     </div>
 
@@ -116,6 +124,7 @@
     <!-- Justif et aligne content -->
     <div class="ui container raised very padded text segment">
         <div>
+        	<h5>Align-content: <span id="outputAlignCont"></span></h5>
             <button class="small ui button inverted teal btnFlexJustifAlign" name="align-content" type="flex-start">align-content flex-start</button>
             <button class="small ui button inverted orange btnFlexJustifAlign" name="align-content" type="flex-end">align-content flex-end</button>
             <button class="small ui button inverted blue btnFlexJustifAlign" name="align-content" type="center">align-content center</button>
@@ -123,42 +132,42 @@
             <button class="small ui button inverted purple btnFlexJustifAlign" name="align-content" type="space-around">align-content space-around</button>
         </div>
         <div class="ui raised very segment divDeTest" id="TestFlexAlign">
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
-            <div class="element" id="alignit1"> 1 </div>
-            <div class="element" id="alignit2"> 2 </div>
-            <div class="element" id="alignit3"> 3 </div>
-            <div class="element" id="alignit4"> 4 </div>
+        	<div class="element" id="alignit1">1</div>
+        	<div class="element" id="alignit2">2</div>
+        	<div class="element" id="alignit3">3</div>
+        	<div class="element" id="alignit4">4</div>
+        	<div class="element" id="alignit5">5</div>
+        	<div class="element" id="alignit6">6</div>
+        	<div class="element" id="alignit7">7</div>
+        	<div class="element" id="alignit8">8</div>
+        	<div class="element" id="alignit9">9</div>
+        	<div class="element" id="alignit10">10</div>
+        	<div class="element" id="alignit11">11</div>
+        	<div class="element" id="alignit12">12</div>
+        	<div class="element" id="alignit13">13</div>
+        	<div class="element" id="alignit14">14</div>
+        	<div class="element" id="alignit15">15</div>
+        	<div class="element" id="alignit16">16</div>
+        	<div class="element" id="alignit17">17</div>
+        	<div class="element" id="alignit18">18</div>
+        	<div class="element" id="alignit19">19</div>
+        	<div class="element" id="alignit20">20</div>
+        	<div class="element" id="alignit21">21</div>
+        	<div class="element" id="alignit22">22</div>
+        	<div class="element" id="alignit23">23</div>
+        	<div class="element" id="alignit24">24</div>
+        	<div class="element" id="alignit25">25</div>
+        	<div class="element" id="alignit26">26</div>
+        	<div class="element" id="alignit27">27</div>
+        	<div class="element" id="alignit28">28</div>
+        	<div class="element" id="alignit29">29</div>
+        	<div class="element" id="alignit30">30</div>
+        	<div class="element" id="alignit31">31</div>
+        	<div class="element" id="alignit32">32</div>
+        	<div class="element" id="alignit33">33</div>
+        	<div class="element" id="alignit34">34</div>
+        	<div class="element" id="alignit35">35</div>
+        	<div class="element" id="alignit36">36</div>
         </div>
     </div>
 
@@ -192,6 +201,9 @@
             <div class="element"> 10 </div>
             <div class="element"> 11 </div>
             <div class="element"> 12 </div>
+            <div class="element"> 13 </div>
+            <div class="element"> 14 </div>
+            <div class="element"> 15 </div>
         </div>
     </div>
 
@@ -249,6 +261,7 @@
         <input type="number" id="selfinp3" placeholder="Choisir une box">
         <div class="ui raised very segment divDeTest" id="TestSelf">
             <div class="element" id="self1"> 1 </div>
+            <div class="element" id="self1"> 1 </div>
             <div class="element" id="self2"> 2 </div>
             <div class="element" id="self3"> 3 </div>
             <div class="element" id="self4"> 4 </div>
@@ -259,6 +272,15 @@
         </div>
     </div>
     <!-- David end -->
+
+	<!--FINAL -->
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted blue btnFinal" name="+" id="final+">Auto</button>
+        <button class="small ui button inverted blue btnFinal" name="-" id="final+">Auto</button>
+        <div class="ui raised very segment divDisplay" id="TestFinal">
+		</div>
+	</div>
+	<!--FINAL -->
 
     <footer class="fooress">
         <div class="ui vertical footer segment">
