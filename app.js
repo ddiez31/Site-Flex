@@ -279,21 +279,20 @@ $(document).ready(function() {
         		}
         	}
         });
+    	$("#FinalCurseurW").keyup(function() {
+    		var inp = $(this).val();
+    		if(finalselect !== 'TestFinal'){
+    			$('#'+finalselect).css("width", inp+"%");
+    		}
+    	});
+
+    	$("#FinalCurseurH").keyup(function() {
+    		var inp = $(this).val();
+    		if(finalselect !== 'TestFinal'){
+    			$('#'+finalselect).css("height", inp+"%");
+    		}
+    	});
     }
-
-    $("#FinalCurseurW").keyup(function() {
-        var inp = $(this).val();
-        if(finalselect !== 'TestFinal'){
-        	$('#'+finalselect).css("width", inp+"%");
-        }
-    });
-
-    $("#FinalCurseurH").keyup(function() {
-        var inp = $(this).val();
-        if(finalselect !== 'TestFinal'){
-        	$('#'+finalselect).css("height", inp+"%");
-        }
-    });
 
     setInterval(function(){
         var color = $('#'+finalselect).attr('style').split(';')[0].split(':')[1];
