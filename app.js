@@ -145,7 +145,7 @@ $(document).ready(function() {
     });
 
 
-    //cyril et julien mettre des couleurs sur les elements et virrer les console.log()
+    //cyril et julien mettre des couleurs sur les elements et virer
     var colorarray = ["blue", "red", "green", "white", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"]
     var prevrand = (colorarray.length) + 1;
     $('.element').each(function() {
@@ -166,146 +166,141 @@ $(document).ready(function() {
         var outils1 = $(this).attr("name");
         var outils = $(this).attr("type");
         if (outils1 == "justify-content" || outils1 == "align-items") {
-            console.log(outils);
-            if(outils !== 'stretch' && outils1 !== "justify-content"){
+            if (outils !== 'stretch' && outils1 !== "justify-content") {
                 $(".elementjudtifalign").css("height", '');
             }
             $("#TestFlexJustifAlign").css(outils1, outils);
-            if(outils === 'stretch'){
+            if (outils === 'stretch') {
                 $(".elementjudtifalign").css("height", 'inherit');
             }
         } else if (outils1 == "align-content") {
-            console.log(outils1);
             $("#TestFlexAlign").css(outils1, outils);
         }
     });
     //fin justify-Content et align-content
 
     //final
-    var nb=0;
+    var nb = 0;
     var finalselect = 'TestFinal';
-	var btncolors = ["red", "orange", "yellow", "olive", "green", "teal", "blue", "violet", "purple", "pink", "brown"];
-    $('#TestFinal').on('click', function(){ //listener du conteneur pour le selectionner
-    	finalselect = $(this).attr('id');
+    var btncolors = ["red", "orange", "yellow", "olive", "green", "teal", "blue", "violet", "purple", "pink", "brown"];
+    $('#TestFinal').on('click', function() { //listener du conteneur pour le selectionner
+        finalselect = $(this).attr('id');
     });
-    $('.menuFinal').each(function(){
-    		rand = Math.floor(Math.random() * btncolors.length);
-            if (rand === prevrand) {
-                while (rand === prevrand) {
-                    rand = Math.floor(Math.random() * btncolors.length);
-                }
+    $('.menuFinal').each(function() {
+        rand = Math.floor(Math.random() * btncolors.length);
+        if (rand === prevrand) {
+            while (rand === prevrand) {
+                rand = Math.floor(Math.random() * btncolors.length);
             }
-            prevrand = rand;
-            $(this).addClass(btncolors[rand])
-    	})
-
-    $('.menuFinal').click(function(){
-    	outils = $(this).attr('type');
-    	if(outils === 'ajout'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="ajout" name="+">+</button><button class="small ui button inverted btnFinal" type="ajout" name="-">-</button><button class="small ui button inverted btnFinal" type="ajout" name="reset">reset</button>');
-    	}else if (outils === 'dirwrap') {
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">nowrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">row</button>')
-    	}else if(outils === 'alignit'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,stretch">stretch</button>')
-    	}else if(outils === 'aligncont'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-between">space between</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-around">space aroud</button>')
-    	}else if(outils === 'justifycont'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,space-around">space aroud</button>')
-    	}else if(outils === 'sizing'){
-    		$('#finalreceiver').html("<span>Largeur en % de l'élément</span><input type='number' id='FinalCurseurW' placeholder='Largeur'><br><span>Hauteur en % de l'élément</span><input type='number' id='FinalCurseurH' placeholder='Hauteur'>")
-    	}else if(outils === 'placement'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="changeselec" name="parent">Parent</button><button class="small ui button inverted btnFinal" type="changeselec" name="enfant">Enfant</button>')
-    	}else if(outils === 'text'){
-    		$('#finalreceiver').html('<input type="text" id="FinalTextinp" placeholder="ajouter du text">')
-    	}
-    	$('.btnFinal').each(function(){
-    		rand = Math.floor(Math.random() * btncolors.length);
-            if (rand === prevrand) {
-                while (rand === prevrand) {
-                    rand = Math.floor(Math.random() * btncolors.length);
-                }
-            }
-            prevrand = rand;
-            $(this).addClass(btncolors[rand])
-    	})
-    		listenFinal();
+        }
+        prevrand = rand;
+        $(this).addClass(btncolors[rand])
     })
 
-    function listenFinal(){
-    	$('.btnFinal').click(function(){
-    		outils = $(this).attr('type');
-    		outils1 = $(this).attr('name');
-    		console.log(outils1);
-    		if(outils === 'ajout'){
-    			if(outils1 === "+"){
-    				nb++;
-    				rand = Math.floor(Math.random() * colorarray.length);
-    				while (rand === prevrand) {
-            	    	rand = Math.floor(Math.random() * colorarray.length); // style='background-color: "+colorarray[rand]+"' 
-            	    }
-            	    prevrand = rand;
-        			// "<button class='element elementFinal'id='final"+nb+"'>"+nb+"</button>"
-        			but = $('<span/ class="elementFinal" style="background-color: '+colorarray[rand]+'"">');
-        			butt = but.attr('id', 'final'+nb);
-        			butto = butt.css('display', 'flex')
-        			$('#'+finalselect).append(butt);
-        			$('.elementFinal').each(function(){
-        				if ($(this).attr('type') !== 'ok') {
-        					$(this).attr('type', 'ok');
-        					$(this).on('click', function(e){
-        						e.stopPropagation();
-        						finalselect = $(this).attr('id');
-        					});
-        				}
-        			})
-        		}
-        		if(outils1 === "-"){
-        			if(finalselect !== 'TestFinal'){
-        				$('#'+finalselect).remove()
-        			}
-        		}
-        		if(outils1 === "reset"){
-        			$('#TestFinal').html("")
-        		}
-        	}
-        	if(outils === 'modifcont'){
-        		if((outils1).split(",")[1] === 'stretch') {
-        			$('#'+finalselect).children().css("height", 100+'%');
-        		}else {
-        			$('#'+finalselect).css((outils1).split(",")[0],(outils1).split(",")[1]);
-        		}
-        	}
-        	if(outils === 'changeselec'){
-        		if(outils1 === 'parent'){
-        			finalselect = $('#'+finalselect).parent().attr('id');
-        			console.log(finalselect);
-        		}
-        	}
-        });
-    	$("#FinalCurseurW").keyup(function() {
-    		var inp = $(this).val();
-    		if(finalselect !== 'TestFinal'){
-    			$('#'+finalselect).css("width", inp+"%");
-    		}
-    	});
+    $('.menuFinal').click(function() {
+        outils = $(this).attr('type');
+        if (outils === 'ajout') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="ajout" name="+">+</button><button class="small ui button inverted btnFinal" type="ajout" name="-">-</button><button class="small ui button inverted btnFinal" type="ajout" name="reset">Reset</button>');
+        } else if (outils === 'dirwrap') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">No-wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">Columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">Row</button>')
+        } else if (outils === 'alignit') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-start">Start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-end">End</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,stretch">Stretch</button>')
+        } else if (outils === 'aligncont') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-start">Start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-end">End</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-between">Space-between</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-around">Space-around</button>')
+        } else if (outils === 'justifycont') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-start">Start</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-end">End</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,space-around">Space-around</button>')
+        } else if (outils === 'sizing') {
+            $('#finalreceiver').html("<span>Largeur en % de l'élément</span><input type='number' id='FinalCurseurW' placeholder='Largeur'><br><span>Hauteur en % de l'élément</span><input type='number' id='FinalCurseurH' placeholder='Hauteur'>")
+        } else if (outils === 'placement') {
+            $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="changeselec" name="parent">Parent</button><button class="small ui button inverted btnFinal" type="changeselec" name="enfant">Enfant</button>')
+        } else if (outils === 'text') {
+            $('#finalreceiver').html('<input type="text" id="FinalTextinp" placeholder="ajouter du text">')
+        }
+        $('.btnFinal').each(function() {
+            rand = Math.floor(Math.random() * btncolors.length);
+            if (rand === prevrand) {
+                while (rand === prevrand) {
+                    rand = Math.floor(Math.random() * btncolors.length);
+                }
+            }
+            prevrand = rand;
+            $(this).addClass(btncolors[rand])
+        })
+        listenFinal();
+    })
 
-    	$("#FinalCurseurH").keyup(function() {
-    		var inp = $(this).val();
-    		if(finalselect !== 'TestFinal'){
-    			$('#'+finalselect).css("height", inp+"%");
-    		}
-    	});
-    	$('#FinalTextinp').on('keypress', function(e){
-    		if(e.which === 13){
-	    		inp = $('#FinalTextinp').val();
-	    		console.log(inp);
-	    		$('#'+finalselect).append("<p>"+inp+"</p>");
-    		}
-    	})
+    function listenFinal() {
+        $('.btnFinal').click(function() {
+            outils = $(this).attr('type');
+            outils1 = $(this).attr('name');
+            if (outils === 'ajout') {
+                if (outils1 === "+") {
+                    nb++;
+                    rand = Math.floor(Math.random() * colorarray.length);
+                    while (rand === prevrand) {
+                        rand = Math.floor(Math.random() * colorarray.length); // style='background-color: "+colorarray[rand]+"' 
+                    }
+                    prevrand = rand;
+                    // "<button class='element elementFinal'id='final"+nb+"'>"+nb+"</button>"
+                    but = $('<span/ class="elementFinal" style="background-color: ' + colorarray[rand] + '"">');
+                    butt = but.attr('id', 'final' + nb);
+                    butto = butt.css('display', 'flex')
+                    $('#' + finalselect).append(butt);
+                    $('.elementFinal').each(function() {
+                        if ($(this).attr('type') !== 'ok') {
+                            $(this).attr('type', 'ok');
+                            $(this).on('click', function(e) {
+                                e.stopPropagation();
+                                finalselect = $(this).attr('id');
+                            });
+                        }
+                    })
+                }
+                if (outils1 === "-") {
+                    if (finalselect !== 'TestFinal') {
+                        $('#' + finalselect).remove()
+                    }
+                }
+                if (outils1 === "reset") {
+                    $('#TestFinal').html("")
+                }
+            }
+            if (outils === 'modifcont') {
+                if ((outils1).split(",")[1] === 'stretch') {
+                    $('#' + finalselect).children().css("height", 100 + '%');
+                } else {
+                    $('#' + finalselect).css((outils1).split(",")[0], (outils1).split(",")[1]);
+                }
+            }
+            if (outils === 'changeselec') {
+                if (outils1 === 'parent') {
+                    finalselect = $('#' + finalselect).parent().attr('id');
+                }
+            }
+        });
+        $("#FinalCurseurW").keyup(function() {
+            var inp = $(this).val();
+            if (finalselect !== 'TestFinal') {
+                $('#' + finalselect).css("width", inp + "%");
+            }
+        });
+
+        $("#FinalCurseurH").keyup(function() {
+            var inp = $(this).val();
+            if (finalselect !== 'TestFinal') {
+                $('#' + finalselect).css("height", inp + "%");
+            }
+        });
+        $('#FinalTextinp').on('keypress', function(e) {
+            if (e.which === 13) {
+                inp = $('#FinalTextinp').val();
+                $('#' + finalselect).append("<p>" + inp + "</p>");
+            }
+        })
     }
 
-    setInterval(function(){
-        var color = $('#'+finalselect).attr('style').split(';')[0].split(':')[1];
+    setInterval(function() {
+        var color = $('#' + finalselect).attr('style').split(';')[0].split(':')[1];
         $('#finalSelectCol').css('backgroundColor', color)
     }, 250);
     //final
