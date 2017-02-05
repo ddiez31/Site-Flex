@@ -120,7 +120,7 @@
             sont positionnés en colonnes). <br> - no-wrap : Les items sont disposés en une seule ligne (au besoin, ils sont compressés pour y tenir). <br> - wrap : active une fonction "retour à la ligne" comme dans un logiciel de traitement de texte classique.
             <br> - wrap-reverse : active le retour à la ligne et les items suivants sont positionnés au dessus des premiers (ou à gauche si les items sont positionnés en colonnes. <br>
             <blockquote>.selecteur {
-                <blockquote>flex-wrap : wrap;</blockquote>
+                <blockquote>flex-wrap : wrap ou no-wrap;</blockquote>
                 }
             </blockquote>
         </p>
@@ -142,7 +142,7 @@
     </div>
 
     <video controls="controls">
-  <source src="videos/videotest.mp4" type="video/mp4" />
+  <source src="videos/justify.mp4" type="video/mp4" />
   Veuillez installer VLC media player pour lire la vidéo.
 </video>
 
@@ -151,7 +151,7 @@
         <p>Flex-start, center et flex-end sont respectivement les propriétés qui permettent de mettre les éléments flex au début, au centre ou à la fin de l'axe principal, de plus space-between permet de répartir l'espace restant entre les éléments flex
             et space-around permet de répartir cet espace tout autour des-dits éléments.
             <blockquote>.selecteur {
-                <blockquote>justify-content: space-around;</blockquote>
+                <blockquote>justify-content : space-around;</blockquote>
                 }
             </blockquote>
         </p>
@@ -167,18 +167,22 @@
         <p>Très exactement la même chose que pour justify-content mais sur l'axe secondaire => flex-start, center et flex-end sont respectivement les propriétés qui permettent de mettre les éléments flex au début, au centre ou à la fin de l'axe secondaire,
             de plus space-between permet de répartir l'espace restant entre les éléments flex et space-around permet de répartir cet espace tout autour des-dits éléments.
             <blockquote>.selecteur {
-                <blockquote>align-content: flex-end;</blockquote>
+                <blockquote>align-content : flex-end;</blockquote>
                 }
             </blockquote>
         </p>
     </div>
 
+    <video controls="controls">
+  <source src="videos/videotest.mp4" type="video/mp4" />
+  Veuillez installer VLC media player pour lire la vidéo.
+</video>
 
     <div class="ui raised very padded text container segment">
         <h2>Align-items :</h2>
         <p> C'est un align-content, qui s'applique à un item visé.
             <blockquote>.selecteur {
-                <blockquote>aligne-items: center;</blockquote>
+                <blockquote>align-items : center;</blockquote>
                 }
             </blockquote>
         </p>
@@ -193,13 +197,8 @@
         <h2>Align-Self :</h2>
         <p>A les mêmes propriétés que Align-Items mais elle permet de gérer l'alignement d'un seul élément de manière indépendante.
             <blockquote> <br>.selecteur {
-                <blockquote> auto ou flex-start ou flex-end ou center ou baseline ou stretch;</blockquote>}</blockquote>
+                <blockquote>align-self : auto ou flex-start ou flex-end ou center ou baseline ou stretch;</blockquote>}</blockquote>
     </div>
-
-    <video controls="controls">
-  <source src="videos/videotest.mp4" type="video/mp4" />
-  Veuillez installer VLC media player pour lire la vidéo.
-</video>
 
     <footer class="fooress">
         <div class="ui vertical footer segment">
