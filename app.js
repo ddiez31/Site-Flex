@@ -146,7 +146,7 @@ $(document).ready(function() {
 
 
     //cyril et julien mettre des couleurs sur les elements et virrer les console.log()
-    var colorarray = ["blue", "red", "green", "white", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"]
+    var colorarray = ["blue", "red", "green", "orange", "yellow", "purple", "lime", "Olive", "DeepPink", "GreenYellow", "MediumPurple", "OrangeRed", "Pink", "MidnightBlue", "MediumSpringGreen", "PapayaWhip", "PeachPuff", "LawnGreen", "Gold", "Fuchsia", "DarkMagenta", "Crimson"];
     var prevrand = (colorarray.length) + 1;
     $('.element').each(function() {
             var rand = Math.floor(Math.random() * colorarray.length);
@@ -166,7 +166,6 @@ $(document).ready(function() {
         var outils1 = $(this).attr("name");
         var outils = $(this).attr("type");
         if (outils1 == "justify-content" || outils1 == "align-items") {
-            console.log(outils);
             if(outils !== 'stretch' && outils1 !== "justify-content"){
                 $(".elementjudtifalign").css("height", '');
             }
@@ -175,7 +174,6 @@ $(document).ready(function() {
                 $(".elementjudtifalign").css("height", 'inherit');
             }
         } else if (outils1 == "align-content") {
-            console.log(outils1);
             $("#TestFlexAlign").css(outils1, outils);
         }
     });
@@ -232,7 +230,6 @@ $(document).ready(function() {
     $('.btnAddSupprFinal').click(function(){
     	var outils = $(this).attr('type');
     	var outils1 = $(this).attr('name');
-    	console.log(outils1);
     	if(outils1 === "+"){
     		nb++;
     		rand = Math.floor(Math.random() * colorarray.length);
@@ -268,11 +265,6 @@ $(document).ready(function() {
     	$('.btnFinal').click(function(){
     		var outils = $(this).attr('type');
     		var outils1 = $(this).attr('name');
-    		console.log(outils1);
-    		if(outils === 'ajout'){
-    			
-        		
-        	}
         	if(outils === 'modifcont'){
         		if((outils1).split(",")[1] === 'stretch') {
         			$('#'+finalselect).children().css("height", 100+'%');
@@ -282,8 +274,11 @@ $(document).ready(function() {
         	}
         	if(outils === 'changeselec'){
         		if(outils1 === 'parent'){
+        			if($('#'+finalselect).parent().attr('id')!== undefined)
         			finalselect = $('#'+finalselect).parent().attr('id');
-        			console.log(finalselect);
+        		}if(outils1 === 'enfant'){
+        			if($('#'+finalselect).children().attr('id')!== undefined)
+        			finalselect = $('#'+finalselect).children().attr('id');
         		}
         	}
         });
@@ -303,7 +298,6 @@ $(document).ready(function() {
     	$('#FinalTextinp').on('keypress', function(e){
     		if(e.which === 13){
 	    		inp = $('#FinalTextinp').val();
-	    		console.log(inp);
 	    		$('#'+finalselect).append("<p>"+inp+"</p>");
     		}
     	})
