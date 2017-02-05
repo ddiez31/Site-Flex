@@ -36,8 +36,43 @@
     <iframe src="canvas.html"></iframe>
     <div class="block"></div>
 
+    <h2>Display</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted red btnDisplay" name="display" id="display">Flex</button>
+        <button class="small ui button inverted green btnNoDisplay" name="nodisplay" id="nodisplay">No-Flex</button>
+        <div class="ui raised very segment divDisplay" id="TestDisplay">
+            <div class="element" id="display"> 1 </div>
+            <div class="element" id="display"> 2 </div>
+            <div class="element" id="display"> 3 </div>
+            <div class="element" id="display"> 4 </div>
+            <div class="element" id="display"> 5 </div>
+            <div class="element" id="display"> 6 </div>
+            <div class="element" id="display"> 7 </div>
+            <div class="element" id="display"> 8 </div>
+            <div class="element" id="display"> 9 </div>
+        </div>
+    </div>
+
+    <h2>Order</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted orange btnOrder" name="order" id="order1">Order 1</button>
+        <input type="number" id="orderinp1" placeholder="Valeur de position"><br>
+        <button class="small ui button inverted blue btnOrder" name="order" id="order2">Order 2</button>
+        <input type="number" id="orderinp2" placeholder="Valeur de position"><br>
+        <button class="small ui button inverted green btnOrder" name="order" id="order3">Order 3</button>
+        <input type="number" id="orderinp3" placeholder="Valeur de position"><br>
+        <button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
+        <input type="number" id="orderinp4" placeholder="Valeur de position">
+        <button class="small ui button inverted black btnOrder" name="order" id="order">Action</button>
+        <div class="ui raised very segment divDeTestFine" id="TestOrder">
+            <div class="element" id="orderbox1"> 1 </div>
+            <div class="element" id="orderbox2"> 2 </div>
+            <div class="element" id="orderbox3"> 3 </div>
+            <div class="element" id="orderbox4"> 4 </div>
+        </div>
+    </div>
+
     <h2>Flex-grow, Flex-basis</h2>
-    <!-- boutons grow vraiment fonctionels -->
     <div class="ui container raised very padded text segment">
         <div class="ui grid">
             <div>
@@ -72,7 +107,6 @@
 
 
     <h2>Flex-shrink</h2>
-    <!-- boutons shrink CURSEUR -->
     <div class="ui container raised very padded text segment">
         <button class="small ui button inverted orange btnFlex" name="1" type="shrink" id="shrink1">Shrink 1</button>
         <input type="number" id="shrinkinp1" placeholder="proport° de réduction"><br>
@@ -89,8 +123,42 @@
         </div>
     </div>
 
+    <h2>Flex-wrap, Flex-direction, Flex-flow</h2>
+    <div class="ui container raised very padded text segment">
+        <h5> Flex-wrap : </h5>
+        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
+        <div class="checkbox">
+            <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button grey btnFlexFlow"><em>Activer Flex-Flow</em>
+            </input>
+        </div>
+        <br>
+        <h5>Flex-direction : </h5>
+        <button type="button" name="col" id="containercol" class="small ui button inverted button purple btnFlexFlow">Column</button>
+        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button orange btnFlexFlow">Column-reverse</button>
+        <button type="button" name="row" id="row" class="small ui button inverted button blue btnFlexFlow">Row</button>
+        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button red btnFlexFlow">Row-reverse</button>
+        <div class="ui raised very segment divDeTest" id="TestFlexFlow">
+            <div class="element"> 1 </div>
+            <div class="element"> 2 </div>
+            <div class="element"> 3 </div>
+            <div class="element"> 4 </div>
+            <div class="element"> 5 </div>
+            <div class="element"> 6 </div>
+            <div class="element"> 7 </div>
+            <div class="element"> 8 </div>
+            <div class="element"> 9 </div>
+            <div class="element"> 10 </div>
+            <div class="element"> 11 </div>
+            <div class="element"> 12 </div>
+            <div class="element"> 13 </div>
+            <div class="element"> 14 </div>
+            <div class="element"> 15 </div>
+        </div>
+    </div>
+
     <h2>Justif-content, Align-item</h2>
-    <!-- Justif et aligne content -->
     <div class="ui container raised very padded text segment">
         <div>
             <h5>Justify-content: <span id="outputJustifyCont"></span></h5>
@@ -116,7 +184,6 @@
     </div>
 
     <h2>Align-content</h2>
-    <!-- Justif et aligne content -->
     <div class="ui container raised very padded text segment">
         <div>
             <button class="small ui button inverted teal btnFlexJustifAlign" name="align-content" type="flex-start">align-content flex-start</button>
@@ -165,82 +232,6 @@
         </div>
     </div>
 
-    <!-- Thibault start -->
-    <h2>Flex-wrap, Flex-direction, Flex-flow</h2>
-    <div class="ui container raised very padded text segment">
-        <h5> Flex-wrap : </h5>
-        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
-        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
-        <div class="checkbox">
-            <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button grey btnFlexFlow"><em>Activer Flex-Flow</em>
-            </input>
-        </div>
-        <br>
-        <h5>Flex-direction : </h5>
-        <button type="button" name="col" id="containercol" class="small ui button inverted button purple btnFlexFlow">Column</button>
-        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button orange btnFlexFlow">Column-reverse</button>
-        <button type="button" name="row" id="row" class="small ui button inverted button blue btnFlexFlow">Row</button>
-        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button red btnFlexFlow">Row-reverse</button>
-        <div class="ui raised very segment divDeTest" id="TestFlexFlow">
-            <div class="element"> 1 </div>
-            <div class="element"> 2 </div>
-            <div class="element"> 3 </div>
-            <div class="element"> 4 </div>
-            <div class="element"> 5 </div>
-            <div class="element"> 6 </div>
-            <div class="element"> 7 </div>
-            <div class="element"> 8 </div>
-            <div class="element"> 9 </div>
-            <div class="element"> 10 </div>
-            <div class="element"> 11 </div>
-            <div class="element"> 12 </div>
-            <div class="element"> 13 </div>
-            <div class="element"> 14 </div>
-            <div class="element"> 15 </div>
-        </div>
-    </div>
-
-    <!-- Thibault end -->
-
-
-    <!-- David start -->
-    <h2>Display</h2>
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted red btnDisplay" name="display" id="display">Flex</button>
-        <button class="small ui button inverted green btnNoDisplay" name="nodisplay" id="nodisplay">No-Flex</button>
-        <div class="ui raised very segment divDisplay" id="TestDisplay">
-            <div class="element" id="display"> 1 </div>
-            <div class="element" id="display"> 2 </div>
-            <div class="element" id="display"> 3 </div>
-            <div class="element" id="display"> 4 </div>
-            <div class="element" id="display"> 5 </div>
-            <div class="element" id="display"> 6 </div>
-            <div class="element" id="display"> 7 </div>
-            <div class="element" id="display"> 8 </div>
-            <div class="element" id="display"> 9 </div>
-        </div>
-    </div>
-
-    <h2>Order</h2>
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted orange btnOrder" name="order" id="order1">Order 1</button>
-        <input type="number" id="orderinp1" placeholder="Valeur de position"><br>
-        <button class="small ui button inverted blue btnOrder" name="order" id="order2">Order 2</button>
-        <input type="number" id="orderinp2" placeholder="Valeur de position"><br>
-        <button class="small ui button inverted green btnOrder" name="order" id="order3">Order 3</button>
-        <input type="number" id="orderinp3" placeholder="Valeur de position"><br>
-        <button class="small ui button inverted pink btnOrder" name="order" id="order4">Order 4</button>
-        <input type="number" id="orderinp4" placeholder="Valeur de position">
-        <button class="small ui button inverted black btnOrder" name="order" id="order">Action</button>
-        <div class="ui raised very segment divDeTestFine" id="TestOrder">
-            <div class="element" id="orderbox1"> 1 </div>
-            <div class="element" id="orderbox2"> 2 </div>
-            <div class="element" id="orderbox3"> 3 </div>
-            <div class="element" id="orderbox4"> 4 </div>
-        </div>
-    </div>
-
     <h2>Align-self</h2>
     <div class="ui container raised very padded text segment">
         <button class="small ui button inverted blue btnSelf" name="auto" id="auto">Auto</button>
@@ -265,10 +256,7 @@
             <div class="element" id="self8"> 8 </div>
         </div>
     </div>
-    <!-- David end -->
 
-    <!-- théorie -->
-    <!-- flex -->
     <!--FINAL -->
     <div class="ui container raised very padded text segment">
         <h2 id='finalSelectCol'>Viser</h2>
