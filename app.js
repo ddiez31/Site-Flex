@@ -196,27 +196,26 @@ $(document).ready(function() {
             prevrand = rand;
             $(this).addClass(btncolors[rand])
     	})
-
-    $('.menuFinal').click(function(){
+    $('.menuFinal').click(function() {
     	outils = $(this).attr('type');
     	if (outils === 'dirwrap') {
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">nowrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">row</button>')
-    	}else if (outils === 'order') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">No-wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">Columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">Row</button>')
+    	} else if (outils === 'order') {
     		$('#finalreceiver').html('<span>Order</span><input type="number" id="FinalOrderinp">')
-    	}else if (outils === 'coucopcol') {
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="couper">Couper</button><button class="small ui button inverted btnFinal" type="copier">Copier</button><button class="small ui button inverted btnFinal" type="coler">Coler</button>')
-    	}else if(outils === 'alignit'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,stretch">stretch</button>')
-    	}else if(outils === 'aligncont'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-between">space between</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-around">space aroud</button>')
-    	}else if(outils === 'justifycont'){
-    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,space-around">space aroud</button>')
-    	}else if(outils === 'sizing'){
+    	} else if (outils === 'coucopcol') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="couper">Couper</button><button class="small ui button inverted btnFinal" type="copier">Copier</button><button class="small ui button inverted btnFinal" type="coler">Coller</button>')
+    	} else if (outils === 'alignit') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-start">Flex-start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-end">Flex-end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,stretch">Stretch</button>')
+    	} else if (outils === 'aligncont') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-start">Flex-start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-end">Flex-end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-between">Space-between</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-around">Space-around</button>')
+    	} else if (outils === 'justifycont') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-start">Flex-start</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-end">Flex-end</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,space-around">Space-around</button>')
+    	} else if (outils === 'sizing') {
     		$('#finalreceiver').html("<span>Largeur en % de l'élément</span><input type='number' id='FinalCurseurW' placeholder='Largeur'><br><span>Hauteur en % de l'élément</span><input type='number' id='FinalCurseurH' placeholder='Hauteur'>")
-    	}else if(outils === 'placement'){
+    	} else if (outils === 'placement') {
     		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="changeselec" name="parent">Parent</button><button class="small ui button inverted btnFinal" type="changeselec" name="enfant">Enfant</button>')
-    	}else if(outils === 'text'){
-    		$('#finalreceiver').html('<input type="text" id="FinalTextinp" placeholder="ajouter du text">')
+    	} else if (outils === 'text') {
+    		$('#finalreceiver').html('<input type="text" id="FinalTextinp" placeholder="Ajouter du texte">')
     	}
     	$('.btnFinal').each(function(){
     		rand = Math.floor(Math.random() * btncolors.length);
@@ -226,11 +225,23 @@ $(document).ready(function() {
                 }
             }
             prevrand = rand;
-            $(this).addClass(btncolors[rand])
+            $(this).addClass(btncolors[rand]);
     	})
     		listenFinal();
     });
     
+    function addlistenerelementfinal(){
+    	$('.elementFinal').each(function(){
+    		if ($(this).attr('type') !== 'ok') {
+    			$(this).attr('type', 'ok');
+    			$(this).on('click', function(e){
+    				e.stopPropagation();
+    				finalselect = $(this).attr('id');
+    				console.log($('#'+finalselect)[0].outerHTML)
+    			});
+    		}
+    	})
+    }
     function listenFinal(){
     	$('.btnFinal').click(function(){
     		var outils = $(this).attr('type');
@@ -253,29 +264,30 @@ $(document).ready(function() {
         	}
         	if(outils === 'couper'){
         		if(finalselect!=='TestFinal'){
-        			item = $('#'+finalselect)[0].outerHTML
+        			item = $('#'+finalselect)[0].outerHTML;
         			$('#'+finalselect).remove();
-        			console.log(item)
+        			console.log(item);
         		}
         	}if(outils === 'copier'){
         		if(finalselect!=='TestFinal'){
-        			item = $('#'+finalselect)[0].outerHTML
-        			console.log(item)
+        			item = $('#'+finalselect)[0].outerHTML;
+        			console.log(item);
         		}
         	}if(outils === 'coler'){
         		var itemparts = item.split('"');
         		var finalitem = [];
-        		nb++;
-        		console.log(nb)
-        		for(i=0; i<itemparts; i++){
-        			if(i===8){
+        		for(i=0; i<itemparts.length; i++){
+        			if(itemparts[i-1]===' type=' || itemparts[i-1]===' id=' ){
+        				console.log(itemparts[i-1]);
+        				nb++;
         				finalitem.push('final'+nb);
         			}else{
         				finalitem.push(itemparts[i]);
         			}
         		}
         		$('#'+finalselect).append(finalitem.join('"'));
-        		console.log(finalitem.join('"'))
+        		console.log(finalitem.join('"'));
+    			addlistenerelementfinal();
         	}
         });
     	$("#FinalCurseurW").keyup(function() {
@@ -295,11 +307,12 @@ $(document).ready(function() {
     		if(e.which === 13){
 	    		inp = $('#FinalTextinp').val();
 	    		$('#'+finalselect).append("<p>"+inp+"</p>");
+	    		$('#FinalTextinp').val('');
     		}
     	});
     	$('#FinalOrderinp').change(function(){
     		inp = $('#FinalOrderinp').val();
-    		$('#'+finalselect).css('order', inp)
+    		$('#'+finalselect).css('order', inp);
     	})
     };
 
@@ -318,22 +331,16 @@ $(document).ready(function() {
     		butt = but.attr('id', 'final'+nb);
     		butto = butt.css('display', 'flex');
     		$('#'+finalselect).append(butt);
-    		$('.elementFinal').each(function(){
-    			if ($(this).attr('type') !== 'ok') {
-    				$(this).attr('type', 'ok');
-    				$(this).on('click', function(e){
-    					e.stopPropagation();
-    					finalselect = $(this).attr('id');
-    				});
-    			}
-    		})
+    		addlistenerelementfinal();
     	}if(outils1 === "-"){
     		if(finalselect !== 'TestFinal'){
-    			$('#'+finalselect).remove()
+    			$('#'+finalselect).remove();
     		}
     	}
     	if(outils1 === "reset"){
-    		$('#TestFinal').html("")
+    		$('#TestFinal').html("");
+    		$('#finalSelectCol').css('backgroundColor', "");
+            $('#finalSelectStyl').html("");
     	}
     });
 
