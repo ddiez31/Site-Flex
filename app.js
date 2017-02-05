@@ -209,6 +209,8 @@ $(document).ready(function() {
             $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-start">Start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,flex-end">End</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-between">Space-between</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-content,space-around">Space-around</button>')
         } else if (outils === 'justifycont') {
             $('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-start">Start</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,flex-end">End</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,center">Center</button><button class="small ui button inverted btnFinal" type="modifcont" name="justify-content,space-around">Space-around</button>')
+        }else if (outils === 'order') {
+            $('#finalreceiver').html("<span>Order</span><input type='number' id='FinalOrder'>")
         } else if (outils === 'sizing') {
             $('#finalreceiver').html("<span>Largeur en % de l'élément</span><input type='number' id='FinalCurseurW' placeholder='Largeur'><br><span>Hauteur en % de l'élément</span><input type='number' id='FinalCurseurH' placeholder='Hauteur'>")
         } else if (outils === 'placement') {
@@ -274,10 +276,15 @@ $(document).ready(function() {
             }
             if (outils === 'changeselec') {
                 if (outils1 === 'parent') {
+                	if($('#'+finalselect).parent().attr('id')!==undefined)
                     finalselect = $('#' + finalselect).parent().attr('id');
+                }if(outils1 === 'enfant'){
+                	if($('#'+finalselect).children().attr('id')!==undefined)
+                	finalselect = $('#'+finalselect).children().attr('id');
                 }
             }
         });
+
         $("#FinalCurseurW").keyup(function() {
             var inp = $(this).val();
             if (finalselect !== 'TestFinal') {
@@ -291,17 +298,27 @@ $(document).ready(function() {
                 $('#' + finalselect).css("height", inp + "%");
             }
         });
+
         $('#FinalTextinp').on('keypress', function(e) {
             if (e.which === 13) {
                 inp = $('#FinalTextinp').val();
                 $('#' + finalselect).append("<p>" + inp + "</p>");
+                $('#FinalTextinp').html('');
             }
+        });
+
+        $('#FinalOrder').on('change', function(){
+        	inp = $('#FinalOrder').val();
+        	$('#'+finalselect).css('order', inp);
         })
     }
 
     setInterval(function() {
-        var color = $('#' + finalselect).attr('style').split(';')[0].split(':')[1];
-        $('#finalSelectCol').css('backgroundColor', color)
-    }, 250);
+    	slect = $('#' + finalselect);
+        var color = slect.attr('style').split(';')[0].split(':')[1];
+        var styltabl = slect.attr('style').split(';');
+        $('#finalSelectCol').css('backgroundColor', color);
+        $('#finalStyleDisplay').html(styltabl.join(','));
+    }, 500);
     //final
 });
