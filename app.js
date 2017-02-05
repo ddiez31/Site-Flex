@@ -291,7 +291,12 @@ $(document).ready(function() {
                 addlistenerelementfinal();
             }
         });
-
+        $("#FinalCurseurW").keyup(function() {
+            var inp = $(this).val();
+            if (finalselect !== 'TestFinal') {
+                $('#' + finalselect).css("width", inp + "%");
+            }
+        });
         $("#FinalCurseurH").keyup(function() {
             var inp = $(this).val();
             if (finalselect !== 'TestFinal') {
