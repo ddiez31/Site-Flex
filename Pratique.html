@@ -35,177 +35,7 @@
 
     <iframe src="canvas.html"></iframe>
     <div class="block"></div>
-
-    <h2>Flex-grow, Flex-basis</h2>
-    <!-- boutons grow vraiment fonctionels -->
-    <div class="ui container raised very padded text segment">
-        <div class="ui grid">
-            <div>
-                <button class="small ui button inverted pink btnFlex" name="1" type="grow">Grow 1</button>
-                <input type="number" class="growinp1" placeholder="proportion"><br>
-                <button class="small ui button inverted pink btnFlex" name="2" type="grow">Grow 2</button>
-                <input type="number" class="growinp2" placeholder="proportion"><br>
-                <button class="small ui button inverted pink btnFlex" name="3" type="grow">Grow 3</button>
-                <input type="number" class="growinp3" placeholder="proportion"><br>
-                <button class="small ui button inverted pink btnFlex" name="4" type="grow">Grow 4</button>
-                <input type="number" class="growinp4" placeholder="proportion"><br>
-            </div>
-            <div>
-                <button class="small ui button inverted orange btnFlex" name="1" type="basis">Basis 1</button>
-                <input type="number" class="basisinp1" placeholder="en px"><br>
-                <button class="small ui button inverted orange btnFlex" name="2" type="basis">Basis 2</button>
-                <input type="number" class="basisinp2" placeholder="en px"><br>
-                <button class="small ui button inverted orange btnFlex" name="3" type="basis">Basis 3</button>
-                <input type="number" class="basisinp3" placeholder="en px"><br>
-                <button class="small ui button inverted orange btnFlex" name="4" type="basis">Basis 4</button>
-                <input type="number" class="basisinp4" placeholder="en px"><br>
-            </div>
-        </div>
-        <div class="block2"></div>
-        <div class="ui raised very segment divDeTestFine" id="TestFlexGrowBasis">
-            <div class="element" id="grobas1"> 1 </div>
-            <div class="element" id="grobas2"> 2 </div>
-            <div class="element" id="grobas3"> 3 </div>
-            <div class="element" id="grobas4"> 4 </div>
-        </div>
-    </div>
-
-
-    <h2>Flex-shrink</h2>
-    <!-- boutons shrink CURSEUR -->
-    <div class="ui container raised very padded text segment">
-        <button class="small ui button inverted orange btnFlex" name="1" type="shrink" id="shrink1">Shrink 1</button>
-        <input type="number" id="shrinkinp1" placeholder="proport° de réduction"><br>
-        <button class="small ui button inverted green btnFlex" name="2" type="shrink" id="shrink2">Shrink 2</button>
-        <input type="number" id="shrinkinp2" placeholder="proport° de réduction"><br>
-        <button class="small ui button inverted teal btnFlex" name="3" type="shrink" id="shrink3">Shrink 3</button>
-        <input type="number" id="shrinkinp3" placeholder="proport° de réduction">
-        <div class="block2"></div>
-        <input type="range" min="180" max="600" val="100" id="TestFlexShrinkCurseur"><span id='shrinkDivRange'>Modifier la largeur initiale</span>
-        <div class="ui raised very segment divDeTestFine" id="TestFlexShrink">
-            <div class="element" id="shr1"> 1 </div>
-            <div class="element" id="shr2"> 2 </div>
-            <div class="element" id="shr3"> 3 </div>
-        </div>
-    </div>
-
-    <h2>Justif-content, Align-item</h2>
-    <!-- Justif et aligne content -->
-    <div class="ui container raised very padded text segment">
-        <div>
-        	<h5>Justify-content: <span id="outputJustifyCont"></span></h5>
-            <button class="small ui button inverted teal btnFlexJustifAlign" name="justify-content" type="flex-start">flex-start</button>
-            <button class="small ui button inverted orange btnFlexJustifAlign" name="justify-content" type="flex-end">flex-end</button>
-            <button class="small ui button inverted blue btnFlexJustifAlign" name="justify-content" type="center">center</button>
-            <button class="small ui button inverted green btnFlexJustifAlign" name="justify-content" type="space-between">space-between</button>
-            <button class="small ui button inverted purple btnFlexJustifAlign" name="justify-content" type="space-around">space-around</button>
-            <br>
-        	<h5>Align-item: <span id="outputAlignItem"></span></h5>
-            <button class="small ui button inverted teal btnFlexJustifAlign" name="align-items" type="flex-start">flex-start</button>
-            <button class="small ui button inverted orange btnFlexJustifAlign" name="align-items" type="flex-end">flex-end</button>
-            <button class="small ui button inverted blue btnFlexJustifAlign" name="align-items" type="center">center</button>
-            <button class="small ui button inverted green btnFlexJustifAlign" name="align-items" type="baseline">baseline</button>
-            <button class="small ui button inverted purple btnFlexJustifAlign" name="align-items" type="stretch">stretch</button>
-        </div>
-        <div class="ui raised very segment divDeTest" id="TestFlexJustifAlign">
-            <div class="element elementjudtifalign" id="justifalign1"> 1 </div>
-            <div class="element elementjudtifalign" id="justifalign2"> 2 </div>
-            <div class="element elementjudtifalign" id="justifalign3"> 3 </div>
-            <div class="element elementjudtifalign" id="justifalign4"> 4 </div>
-        </div>
-    </div>
-
-    <h2>Align-content</h2>
-    <!-- Justif et aligne content -->
-    <div class="ui container raised very padded text segment">
-        <div>
-        	<h5>Align-content: <span id="outputAlignCont"></span></h5>
-            <button class="small ui button inverted teal btnFlexJustifAlign" name="align-content" type="flex-start">align-content flex-start</button>
-            <button class="small ui button inverted orange btnFlexJustifAlign" name="align-content" type="flex-end">align-content flex-end</button>
-            <button class="small ui button inverted blue btnFlexJustifAlign" name="align-content" type="center">align-content center</button>
-            <button class="small ui button inverted green btnFlexJustifAlign" name="align-content" type="space-between">align-content space-between</button>
-            <button class="small ui button inverted purple btnFlexJustifAlign" name="align-content" type="space-around">align-content space-around</button>
-        </div>
-        <div class="ui raised very segment divDeTest" id="TestFlexAlign">
-        	<div class="element" id="alignit1">1</div>
-        	<div class="element" id="alignit2">2</div>
-        	<div class="element" id="alignit3">3</div>
-        	<div class="element" id="alignit4">4</div>
-        	<div class="element" id="alignit5">5</div>
-        	<div class="element" id="alignit6">6</div>
-        	<div class="element" id="alignit7">7</div>
-        	<div class="element" id="alignit8">8</div>
-        	<div class="element" id="alignit9">9</div>
-        	<div class="element" id="alignit10">10</div>
-        	<div class="element" id="alignit11">11</div>
-        	<div class="element" id="alignit12">12</div>
-        	<div class="element" id="alignit13">13</div>
-        	<div class="element" id="alignit14">14</div>
-        	<div class="element" id="alignit15">15</div>
-        	<div class="element" id="alignit16">16</div>
-        	<div class="element" id="alignit17">17</div>
-        	<div class="element" id="alignit18">18</div>
-        	<div class="element" id="alignit19">19</div>
-        	<div class="element" id="alignit20">20</div>
-        	<div class="element" id="alignit21">21</div>
-        	<div class="element" id="alignit22">22</div>
-        	<div class="element" id="alignit23">23</div>
-        	<div class="element" id="alignit24">24</div>
-        	<div class="element" id="alignit25">25</div>
-        	<div class="element" id="alignit26">26</div>
-        	<div class="element" id="alignit27">27</div>
-        	<div class="element" id="alignit28">28</div>
-        	<div class="element" id="alignit29">29</div>
-        	<div class="element" id="alignit30">30</div>
-        	<div class="element" id="alignit31">31</div>
-        	<div class="element" id="alignit32">32</div>
-        	<div class="element" id="alignit33">33</div>
-        	<div class="element" id="alignit34">34</div>
-        	<div class="element" id="alignit35">35</div>
-        	<div class="element" id="alignit36">36</div>
-        </div>
-    </div>
-
-    <!-- Thibault start -->
-    <h2>Flex-wrap, Flex-direction, Flex-flow</h2>
-    <div class="ui container raised very padded text segment">
-        <h5> Flex-wrap : </h5>
-        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
-        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
-        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
-        <div class="checkbox">
-            <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button grey btnFlexFlow"><em>Activer Flex-Flow</em>
-            </input>
-        </div>
-        <br>
-        <h5>Flex-direction</h5>
-        <button type="button" name="col" id="containercol" class="small ui button inverted button purple btnFlexFlow">Column</button>
-        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button orange btnFlexFlow">Column-reverse</button>
-        <button type="button" name="row" id="row" class="small ui button inverted button blue btnFlexFlow">Row</button>
-        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button red btnFlexFlow">Row-reverse</button>
-        <div class="ui raised very segment divDeTest" id="TestFlexFlow">
-            <div class="element"> 1 </div>
-            <div class="element"> 2 </div>
-            <div class="element"> 3 </div>
-            <div class="element"> 4 </div>
-            <div class="element"> 5 </div>
-            <div class="element"> 6 </div>
-            <div class="element"> 7 </div>
-            <div class="element"> 8 </div>
-            <div class="element"> 9 </div>
-            <div class="element"> 10 </div>
-            <div class="element"> 11 </div>
-            <div class="element"> 12 </div>
-            <div class="element"> 13 </div>
-            <div class="element"> 14 </div>
-            <div class="element"> 15 </div>
-        </div>
-    </div>
-
-    <!-- Thibault end -->
-
-
-    <!-- David start -->
+    
     <h2>Display</h2>
     <div class="ui container raised very padded text segment">
         <button class="small ui button inverted red btnDisplay" name="display" id="display">Flex</button>
@@ -242,6 +72,167 @@
         </div>
     </div>
 
+    <h2>Flex-grow, Flex-basis</h2>
+    <div class="ui container raised very padded text segment">
+        <div class="ui grid">
+            <div>
+                <button class="small ui button inverted pink btnFlex" name="1" type="grow">Grow 1</button>
+                <input type="number" class="growinp1" placeholder="proportion"><br>
+                <button class="small ui button inverted pink btnFlex" name="2" type="grow">Grow 2</button>
+                <input type="number" class="growinp2" placeholder="proportion"><br>
+                <button class="small ui button inverted pink btnFlex" name="3" type="grow">Grow 3</button>
+                <input type="number" class="growinp3" placeholder="proportion"><br>
+                <button class="small ui button inverted pink btnFlex" name="4" type="grow">Grow 4</button>
+                <input type="number" class="growinp4" placeholder="proportion"><br>
+            </div>
+            <div>
+                <button class="small ui button inverted orange btnFlex" name="1" type="basis">Basis 1</button>
+                <input type="number" class="basisinp1" placeholder="en px"><br>
+                <button class="small ui button inverted orange btnFlex" name="2" type="basis">Basis 2</button>
+                <input type="number" class="basisinp2" placeholder="en px"><br>
+                <button class="small ui button inverted orange btnFlex" name="3" type="basis">Basis 3</button>
+                <input type="number" class="basisinp3" placeholder="en px"><br>
+                <button class="small ui button inverted orange btnFlex" name="4" type="basis">Basis 4</button>
+                <input type="number" class="basisinp4" placeholder="en px"><br>
+            </div>
+        </div>
+        <div class="block2"></div>
+        <div class="ui raised very segment divDeTestFine" id="TestFlexGrowBasis">
+            <div class="element" id="grobas1"> 1 </div>
+            <div class="element" id="grobas2"> 2 </div>
+            <div class="element" id="grobas3"> 3 </div>
+            <div class="element" id="grobas4"> 4 </div>
+        </div>
+    </div>
+
+
+    <h2>Flex-shrink</h2>
+    <div class="ui container raised very padded text segment">
+        <button class="small ui button inverted orange btnFlex" name="1" type="shrink" id="shrink1">Shrink 1</button>
+        <input type="number" id="shrinkinp1" placeholder="proport° de réduction"><br>
+        <button class="small ui button inverted green btnFlex" name="2" type="shrink" id="shrink2">Shrink 2</button>
+        <input type="number" id="shrinkinp2" placeholder="proport° de réduction"><br>
+        <button class="small ui button inverted teal btnFlex" name="3" type="shrink" id="shrink3">Shrink 3</button>
+        <input type="number" id="shrinkinp3" placeholder="proport° de réduction">
+        <div class="block2"></div>
+        <input type="range" min="180" max="600" val="100" id="TestFlexShrinkCurseur"><span id='shrinkDivRange'>Modifier la largeur initiale</span>
+        <div class="ui raised very segment divDeTestFine" id="TestFlexShrink">
+            <div class="element" id="shr1"> 1 </div>
+            <div class="element" id="shr2"> 2 </div>
+            <div class="element" id="shr3"> 3 </div>
+        </div>
+    </div>
+    
+    <h2>Flex-wrap, Flex-direction, Flex-flow</h2>
+    <div class="ui container raised very padded text segment">
+        <h5> Flex-wrap : </h5>
+        <button class="small ui button inverted teal btnFlexFlow" name="wrap" id="wrap">Wrap</button>
+        <button class="small ui button inverted green btnFlexFlow" name="wraprev" id="wraprev">Wrap-reverse</button>
+        <button class="small ui button inverted brown btnFlexFlow" name="no-wrap" id="nowrap">No-wrap</button>
+        <div class="checkbox">
+            <input type="checkbox" name="wrap" id="activeFF" class="small ui button inverted button grey btnFlexFlow"><em>Activer Flex-Flow</em>
+            </input>
+        </div>
+        <br>
+        <h5>Flex-direction</h5>
+        <button type="button" name="col" id="containercol" class="small ui button inverted button purple btnFlexFlow">Column</button>
+        <button type="button" name="col-rev" id="containercolrev" class="small ui button inverted button orange btnFlexFlow">Column-reverse</button>
+        <button type="button" name="row" id="row" class="small ui button inverted button blue btnFlexFlow">Row</button>
+        <button type="button" name="row-rev" id="row-reverse" class="small ui button inverted button red btnFlexFlow">Row-reverse</button>
+        <div class="ui raised very segment divDeTest" id="TestFlexFlow">
+            <div class="element"> 1 </div>
+            <div class="element"> 2 </div>
+            <div class="element"> 3 </div>
+            <div class="element"> 4 </div>
+            <div class="element"> 5 </div>
+            <div class="element"> 6 </div>
+            <div class="element"> 7 </div>
+            <div class="element"> 8 </div>
+            <div class="element"> 9 </div>
+            <div class="element"> 10 </div>
+            <div class="element"> 11 </div>
+            <div class="element"> 12 </div>
+            <div class="element"> 13 </div>
+            <div class="element"> 14 </div>
+            <div class="element"> 15 </div>
+        </div>
+    </div>
+
+    <h2>Justif-content, Align-item</h2>
+    <div class="ui container raised very padded text segment">
+        <div>
+            <h5>Justify-content: <span id="outputJustifyCont"></span></h5>
+            <button class="small ui button inverted teal btnFlexJustifAlign" name="justify-content" type="flex-start">flex-start</button>
+            <button class="small ui button inverted orange btnFlexJustifAlign" name="justify-content" type="flex-end">flex-end</button>
+            <button class="small ui button inverted blue btnFlexJustifAlign" name="justify-content" type="center">center</button>
+            <button class="small ui button inverted green btnFlexJustifAlign" name="justify-content" type="space-between">space-between</button>
+            <button class="small ui button inverted purple btnFlexJustifAlign" name="justify-content" type="space-around">space-around</button>
+            <br>
+            <h5>Align-item : <span id="outputAlignItem"></span></h5>
+            <button class="small ui button inverted teal btnFlexJustifAlign" name="align-items" type="flex-start">flex-start</button>
+            <button class="small ui button inverted orange btnFlexJustifAlign" name="align-items" type="flex-end">flex-end</button>
+            <button class="small ui button inverted blue btnFlexJustifAlign" name="align-items" type="center">center</button>
+            <button class="small ui button inverted green btnFlexJustifAlign" name="align-items" type="baseline">baseline</button>
+            <button class="small ui button inverted purple btnFlexJustifAlign" name="align-items" type="stretch">stretch</button>
+        </div>
+        <div class="ui raised very segment divDeTest" id="TestFlexJustifAlign">
+            <div class="element elementjudtifalign" id="justifalign1"> 1 </div>
+            <div class="element elementjudtifalign" id="justifalign2"> 2 </div>
+            <div class="element elementjudtifalign" id="justifalign3"> 3 </div>
+            <div class="element elementjudtifalign" id="justifalign4"> 4 </div>
+        </div>
+    </div>
+
+    <h2>Align-content</h2>
+    <div class="ui container raised very padded text segment">
+        <div>
+            <h5>Align-content: <span id="outputAlignCont"></span></h5>
+            <button class="small ui button inverted teal btnFlexJustifAlign" name="align-content" type="flex-start">align-content flex-start</button>
+            <button class="small ui button inverted orange btnFlexJustifAlign" name="align-content" type="flex-end">align-content flex-end</button>
+            <button class="small ui button inverted blue btnFlexJustifAlign" name="align-content" type="center">align-content center</button>
+            <button class="small ui button inverted green btnFlexJustifAlign" name="align-content" type="space-between">align-content space-between</button>
+            <button class="small ui button inverted purple btnFlexJustifAlign" name="align-content" type="space-around">align-content space-around</button>
+        </div>
+        <div class="ui raised very segment divDeTest" id="TestFlexAlign">
+            <div class="element" id="alignit1">1</div>
+            <div class="element" id="alignit2">2</div>
+            <div class="element" id="alignit3">3</div>
+            <div class="element" id="alignit4">4</div>
+            <div class="element" id="alignit5">5</div>
+            <div class="element" id="alignit6">6</div>
+            <div class="element" id="alignit7">7</div>
+            <div class="element" id="alignit8">8</div>
+            <div class="element" id="alignit9">9</div>
+            <div class="element" id="alignit10">10</div>
+            <div class="element" id="alignit11">11</div>
+            <div class="element" id="alignit12">12</div>
+            <div class="element" id="alignit13">13</div>
+            <div class="element" id="alignit14">14</div>
+            <div class="element" id="alignit15">15</div>
+            <div class="element" id="alignit16">16</div>
+            <div class="element" id="alignit17">17</div>
+            <div class="element" id="alignit18">18</div>
+            <div class="element" id="alignit19">19</div>
+            <div class="element" id="alignit20">20</div>
+            <div class="element" id="alignit21">21</div>
+            <div class="element" id="alignit22">22</div>
+            <div class="element" id="alignit23">23</div>
+            <div class="element" id="alignit24">24</div>
+            <div class="element" id="alignit25">25</div>
+            <div class="element" id="alignit26">26</div>
+            <div class="element" id="alignit27">27</div>
+            <div class="element" id="alignit28">28</div>
+            <div class="element" id="alignit29">29</div>
+            <div class="element" id="alignit30">30</div>
+            <div class="element" id="alignit31">31</div>
+            <div class="element" id="alignit32">32</div>
+            <div class="element" id="alignit33">33</div>
+            <div class="element" id="alignit34">34</div>
+            <div class="element" id="alignit35">35</div>
+            <div class="element" id="alignit36">36</div>
+        </div>
+    </div>
+
     <h2>Align-self</h2>
     <div class="ui container raised very padded text segment">
         <button class="small ui button inverted blue btnSelf" name="auto" id="auto">Auto</button>
@@ -266,30 +257,29 @@
             <div class="element" id="self8"> 8 </div>
         </div>
     </div>
-    <!-- David end -->
 
-		<!-- théorie -->
-        <!-- flex -->
-	<!--FINAL -->
+    <h2>Jeu final</h2>
     <div class="ui container raised very padded text segment">
     	<h2 id='finalSelectCol'>Viser</h2><span id='finalSelectStyl'></span><br>
     	<button class="small ui button inverted red btnAddSupprFinal" type="ajout" name="+">+</button>
     	<button class="small ui button inverted yellow btnAddSupprFinal" type="ajout" name="-">-</button>
     	<button class="small ui button inverted blue btnAddSupprFinal" type="ajout" name="reset">reset</button>
+        <button class="small ui button inverted menuFinal" type="sizing">Sizing</button>
+        <button class="small ui button inverted menuFinal" type="text">Text</button>
+        <button class="small ui button inverted menuFinal" type="placement">Selectioner</button>
         <!-- <button class="small ui button inverted menuFinal" type="ajout">ajouter retirer</button> -->
         <button class="small ui button inverted menuFinal" type="dirwrap">Direction et wrap</button>
         <button class="small ui button inverted menuFinal" type="alignit">Align items</button>
         <button class="small ui button inverted menuFinal" type="aligncont">Align content</button>
         <button class="small ui button inverted menuFinal" type="justifycont">Justify content</button>
-        <button class="small ui button inverted menuFinal" type="sizing">Sizing</button>
-        <button class="small ui button inverted menuFinal" type="text">Text</button>
-        <button class="small ui button inverted menuFinal" type="placement">Selectioner</button>
+        <button class="small ui button inverted menuFinal" type="order">Order</button>
+        <button class="small ui button inverted menuFinal" type="coucopcol">CCC</button>
+        
         <br><hr>
         <span id="finalreceiver"></span>
-        <div class="ui raised very segment divDeTest" style="background-color: white" id="TestFinal">
+        <div class="ui raised very segment divDeTest" id="TestFinal">
 		</div>
 	</div>
-	<!--FINAL -->
 
     <footer class="fooress">
         <div class="ui vertical footer segment">

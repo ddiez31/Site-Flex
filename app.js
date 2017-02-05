@@ -180,7 +180,7 @@ $(document).ready(function() {
     //fin justify-Content et align-content
 
     //final
-    var nb=0;
+    var nb = 0;
     var finalselect = 'TestFinal';
 	var btncolors = ["red", "orange", "yellow", "olive", "green", "teal", "blue", "violet", "purple", "pink", "brown"];
     $('#TestFinal').on('click', function(){ //listener du conteneur pour le selectionner
@@ -201,6 +201,10 @@ $(document).ready(function() {
     	outils = $(this).attr('type');
     	if (outils === 'dirwrap') {
     		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,wrap">Wrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-wrap,nowrap">nowrap</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,column">columns</button><button class="small ui button inverted btnFinal" type="modifcont" name="flex-direction,row">row</button>')
+    	}else if (outils === 'order') {
+    		$('#finalreceiver').html('<span>Order</span><input type="number" id="FinalOrderinp">')
+    	}else if (outils === 'coucopcol') {
+    		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="couper">Couper</button><button class="small ui button inverted btnFinal" type="copier">Copier</button><button class="small ui button inverted btnFinal" type="coler">Coler</button>')
     	}else if(outils === 'alignit'){
     		$('#finalreceiver').html('<button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-start">start</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,flex-end">end</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,center">center</button><button class="small ui button inverted btnFinal" type="modifcont" name="align-items,stretch">stretch</button>')
     	}else if(outils === 'aligncont'){
@@ -227,6 +231,78 @@ $(document).ready(function() {
     		listenFinal();
     });
     
+    function listenFinal(){
+    	$('.btnFinal').click(function(){
+    		var outils = $(this).attr('type');
+    		var outils1 = $(this).attr('name');
+        	if(outils === 'modifcont'){
+        		if((outils1).split(",")[1] === 'stretch') {
+        			$('#'+finalselect).children().css("height", 100+'%');
+        		}else {
+        			$('#'+finalselect).css((outils1).split(",")[0],(outils1).split(",")[1]);
+        		}
+        	}
+        	if(outils === 'changeselec'){
+        		if(outils1 === 'parent'){
+        			if($('#'+finalselect).parent().attr('id')!== undefined)
+        			finalselect = $('#'+finalselect).parent().attr('id');
+        		}if(outils1 === 'enfant'){
+        			if($('#'+finalselect).children().attr('id')!== undefined)
+        			finalselect = $('#'+finalselect).children().attr('id');
+        		}
+        	}
+        	if(outils === 'couper'){
+        		if(finalselect!=='TestFinal'){
+        			item = $('#'+finalselect)[0].outerHTML
+        			$('#'+finalselect).remove();
+        			console.log(item)
+        		}
+        	}if(outils === 'copier'){
+        		if(finalselect!=='TestFinal'){
+        			item = $('#'+finalselect)[0].outerHTML
+        			console.log(item)
+        		}
+        	}if(outils === 'coler'){
+        		var itemparts = item.split('"');
+        		var finalitem = [];
+        		nb++;
+        		console.log(nb)
+        		for(i=0; i<itemparts; i++){
+        			if(i===8){
+        				finalitem.push('final'+nb);
+        			}else{
+        				finalitem.push(itemparts[i]);
+        			}
+        		}
+        		$('#'+finalselect).append(finalitem.join('"'));
+        		console.log(finalitem.join('"'))
+        	}
+        });
+    	$("#FinalCurseurW").keyup(function() {
+    		var inp = $(this).val();
+    		if(finalselect !== 'TestFinal'){
+    			$('#'+finalselect).css("width", inp+"%");
+    		}
+    	});
+
+    	$("#FinalCurseurH").keyup(function() {
+    		var inp = $(this).val();
+    		if(finalselect !== 'TestFinal'){
+    			$('#'+finalselect).css("height", inp+"%");
+    		}
+    	});
+    	$('#FinalTextinp').on('keypress', function(e){
+    		if(e.which === 13){
+	    		inp = $('#FinalTextinp').val();
+	    		$('#'+finalselect).append("<p>"+inp+"</p>");
+    		}
+    	});
+    	$('#FinalOrderinp').change(function(){
+    		inp = $('#FinalOrderinp').val();
+    		$('#'+finalselect).css('order', inp)
+    	})
+    };
+
     $('.btnAddSupprFinal').click(function(){
     	var outils = $(this).attr('type');
     	var outils1 = $(this).attr('name');
@@ -259,53 +335,13 @@ $(document).ready(function() {
     	if(outils1 === "reset"){
     		$('#TestFinal').html("")
     	}
-    })
-
-    function listenFinal(){
-    	$('.btnFinal').click(function(){
-    		var outils = $(this).attr('type');
-    		var outils1 = $(this).attr('name');
-        	if(outils === 'modifcont'){
-        		if((outils1).split(",")[1] === 'stretch') {
-        			$('#'+finalselect).children().css("height", 100+'%');
-        		}else {
-        			$('#'+finalselect).css((outils1).split(",")[0],(outils1).split(",")[1]);
-        		}
-        	}
-        	if(outils === 'changeselec'){
-        		if(outils1 === 'parent'){
-        			if($('#'+finalselect).parent().attr('id')!== undefined)
-        			finalselect = $('#'+finalselect).parent().attr('id');
-        		}if(outils1 === 'enfant'){
-        			if($('#'+finalselect).children().attr('id')!== undefined)
-        			finalselect = $('#'+finalselect).children().attr('id');
-        		}
-        	}
-        });
-    	$("#FinalCurseurW").keyup(function() {
-    		var inp = $(this).val();
-    		if(finalselect !== 'TestFinal'){
-    			$('#'+finalselect).css("width", inp+"%");
-    		}
-    	});
-
-    	$("#FinalCurseurH").keyup(function() {
-    		var inp = $(this).val();
-    		if(finalselect !== 'TestFinal'){
-    			$('#'+finalselect).css("height", inp+"%");
-    		}
-    	});
-    	$('#FinalTextinp').on('keypress', function(e){
-    		if(e.which === 13){
-	    		inp = $('#FinalTextinp').val();
-	    		$('#'+finalselect).append("<p>"+inp+"</p>");
-    		}
-    	})
-    }
+    });
 
     setInterval(function(){
-        var color = $('#'+finalselect).attr('style').split(';')[0].split(':')[1];
-        var styl = $('#'+finalselect).attr('style').split(';')
+    	if($('#'+finalselect).attr('style') !== undefined){
+    	    var color = $('#'+finalselect).attr('style').split(';')[0].split(':')[1];
+	        var styl = $('#'+finalselect).attr('style').split(';')
+    	}
         $('#finalSelectCol').css('backgroundColor', color)
         $('#finalSelectStyl').html(styl)
     }, 250);

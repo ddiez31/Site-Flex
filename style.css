@@ -32,11 +32,12 @@
     }
     
     body {
-        background-image: url("boxBG.jpg");
+    	background-color: #191970;
+        /*background-image: url("boxBG.jpg");
         background-attachment: fixed;
         background-position: 0 50px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;*/
     }
     
     p,
@@ -182,6 +183,10 @@
         flex-wrap: wrap;
     }
     
+    #TestFinal {
+    	background-color: white;
+    }
+
     #finalSelectCol {
         color: black;
         width: 10%;
