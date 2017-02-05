@@ -333,21 +333,23 @@ $(document).ready(function() {
         }
         if (outils1 === "-") {
             if (finalselect !== 'TestFinal') {
-                $('#' + finalselect).remove()
+                $('#' + finalselect).remove();
             }
         }
         if (outils1 === "reset") {
-            $('#TestFinal').html("")
+            $('#TestFinal').html("");
+            $('#finalSelectCol').css('backgroundColor', "");
+            $('#finalSelectStyl').html("");
         }
     });
 
     setInterval(function() {
         if ($('#' + finalselect).attr('style') !== undefined) {
             var color = $('#' + finalselect).attr('style').split(';')[0].split(':')[1];
-            var styl = $('#' + finalselect).attr('style').split(';')
-        }
-        $('#finalSelectCol').css('backgroundColor', color)
-        $('#finalSelectStyl').html(styl)
+            var styl = $('#' + finalselect).attr('style').split(';');
+        };
+        $('#finalSelectCol').css('backgroundColor', color);
+        $('#finalSelectStyl').html(styl);
     }, 250);
     //final
 });
